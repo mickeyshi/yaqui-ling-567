@@ -1,0 +1,100 @@
+Language: Yaqui
+Language code: yaq1
+Lines: translit translit-seg gloss translat
+Author: Changfei Shi
+Date: January 15, 2021
+Source a: Introduction to Hiaki Grammar
+
+
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+In kapitan nooka. 
+In kapitan nooka
+1SG.POSS captain speak
+My captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Em kapitan nooka. 
+Em kapitan nooka
+2SG.POSS captain speak
+Your captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Itom kapitan nooka. 
+Itom kapitan nooka
+1PL.POSS captain speak
+Our captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Enchim kapitan nooka. 
+Enchim kapitan nooka
+2PL.POSS captain speak
+You all's captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Apo'ik kapitan nooka. 
+Apo'ik kapitan nooka
+3SG.POSS captain speak
+Her captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Vempo'im kapitan nooka. 
+Vempo'im kapitan nooka
+3PL.POSS captain speak
+Their captain is speaking. 
+
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {poss}
+In nooka. 
+In nooka
+1SG.POSS speak
+My is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {poss}
+Em nooka. 
+Em nooka
+2SG.POSS speak
+Your is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Hoan vempo'im kari-ta vitchu. 
+Hoan vempo'im kari-ta vitchu.
+Hoan 3PL.POSS house-ACC watch
+Hoan is watching their house. 
+
+Source: Introduction to Hiaki Grammar, pg 166
+Vetted: s
+Judgment: g
+Phenomena: {poss}
+Aa huviawa siika.
+Aa huuvi-wa siika
+3SG.POSS wife-POSS went
+His wife went.  
+
