@@ -1,0 +1,14 @@
+1. 2355 items parsed out of 2355.
+2. 32.23 was the average number of parses per item. 
+3. 672 readings were found for "uusi-tu-k in achai ayam nee ya'a-ria-k."
+4. Yaqui has free word order, with an optional subject. We can highlight a few ambiguities that arise from this:
+	-SUBJ-HEAD and HEAD-COMP rules can both apply to an S. There are object markers that should resolve ambiguities in most cases, but -
+	-Grammar does not have a lexical entry corresponding to the coordination word "into"/"intok", and instead allows the creation of a CONJP from any two side-by-side NPs. 
+	-Currently, the grammar doesn't carry over object-marker constraints to coordinated objects. (The marker -ta that should carry over to both conjuncts of a CONJP is not forced to appear on the first argument, in our current grammar.)
+	-The marker "in", corresponding to the determiner "my", is allowed to appear on either side of an NP that it serves as the determiner of. When it appears between two NPs, our as-is grammar states that it can be the daughter of either NP. 
+	
+	In actuality, these possessives should only occur at the start of an NP, and should replace any determiner. 
+5.
+
+
+
