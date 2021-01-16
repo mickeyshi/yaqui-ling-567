@@ -9,10 +9,6 @@ noun-pc2_lrt1-suffix :=
 %suffix (* -ta)
 noun-pc2_lrt1-lex-rule.
 
-noun-pc3_lrt1-suffix :=
-%suffix (* -ta)
-noun-pc3_lrt1-lex-rule.
-
 noun-pc3_lrt2-suffix :=
 %suffix (* -mea)
 noun-pc3_lrt2-lex-rule.
@@ -280,10 +276,6 @@ verb-pc40_lrt1-lex-rule.
 verb-pc41_lrt1-prefix :=
 %prefix (* hi-)
 verb-pc41_lrt1-lex-rule.
-
-verb-pc43_lrt1-suffix :=
-%suffix (* -ta)
-verb-pc43_lrt1-lex-rule.
 
 verb-pc44_lrt1-suffix1 :=
 %suffix (* -ean)
