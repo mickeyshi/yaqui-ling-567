@@ -1,0 +1,12 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+noun-pc3_lrt3-lex := noun-pc3_lrt3-lex-rule.
+
+noun-pc5_lrt2-lex := noun-pc5_lrt2-lex-rule.
+
+verb-pc59_lrt1-lex := verb-pc59_lrt1-lex-rule.
+
+verb-pc60_lrt1-lex := verb-pc60_lrt1-lex-rule.
+
+verb-pc61_lrt1-lex := verb-pc61_lrt1-lex-rule.
+
+verb-pc62_lrt1-lex := verb-pc62_lrt1-lex-rule.
