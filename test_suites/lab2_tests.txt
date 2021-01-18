@@ -1,7 +1,7 @@
 Language: Yaqui
 Language code: yaq1
 Lines: translit translit-seg gloss translat
-Author: Changfei Shi
+Author: Changfei Shi, Meheresh Yeditha
 Date: January 15, 2021
 Source a: Introduction to Hiaki Grammar
 
@@ -98,3 +98,102 @@ Aa huuvi-wa siika
 3SG.POSS wife-POSS went
 His wife went.  
 
+#Test case 1: pass
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: g
+Phenomena: {case}
+uu yo'o bwa'am-ta bwa'e
+uu yo'o bwa'am-ta bwa'e
+the adult.3sg broth-acc eat
+`The adult ate the broth.'
+
+#Test case 2: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu-ta yo'o bwa'am bwa'e
+uu-ta yo'o bwa'am bwa'e
+the-acc adult.3sg broth eat
+`The adult ate the broth.'
+
+#Test case 3: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o-ta bwa'am bwa'e
+uu yo'o-ta bwa'am bwa'e
+the adult.3sg-acc broth eat
+`The adult ate the broth.'
+
+#Test case 4: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o bwa'am bwa'e-ta
+uu yo'o bwa'am bwa'e-ta
+the adult.3sg broth eat-acc
+`The adult ate the broth.'
+
+#Test case 5: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o-ta bwa'am-ta bwa'e
+uu yo'o-ta bwa'am-ta bwa'e
+the adult.3sg-acc broth-acc eat
+`The adult ate the broth.'
+
+#Test case 6: pass
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: g
+Phenomena: {case}
+uu yo'o paloma-m bwa'e
+uu yo'o paloma-m bwa'e
+the adult.3sg pigeon-3pl.acc eat
+`The adult ate the pigeon.'
+
+#Test case 7: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o paloma-m-ta bwa'e
+uu yo'o paloma-m-ta bwa'e
+the adult.3sg pigeon-3pl-acc eat
+`The adult ate the pigeon.'
+
+#Test case 8: pass
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: g
+Phenomena: {case}
+uu yo'o hoote
+uu yo'o hoote
+the adult.3sg sit
+`The adult sits.'
+
+#Test case 9: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o-ta hoote
+uu yo'o-ta hoote
+the adult.3sg-acc sit
+`The adult sits.'
+
+#Test case 10: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o-m-ta hoote
+uu yo'o-m-ta hoote
+the adults-3pl-acc sit
+`The adults sit.'
