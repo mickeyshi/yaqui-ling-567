@@ -1,6 +1,6 @@
 ;;; files to load
 
-grammar-top               := "../yaq-pet.tdl".
+grammar-top               := "../hiaki-pet.tdl".
 variable-property-mapping := "../semi.vpm".
 preprocessor              := "../repp/vanilla.rpp".
 ;generation-ignore-signs   := "generation.ignore".

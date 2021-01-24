@@ -81,6 +81,6 @@ vempo_2_gr := arg0e_gtr &
   [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
     FLAGS.TRIGGER "-su" ].
 
-soto%27i_gr := arg0e_gtr &
+soto_27i_gr := arg0e_gtr &
   [ CONTEXT.RELS.LIST < [ ARG0.E.ASPECT pot ] >,
-    FLAGS.TRIGGER "soto%27i" ].
+    FLAGS.TRIGGER "soto_27i" ].

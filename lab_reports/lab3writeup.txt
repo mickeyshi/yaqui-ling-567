@@ -1,0 +1,306 @@
+1. The observations from the corpus remain the same from last week. Note that I actually made the determiner changes outlined in question 2 over the weekend before knowing about the assignment not actually enforcing that the changes be made. 
+
+	For the custom lab3 provided testsuite (prior to testing):
+		-11 items parsed out of 25.
+		-8.29 analyses per parsed item was the average.
+		-The most ambiguous parse ("Maria uka livrom-ta nooka") received 24 parses.
+		-Yes.
+			1. "Uu kapitan bwiika" assigns correct roles for 2/4 of its parses. The captain_n_ref is coindexed with the ARG1 of sing_v_rel. Unfortunately, despite being an intransitive verb, our grammar assumes that "bwiika" is transitive and assigns a non-focus ARG2 for the presumably dropped object of "bwiika".
+			2&3&4&5.These same semantics generalize to "i'i kapitan bwiika" and "wa'a kapitan bwiika", along with other similar structures.  (The semantics shouldn't be quite the same, as i'i has the "this" translation while "wa'a" has the "that" translation. 
+			5. "Maria uka livrom-ta nooka" assigns (somewhat) correct roles in 1 of its 24 parses- the arg0 and arg1 values of the "nooka" relation are assigned correctly to Maria and the book. Note that "nooka" has the speak relation here - Hiaki actually uses "nooka" for both "speak" and "read."
+			6&7. The same semantics generalize to "Maria i'i livrom-ta nooka" and "maria wa'a livrom-ta nooka".
+			8. "Ime" in "ime kapitan nooka" (which shouldn't parse, given the number disagreement between the plural determiner and the singular noun) is causing a few false parses. "Ime" is actually identified in the current lexicon as a noun, so it's getting a noun marker. (The use of the determiner "ime" as a noun meaning "these <objects>" is actually supported from the corpus.)
+			9. "Hoan nooka into bwiika" correctly assigns Hoan's arg0 to the arg1 of both "nooka" and "bwiika".
+			NOTE. A few of these don't parse because "Emilio" [sample name given by linguist] wasn't actually added into the lexicon. 
+			10. The ungrammatical (yet parsing ) "Hoan into Maria-ta nooka" assigns the hypothetically correct roles to speak_v_rel, if Maria did not have the accusative marker. 
+			
+			
+		
+		-Sources of ambiguity include the asyndetic coordination mentioned last week (which, unfortunately, does seem to be grammatical - though the source mentioned that asyndetic coordination is less common than polysyndetic coordination, especially for two-conjunct formations [very unlikely to get "Maria Emilio nooka"].)
+
+		We removed "in" appearing as a noun in the lexicon, removing some of the ambiguity there. Additionally, our grammar allows subject dropping and doesn't enforce that object nouns have the accusative marker. A simple sentence like "Uu kapitan bwiika" has 4 parses because the nominative-marked captain is being put into the accusative position. 
+		
+	After making changes:
+	For the corpus:
+		-282 sentences parsed, compared to 270 last week. 
+		-16.82 was the average number of parses per item, compared to ~29 last week.
+		-366 was the greatest number of parses, for "kaita, kaita tea hia."
+		-Ambiguity sources: asyndetic coordination, noun-verb confusion as the result of the interpreter not capturing the noun predicate process that Hiaki employs to produce VPs from nouns and adding multiple copies of the same noun/verb to the grammar
+		-1.For "heidi jason-ta temai", the parse looks appropriate. "ask" is given the arguments of "Jason" and "Heidi" to its relationship.
+		2. For "juanita omte-k" , the parse looks appropriate. "omte" (get mad") is given "juanita" as its argument 0. Importantly, there's no relation indicating that this occurred in the past - should probably change past tense verbs to compensate
+		3. "Juanita maria-ta omte-tua" - looks correct, given "omte" is now a transitive verb. 
+		4. "koko bwan" - None of the semantic trees capture "They indeed died.", but this is because the lexicon has "bwan"("indeed") as a V, instead of as an adverb. 
+		5. "Maria tekipanoa" - Expected arguments to work_v_rel.
+		6. "Uusi-m yeewe" - "Children play" - Expected arguments to play_v_rel. More ambiguity, due to uusi-m filling either a subject or object role due to the pro-drop nature of Hiaki.  
+		7. "Maria kari-te-ria-wa". Incorrect arguments - current arguments and relations say "Mari house(as a verb)", instead of correctly reading the APPL-PASS affixes to give "Maria had a house made for her."
+		8. "Etbwa". "Sneak out" (imperative) - incorrect semantics, no sense of imperative command
+		9. "Hoara kaita" - "The home isn't there" - Hard to say for sure, but "home" is assigned to the "nothing_v_rel" of "kaita". 
+		10. "Heidi aache" - "Heidi is laughing" - Heidi arg is correctly assigned to laugh_v_rel, though another non-focused argument
+	For the testset:
+		-22 items parsed out of 45, with 95.5% test coverage.
+		-4.38 distinct analyses per item on average.
+		-34 parses on "Emilio bwiika Maria intok nooka"
+		-"Nooka" has two copies in the verb lexicon. Plural nouns can be either subjects or objects, Hiaki is pro-drop, leading to plural ambiguity. Aforementioned duplicate verb issue. Ambiguity from uncoordinated nom and acc singular nouns is now gone, but singular nominals and plural nouns can still be coordinated. Other sources of ambiguity mentioned above remain.
+		-The semantics of the 10 sentences mentioned in the earlier parse remained valid, as well as the semantics of the parse trees of the possessive sentences given in lab2. 
+
+2. I focused on determiners.  Determiners in Hiaki are optional, but if present, must agree with the number and/or case their noun complements. All plural nouns in Hiaki share one group of determiners (plural determiners), whereas singular nouns in Hiaki are split into nominative and accusative categories.
+
+	"Uu", "i'i", and "waka" are all singular nominative determiners, so the following examples should be grammatical.
+
+	#Subject Determiners------------------------------
+	Source: Changfei Shi
+	Vetted: f
+	Judgment: g
+	Phenomena: {det}
+	Uu kapitan bwiika
+	Uu kapitan bwiika
+	the.SG.SUBJ captain sing
+	The captain is singing.
+
+	Source: Changfei Shi
+	Vetted: f
+	Judgment: g
+	Phenomena: {det}
+	I'i kapitan bwiika
+	I'i kapitan bwiika
+	this.SG.SUBJ captain sing
+	This captain is singing.
+
+	Source: Changfei Shi
+	Vetted: f
+	Judgment: g
+	Phenomena: {det}
+	Wa'a kapitan bwiika
+	Wa'a kapitan bwiika
+	that.SG.SUBJ captain sing
+	That captain is singing.
+
+	The following should not be grammatical, as the nominative determiner has been placed in an object position.
+
+	#Ungrammatical checks (subject determiner in object position)
+	Source: Changfei Shi
+	Vetted: f
+	Judgment: u
+	Phenomena: {det}
+	Maria uu livrom-ta nooka.
+	Maria uu livrom-ta nooka
+	Maria the.SG.SUBJ book-ACC read
+	Maria is reading the book. 
+
+	Source: Changfei Shi
+	Vetted: f
+	Judgment: u
+	Phenomena: {det}
+	Maria i'i livrom-ta nooka.
+	Maria i'i livrom-ta nooka
+	Maria this.SG.SUBJ book-ACC read
+	Maria is reading this book. 
+
+	Source: Changfei Shi
+	Vetted: f
+	Judgment: u
+	Phenomena: {det}
+	Maria wa'a livrom-ta nooka.
+	Maria wa'a livrom-ta nooka
+	Maria that.SG.SUBJ book-ACC read
+	Maria is reading that book. 
+
+	Likewise, for accusative determiners "uka", "ika", and "waka", several basic sentences were added to check grammaticality, like the following: 
+	
+	Source: Changfei Shi
+	Vetted: f
+	Judgment: g
+	Phenomena: {det}
+	Maria uka livrom-ta nooka.
+	Maria uka livrom-ta nooka
+	Maria the.SG.OBJ book-ACC read
+	Maria is reading the book. 
+	
+	And we want to prohibit it from appearing in subject position:
+	
+	Source: Changfei Shi
+	Vetted: f
+	Judgment: u
+	Phenomena: {det}
+	ika kapitan bwiika
+	ika kapitan bwiika
+	this.SG.OBJ captain sing
+	This captain is singing.
+	
+	For plurals "ume", "ime", and "wame", we wanted to make sure they could appear in either position...
+	
+	Source: Changfei Shi
+	Vetted: f
+	Judgment: g
+	Phenomena: {det}
+	Ume uusi-m bwiika
+	Ume uusi-m bwiika
+	the.PL.OBJ child-pl sing
+	The children are singing.
+	
+	
+	Source: Changfei Shi
+	Vetted: f
+	Judgment: g
+	Phenomena: {det}
+	Ime uusi-m bwiika
+	Ime uusi-m bwiika
+	this.PL.OBJ captain sing
+	This captain is singing.
+	
+	... but not before singular nouns.
+	
+	Source: Changfei Shi
+	Vetted: f
+	Judgment: u
+	Phenomena: {det}
+	Ume kapitan bwiika
+	Ume kapitan bwiika
+	the.PL.OBJ captain sing
+	The captain is singing.
+	
+	#Plural in singular object position - should error
+	Source: Changfei Shi
+	Vetted: f
+	Judgment: u
+	Phenomena: {det}
+	Maria wame'e livrom-ta nooka.
+	Maria wame'e livrom-ta nooka
+	Maria that.PL.OBJ book-OBJ read
+	Maria is reading the book. 
+	
+All of these determiners (the singular-nom "uu, ii, wa'a", the singular-acc "uka, ika, waka" and the plural "ume, ime, wame'e") were edited to reflect their grammatical case and number. "
+
+
+3. I focused on noun classes, and removing extraneous nouns from the language. 
+	Removed noun classes:
+	
+	noun-7 - These were getting the possessum "-wa" marker, and due to their rarity in the lexicon, were not being associated with the regular noun affixes. Moved them over to common nouns.
+
+	An example of the possessive:
+	peo aa yoemia-wa muucha-k 
+	Peo 3sg.POSS family-pssd lose through death-PERF 
+	"Pete lost his family."
+	
+	Added the obligatory morphological "possessed-noun" position class for the "-wa" affix, to have it apply to all nouns. 
+	
+	noun-17 - Verb "bwichia" (smoke) was getting mistakenly identified as a noun. Moved this to the generic 3rd-person noun class.
+
+	The following should be ungrammatical:
+	Bwichia nooka.
+	Smoke speak
+	"Smokes speaks"
+
+	The following should be grammatical.
+	Huna'a veha bwichia-taite-ne.
+	That.one then smoke.INCEP.FUT
+	"Then that one will begin to smoke."
+
+
+	noun-21 - "chaka'aria" had been separated due to its unique "with" modifier, but this is not specific to this noun. Moved this to the generic 3rd-person noun class.
+	The following should be grammatical. 
+
+	Hoan chaka'aria-ta vitchu.
+	Hoan corner-ACC look
+	"Hoan is looking at the corner" 
+
+	noun-27 - "elesiiki" and "va'awa" were being used as noun predicates (i.e., being converted to a VP, and receiving VP affixes.) We currently don't have a way of handling this as a morphological process, but there's no distinction between these nouns and the rest. Consequently, we removed this class, and added its nouns to the generic noun class. 
+
+	The following should be ungrammatical (for now.)
+	Kaa va'wa-ne.
+	NEG broth.FUTURE
+	There is no broth. 
+
+
+	noun-29 - All the nouns in this category ("etbwa" - steal, "ke'e" - bite), were verbs mistakenly being interpreted as nouns. Moved these to the intransitive verb category. 
+
+	The following should be ungrammatical:
+	Etbwa nooka.
+	Steal.NOM speak
+	"Steal speaks"
+
+
+
+	noun-33 - Both of the nouns "hia" and "vicha" were verbs mistakenly interpreted as nouns. Moved these to the transitive verb category. 
+	noun-98- "tahkai" was being confused between the verb use and the noun use and got its own noun class, moved to separate generic noun and intransitive verb classes. 
+
+	Both the following should be grammatical.
+	Maria tahkai.
+	Maria make.tortillas
+	"Maria is making tortillas."
+
+	Maria takhai-m bwe'e.
+	Maria tortilla-PL eat
+	"Maria is eating tortillas."
+	
+	noun-81 - These nouns were getting marked with verb affixes as a result of the noun -> verb predicate process in Hiaki and typos in the lexicon ("paloma-n" [pigeon-IMPF(?)] had been added in, despite it not matching a sister conjunct "muumu-m" [BEE-PL] - sentence was transliterated "bees and pigeons"). Moved these to common nouns. 
+	
+	noun-95 - Being affected by "unspecified reduplication process". Added these nouns to the common noun class, but let the morphological rule apply to all common nouns. 
+	
+	Something like
+	heewi , RED-sientomtaka koko-k 
+	yes , unspecified reduplication-hundred-body die(pl.)-PERF . 
+	Yes, hundreds of them died.
+	
+	and 
+	RED-Maria nooka
+	unspecified reduplication-Maria read
+	Maria is reading.
+	
+	Should both be grammatical. 
+	
+	SUMMARY: Essentially coalesced all non-pronoun nouns into a single common noun class. The provided descriptive resource on Hiaki makes no real distinction between noun classes in Hiaki, outside of the nominal-accusative-plural case split, so while this might overgenerate (esp with proper nouns), this is a simple solution for now. 
+	
+Morphology
+	Removed nounpc7 - Affix "-k" represented the addition of the PAST tense to a verb - was getting added to nouns because Hiaki allows noun predicates. This should be handled by a verb process.
+	Removed nounpc8 - was entirely dependent on noun17 (Check IGT for nounpc8)
+	Removed noun-pc9 - was entirely dependent on noun-pc8 and noun21 - "ne" marker is for verbs, not nouns. (Check IGT for nounpc21)
+	Removed noun-pc10 - was entirely dependent on noun-pc2 and noun21 - "chaka'ria" - "mak" locative is handled elsewhere
+	Removed noun-pc12 - only inputs were noun29 and noun-pc13, added a nominalizer "ri" to a verb - this derivational morphological process isn't currently handled by the Grammar Matrix
+	The following should be ungrammatical (despite being grammatical in our corpus):
+		ume ke'e-ri-m mekka himma
+		DET.PL bite-NMZR-PL far:away throw 
+		"Throw away the bitten one"
+		
+	Removed noun-pc13 - only inputs were misclassified verbs that got the causative verb marker
+	Something like 
+	Uu kapitan takhai-tua bwe'e.
+	the.SG.SUBJ captain tortilla-CAUS eat.
+	"The captain is eating tortillas."
+	
+	Should be ungrammatical. 
+	
+	Removed noun-pc24 - only rule was the REDUPLICATION habitual marker used for the verb version of noun-98 "tahkai" (see IGT for noun-98)
+	Removed noun-pc26 - only rule was the IMPF verb marker used for the verb version of noun-98 "tahkai"(see IGT for noun-98)
+	
+	Removed Noun PC3 Lexical Rule Type 3, which gave all nouns the sg marker without the nominal case. 
+	Maria nooka
+	Maria speak
+	"Maria speaks"
+	should have the nominal marker, rather than being a generic singular-marked noun. 
+	
+	Removed noun-pc18. This added the imperfect "-n" suffix to nouns, which again, was the result of noun predicates. The following should not be licensed by our grammar, despite possibly being licensed by Hiaki, until the morphological process that builds verbs from nouns is created : 
+	
+	Kaa Maria paloma-n
+	NEG Maria pigeon-IMPF
+	"Maria was not a pigeon."
+	
+	Made noun-pc23 take all common nouns as reduplication targets for its "unnamed reduplication process."
+	
+	CASE CHANGES-------------------------------------------------------
+	
+	POSSESSIVES: Renamed the lexical rule adding the possessive "-wa" to the possessum of a possessor "aa", and made it obligatory in line with the choice matrix suggestion. A word is now marked for possessive before plural and accusative affixes are added. 
+	
+	CASE AND NUMBER: Named the numbered noun position class, and made it obligatory. The singular category now requires a secondary position class - the singular-case position classes, which adds the "-ta" affix (if accusative) and no affix (if nominative). This should make the various IGT examples for determiner agreement valid, including the testsuite examples given above. 
+	
+	With these changes, the following examples should be grammatical:
+	
+	Hoan aa kapitan-wa-m nooka
+	Hoan 3.SG.POSS captain-POSSESSED-PL speak
+	Hoan is speaking to his captains.
+	
+	Hoan aa kapitan-wa-ta nooka.
+	Hoan 3.SG.POSS captain-POSSESSED-PL-SG.ACC speak
+	Hoan is speaking to his captain.
+	
+	

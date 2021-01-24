@@ -1,24 +1,3 @@
-~~~~
-
-Language: Yaqui
-Group Members: Meheresh Yeditha and Mickey Shi
-
-Our writeup is present at ./lab2report.txt.
-
-Our databases are also present at ./tsdb/home/2021-01-16_02/59/25_utc, with 
-the corpus folder representing the full supplied corpus and the lab2 folder
-representing our 20 written tests for this lab.
-
-One can also see at test_suites/lab2_tests.txt our tests. The lkb-friendly
-format is found at test_suites/item (which is identical to tsdb/skeletons/
-lab2/item).
-
-~~~~
-
-
-
-
-
 ------------------------------------------------------------------------------
 LinGO Grammar Matrix
 

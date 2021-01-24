@@ -1,0 +1,448 @@
+Language: Yaqui
+Language code: yaq1
+Lines: translit translit-seg gloss translat
+Author: Changfei Shi
+Date: January 17, 2021
+Source a: Introduction to Hiaki Grammar
+
+#LAB 2
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+In kapitan nooka. 
+In kapitan nooka
+1SG.POSS captain speak
+My captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Em= kapitan nooka. 
+Em= kapitan nooka
+2SG.POSS= captain speak
+Your captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Itom kapitan nooka. 
+Itom kapitan nooka
+1PL.POSS captain speak
+Our captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Enchim kapitan nooka. 
+Enchim kapitan nooka
+2PL.POSS captain speak
+You all's captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Apo'ik kapitan nooka. 
+Apo'ik kapitan nooka
+3SG.POSS captain speak
+Her captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Vempo'im kapitan nooka. 
+Vempo'im kapitan nooka
+3PL.POSS captain speak
+Their captain is speaking. 
+
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {poss}
+In nooka. 
+In nooka
+1SG.POSS speak
+My is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {poss}
+Em= nooka. 
+Em= nooka
+2SG.POSS= speak
+Your is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Hoan vempo'im kari-ta vitchu. 
+Hoan vempo'im kari-ta vitchu.
+Hoan 3PL.POSS house-ACC watch
+Hoan is watching their house. 
+
+Source: Introduction to Hiaki Grammar, pg 166
+Vetted: s
+Judgment: g
+Phenomena: {poss}
+Aa huviawa siika.
+Aa huuvi-wa siika
+3SG.POSS wife-POSS went
+His wife went.  
+
+#Test case 1: pass
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: g
+Phenomena: {case}
+uu yo'o bwa'am-ta bwa'e
+uu yo'o bwa'am-ta bwa'e
+the adult.3sg broth-acc eat
+`The adult ate the broth.'
+
+#Test case 2: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu-ta yo'o bwa'am bwa'e
+uu-ta yo'o bwa'am bwa'e
+the-acc adult.3sg broth eat
+`The adult ate the broth.'
+
+#Test case 3: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o-ta bwa'am bwa'e
+uu yo'o-ta bwa'am bwa'e
+the adult.3sg-acc broth eat
+`The adult ate the broth.'
+
+#Test case 4: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o bwa'am bwa'e-ta
+uu yo'o bwa'am bwa'e-ta
+the adult.3sg broth eat-acc
+`The adult ate the broth.'
+
+#Test case 5: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o-ta bwa'am-ta bwa'e
+uu yo'o-ta bwa'am-ta bwa'e
+the adult.3sg-acc broth-acc eat
+`The adult ate the broth.'
+
+#Test case 6: pass
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: g
+Phenomena: {case}
+uu yo'o paloma-m bwa'e
+uu yo'o paloma-m bwa'e
+the adult.3sg pigeon-3pl.acc eat
+`The adult ate the pigeon.'
+
+#Test case 7: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o paloma-m-ta bwa'e
+uu yo'o paloma-m-ta bwa'e
+the adult.3sg pigeon-3pl-acc eat
+`The adult ate the pigeon.'
+
+#Test case 8: pass
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: g
+Phenomena: {case}
+uu yo'o hoote
+uu yo'o hoote
+the adult.3sg sit
+`The adult sits.'
+
+#Test case 9: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o-ta hoote
+uu yo'o-ta hoote
+the adult.3sg-acc sit
+`The adult sits.'
+
+#Test case 10: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o-m-ta hoote
+uu yo'o-m-ta hoote
+the adults-3pl-acc sit
+`The adults sit.'
+
+#LAB 3
+#DETERMINERS----------------------------------------------
+#Subject Determiners------------------------------
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Uu kapitan bwiika
+Uu kapitan bwiika
+the.SG.SUBJ captain sing
+The captain is singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+I'i kapitan bwiika
+I'i kapitan bwiika
+this.SG.SUBJ captain sing
+This captain is singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Wa'a kapitan bwiika
+Wa'a kapitan bwiika
+that.SG.SUBJ captain sing
+That captain is singing.
+
+#Object Determiners------------------------------
+#Basic agreement checks for singular determiners
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Maria uka livrom-ta nooka.
+Maria uka livrom-ta nooka
+Maria the.SG.OBJ book-ACC read
+Maria is reading the book. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Maria ika livrom-ta nooka.
+Maria ika livrom-ta nooka
+Maria this.SG.OBJ book-ACC read
+Maria is reading this book. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Maria waka livrom-ta nooka.
+Maria waka livrom-ta nooka
+Maria that.SG.OBJ book-ACC read
+Maria is reading that book. 
+
+#Ungrammatical checks (subject determiner in object position)
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Maria uu livrom-ta nooka.
+Maria uu livrom-ta nooka
+Maria the.SG.SUBJ book-ACC read
+Maria is reading the book. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Maria i'i livrom-ta nooka.
+Maria i'i livrom-ta nooka
+Maria this.SG.SUBJ book-ACC read
+Maria is reading this book. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Maria wa'a livrom-ta nooka.
+Maria wa'a livrom-ta nooka
+Maria that.SG.SUBJ book-ACC read
+Maria is reading that book. 
+
+#Ungrammatical checks (object determiner in subject position)
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Uka kapitan bwiika
+Uka kapitan bwiika
+the.SG.OBJ captain sing
+The captain is singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+ika kapitan bwiika
+ika kapitan bwiika
+this.SG.OBJ captain sing
+This captain is singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Waka kapitan bwiika
+Waka kapitan bwiika
+that.SG.OBJ captain sing
+That captain is singing.
+
+#Plural Determiners------------------------------
+#Plural determiner in subject position
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Ume uusi-m bwiika
+Ume uusi-m bwiika
+the.PL.OBJ child-pl sing
+The children are singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Ime uusi-m bwiika
+Ime uusi-m bwiika
+this.PL.OBJ child-PL sing
+These children are singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Wame'e uusi-m bwiika
+Wame'e uusi-m bwiika
+that.PL.OBJ child-PL sing
+Those children are singing.
+
+#Ungrammatical checks (plural determiner in singular determiner position)
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Ume kapitan bwiika
+Ume kapitan bwiika
+the.PL.OBJ captain sing
+The captain is singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Ime kapitan bwiika
+Ime kapitan bwiika
+this.PL.OBJ captain sing
+This captain is singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Wame'e kapitan bwiika
+Wame'e kapitan bwiika
+that.PL.OBJ captain sing
+That captain is singing.
+
+
+#Plural in object position
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Maria ume livrom-m nooka.
+Maria ume livrom-m nooka
+Maria the.PL.OBJ book-PL read
+Maria is reading the book. 
+
+#Plural in singular object position - should error
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Maria wame'e livrom-ta nooka.
+Maria wame'e livrom-ta nooka
+Maria that.PL.OBJ book-OBJ read
+Maria is reading the book. 
+
+#COORDINATION----------------------------------------------
+Source: Heidi Harley
+Vetted: s
+Judgment: u
+Phenomena: {crd}
+Emilio into Maria nooka
+Emilio into Maria nooka
+Emilio and Maria speak
+Emilio and Maria are speaking. 
+
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {crd}
+Hoan nooka into bwiika.
+Hoan nooka into bwiika.
+Hoan speak.PRS and sing.PRS
+Hoan is speaking and singing.
+
+#No coordination of subject and objects
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {crd}
+Hoan into Maria-ta nooka.
+Hoan into Maria-ta nooka
+Hoan and Maria-acc sing.PRS
+Hoan and Maria are singing.
+
+#Improper asyndetic coordination
+Source: Heidi Harley
+Vetted: s
+Judgment: u
+Phenomena: {crd}
+Emilio Maria nooka
+Emilio Maria nooka
+Emilio Maria speak
+Emilio and Maria are speaking. 
+
+#Second position coordination (similar to Latin que)
+Source: Heidi Harley
+Vetted: s
+Judgment: g
+Phenomena: {crd}
+Emilio bwiika Maria intok nooka
+Emilio bwiika Maria intok nooka
+Emilio sing Maria and speak
+Emilio and Maria are speaking. 
+
+#Coordination of unlikes
+
