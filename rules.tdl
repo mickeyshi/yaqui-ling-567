@@ -21,10 +21,6 @@ adv1-mid-coord := adv1-mid-coord-rule.
 
 adv1-top-coord := adv1-top-coord-rule.
 
-vp1-top-coord := vp1-top-coord-rule.
-
-vp1-bottom-coord := vp1-bottom-coord-rule.
-
 vp2-top-coord := vp2-top-coord-rule.
 
 vp2-mid-coord := vp2-mid-coord-rule.
@@ -37,14 +33,6 @@ vp3-mid-coord := vp3-mid-coord-rule.
 
 vp3-bottom-coord := vp3-bottom-coord-rule.
 
-vp4-top-coord := vp4-top-coord-rule.
-
-vp4-mid-coord := vp4-mid-coord-rule.
-
-vp4-bottom-coord := vp4-bottom-coord-rule.
-
-vp4-left-coord := vp4-left-coord-rule.
-
 vp5-top-coord := vp5-top-coord-rule.
 
 vp5-mid-coord := vp5-mid-coord-rule.
@@ -56,14 +44,6 @@ np6-same-same-same-top-coord := np6-same-same-same-top-coord-rule.
 np6-same-same-same-mid-coord := np6-same-same-same-mid-coord-rule.
 
 np6-bottom-coord := np6-bottom-coord-rule.
-
-np7-same-same-same-top-coord := np7-same-same-same-top-coord-rule.
-
-np7-same-same-same-mid-coord := np7-same-same-same-mid-coord-rule.
-
-np7-bottom-coord := np7-bottom-coord-rule.
-
-np7-left-coord := np7-left-coord-rule.
 
 np8-same-same-same-top-coord := np8-same-same-same-top-coord-rule.
 
@@ -79,6 +59,22 @@ np10-same-same-same-top-coord := np10-same-same-same-top-coord-rule.
 
 np10-bottom-coord := np10-bottom-coord-rule.
 
+s11-top-coord := s11-top-coord-rule.
+
+s11-bottom-coord := s11-bottom-coord-rule.
+
 head-adj := my-head-adj-phrase.
 
 adj-head := my-adj-head-phrase.
+
+ex-comp := extracted-comp-phrase.
+
+ex-adj := basic-extracted-adj-phrase.
+
+ex-subj := extracted-subj-phrase.
+
+wh-ques := wh-ques-phrase.
+
+in-situ-ques := insitu-int-cl.
+
+ex-det := extracted-det-phrase.

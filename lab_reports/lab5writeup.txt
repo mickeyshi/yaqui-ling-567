@@ -1,0 +1,362 @@
+1.
+I chose to work with coordination and wh-words for this week.
+
+For coordination - Hiaki allows monosyndeton, polysyndeton, and asyndetic coordination strategies for VPs, NPs, AdvPs, AdjPs, and sentences. Asyndetic coordination is mostly for nouns, but it has been observed for sentences. Lexemes must have shared case in order to coordinate (i.e. no coordination of nominative and accusative nouns). Hiaki also allows the latin "que"-type formation for conjuncts - i.e. placing the conjunction after the subject of a coordinated sentence. That phenomenon is probably too much for the current model to handle, so I focused on reducing ambiguity. 
+
+Under Coordination in the Grammar Matrix:
+	-Removed asyndetic coordination for VPs (cs1) - while it might be allowable in specific niche circumstances, it was causing too much ambiguity.
+		The following should be unrecognized by our grammar:
+		
+		Maria nooka vicha
+		Maria speak see
+		Intended: "Maria is speaking and seeing"
+		
+	
+	-Removed omnisyndetic coordination with "intok" as a coordination strategy for both VPs and NPs. 
+		The following should be ungrammatical:
+		
+		Maria intok Hoan intok vicha
+		Maria and Hoan and see
+		Intended: "Maria and Hoan are seeing". 
+		
+		Maria vicha intok nooka intok.
+		Maria see and speak and
+		Intended: "Maria is speaking and seeing"
+		
+	-Added new coordination strategy for sentences:
+	
+	Coordination Strategy 11:
+    in which sentences
+    are marked in a  polysyndeton pattern
+    by a word spelled intok that comes before the coordinand
+	
+	#Coordination of sentences
+	Source: Changfei Shi
+	Vetted: s
+	Judgment: g
+	Phenomena: {crd}
+	Emilio vicha intok Maria nooka
+	Emilio vicha intok Maria nooka
+	Emilio see Maria and speak
+	Emilio is seeing and Maria is speaking. 
+	
+Wh-words are generally fronted in Hiaki, with object wh-words staying in situ. From what I gathered, wh-words seem to be fronted within embedded clauses, but not to the front of the main clause. Consequently, I made several choices under "wh-questions:"
+		
+Under wh-questions:
+	-Only one question phrase can be fronted in Hiaki, from the data available. (Object wh-words stay in situ.)
+	-Obligatory fronting is optional, as object wh-words can stay in situ.
+	-I couldn't identify any pied piping, so left those blank.
+
+Under Lexicon:
+	Wh- Changes---------------------------
+	Added five separate wh-classes for the various wh-nouns that were added to the testsuite last week:
+	what-noun:
+		-This is a question pronoun
+		-For nouns of this type, a determiner is:   impossible
+		-Spelling: hitaa, Predicate: _what_n_rel
+
+	who-nom-noun:
+		-This is a question pronoun
+		-For nouns of this type, a determiner is:   impossible
+		-Features: Case: nom
+		-Spelling: havee, Predicate: _who.NOM_n_rel
+		-
+	who-acc-noun
+		-This is a question pronoun
+		-For nouns of this type, a determiner is:   impossible
+		-Features: Case: acc
+		-Spelling: have-ta, Predicate: _who.ACC_n_rel
+
+	where-noun
+		-This is a question pronoun
+		-For nouns of this type, a determiner is:   impossible
+		-Spelling: hakwo, Predicate: _where_n_rel
+					hakwo-sa, Predicate: _where-QUESTION_n_rel
+
+	when-noun
+		-This is a question pronoun
+		-For nouns of this type, a determiner is:   impossible
+		-Spelling: haksa, Predicate: _when_n_rel
+					hakun-sa, Predicate: _when-QUESTION_n_rel
+					
+	The IGT to test these are in the testsuite, but repeated here:
+	Source: Changfei Shi
+	Vetted: s
+	Judgment: g
+	Phenomena: {wh}
+	Uu kapitan haveta vicha
+	Uu kapitan have-ta vicha
+	the captain who-ACC see
+	Who is the captain seeing?
+
+	Source: Changfei Shi
+	Vetted: s
+	Judgment: g
+	Phenomena: {wh}
+	Uu kapitan haveta vicha
+	Uu kapitan have-ta vicha
+	the captain who-ACC see
+	Who is the captain seeing?
+
+	#Accusative marker required for objects
+	Source: Changfei Shi
+	Vetted: s
+	Judgment: u
+	Phenomena: {wh}
+	Uu kapitan have vicha
+	Uu kapitan have vicha
+	the captain who see
+	Who is the captain seeing?
+
+	Source: Changfei Shi
+	Vetted: s
+	Judgment: g
+	Phenomena: {wh}
+	Havee haveta vichak
+	Havee have-ta vicha-k
+	who who-ACC see-PFV
+	Who saw who?
+
+	Source: Introduction to Hiaki Grammar
+	Vetted: s
+	Judgment: g
+	Phenomena: {wh}
+	Haksa empo tekipanoa
+	Haksa empo tekipanoa
+	Where you work
+	Where do you work?
+
+	#Haksa is shortened form of hakunsa
+	Source: Introduction to Hiaki Grammar
+	Vetted: s
+	Judgment: g
+	Phenomena: {wh}
+	Hakunsa empo tekipanoa
+	Hakun-sa empo tekipanoa
+	Where-QUESTION you work
+	Where-QUESTION do you work?
+	
+	Small changes to the grammar - 
+
+	-Removed auxiliary type 9, which only had "bwiika" as an affix. This was likely the result of the interpreter going over the following sentence:
+		90@@@@-1@@a'apo RED1-bwiika@@@@1@2@3.SG.NOM Habitual-sing // S/he sings (habitually).@@
+	I assume the interpreter thought that the RED1 was the main verb, with the bwiika as the affix. This had been causing problems, especially since it was empty morphologically, and "bwiika" is a verb, in any case. 	
+
+		
+	This reduces the amount of ambiguity in the grammar from mistakenly identifying verbs as nouns. What should happen later to reintroduce this copula formation into the grammar is a lexical rule creating a verb from a noun class in the copula position. 
+
+	Pronoun Changes---------------------------
+	
+	Pronouns in Hiaki are fairly simple: 6 subject pronouns exist for combinations of person(1st, 2nd, 3rd) and number(sg and pl), and 6 object pronouns exist for those same combinations. Source: Introduction to Hiaki Grammar
+	
+	-For all pronouns under the Lexicon page, did some renaming to match their person-number-case. So "enchi", the 2.SG.ACC pronoun, became 2nd-sg-acc-pronoun. 
+		
+	-Made numbered-noun-pc (which added number/case markers) REQUIRED for common nouns. This coincided with making numbered-noun-pc (under Morphology) non-obligatory, and removing all pronoun inputs . This was to prevent nominative/accusative/plural case markers on pronouns, which don't get those specific markings in Hiaki (but can get other affixes for locative case). These changes were motivated by "Inepo enchim hahase" - the translation for "I chase you", which was one of the example sentences - not parsing. 
+	
+	Additionally, in order to specifically prevent plural/case markers from being added to pronouns, created a new noun class: 
+
+	generic-pronoun(noun137)
+	This is a personal pronoun type.
+	[No stems]
+	[No features]
+	For nouns of this type, a determiner is:  impossible
+	Morphotactic constraints: 
+	Noun forbids the following position class: case-marked singular noun(noun-pc2)
+	Noun forbids the following position class: numbered-noun (noun-pc5)
+	
+	I made this generic pronoun type the supertype of all existing pronoun classes. 
+
+	The following should be grammatical:
+	
+	Inepo enchim hahase.
+	1.SG.NOM 2.SG.PL chase
+	"I chase you". 
+	
+	The following should not be grammatical:
+	
+	Inepo enchi-ta hahase.
+	1.SG.NOM 2.SG.PL-ACC chase
+	Intended: "I chase you". 
+	
+	
+
+Morphology:
+	Removed verb53 from the morphology. This verb class consisted of nouns being misinterpreted as verb predicates (in copula sentences, most likely.), like "hoara" [home], "uusi" [child], etc. 
+
+	Removed verb-pc46. This added "-te" - a "MAKE" affix that turned nouns into verbs. It was only used for verb53.
+
+====================================================================================
+2. 
+	
+I translated the MMT sentences by taking simple sentences from the textbook and replacing the subject/object nouns, while maintaining the case. Translations for the various words were taken by consulting the corpus/lexicon.tdl files. 
+
+Reference sentences from the textbook:
+
+Waa wo'i koche.
+That coyote sleep
+"That coyote is sleeping."
+
+Uusi-m uka chuu’u hahase.
+Child-PL the.ACC dog chase
+"Children are chasing the dog."
+
+---------------------------
+DICTIONARY FOR eng.txt
+
+NOUNS
+dog		chuu'u
+cat		miisi
+dogs	chuu'u-m
+cats	miisi-m
+cars	karo-m
+park	?
+
+I		inepo (subj), nee (obj)
+you		empo (subj), enchim (obj)
+
+who		havee (subj), have-ta (obj)
+what	hiita
+
+		
+VERBS
+sleep	koche
+chase	hahase
+eat		bwa'e
+
+think
+ask
+
+AUXILIARIES
+don't 	kaa
+LOC(in)	-po
+POSS	-ta
+
+DETERMINERS
+the		uu (SING.NOM), uka(SING.ACC), ume (PL)
+my		in
+
+ADJECTIVES
+Hungry	tevaure (verb, actually be.hungry)
+
+CONJUNCTIONS
+and		intok
+because	porque
+after	<VERB>-su-k-o veha (<VERB>-COMPL-PERF-when then)
+
+----
+
+TRANSLATIONS
+
+-Notes: Hiaki is present progressive by default. 
+
+Chu'um koche.
+Chuu'u-m koche
+Dog-PL sleep
+Dogs are sleeping.
+
+Chu'um karom hahase.
+Chuu'u-m karo-m hahase
+Dog-PL car-pl chase
+Dogs are chasing cars. 
+
+Inepo enchim hahase.
+inepo enchim hahase
+1.SG.NOM 2.SG.ACC chase
+I chase you.
+
+Chu'um bwa'e.
+Chuu'u-m bwa'e
+Dog-PL eat
+Dogs are eating.
+
+Chu'um kaa karom hahase.
+Chuu'u-m kaa karo-m hahase
+Dog-PL NEG car-pl chase
+Dogs are not chasing cars. 
+
+------------------------
+
+The grammar at present is unable to handle 
+	-Embedded clauses/questions
+	-Yes/no questions
+	-Adjectives
+	-Prepositions/locative case
+	-Copulas
+	-Possession with common nouns (rather than pronouns)
+	
+	
+which I took note of when determining which of eng.txt would compile:
+Dogs sleep
+Dogs chase cars
+I chase you
+Dogs eat
+The dogs dont chase cars
+I think that you know that dogs chase cars : Embedded clause
+I ask whether you know that dogs chase cars : Embedded clause
+Cats and dogs chase cars
+Dogs chase cars and cats chase dogs
+Cats chase dogs and sleep
+Do cats chase dogs : Yes-no question
+Hungry dogs eat : Adjective
+Dogs in the park eat : Preposition
+Dogs eat in the park: Preposition
+The dogs are hungry
+The dogs are in the park : Locative
+The dogs are the cats : Copula
+The dog s car sleeps : Possession
+My dogs sleep
+Who sleeps
+What do the dogs chase
+What do you think the dogs chase : Embedded clause
+Who asked what the dogs chase : Embedded clause
+I asked what the dogs chased : Embedded question
+The dog sleeps because the cat sleeps  : Relative clause
+The dog sleeps after the cat sleeps : Relative clause
+
+
+====================================================================================
+3. I was able to successfully run the MT on the Hiaki corpus, after some fixes.
+
+Difficulties included:
+-Unzipping mmt.tgz : I was unable to tar -xzf the downloaded file. Instead, I had to use 7-Zip from Windows, and then move the extracted file to the LKB VM via shared folder.
+-trigger.mt : Due to the  "bwiika" affix taking multiple ASPECT values, the grammar failed to compile via ace:
+
+bwiika_3_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ ARG0.E [ TENSE fut,
+                                   ASPECT incep,
+                                   cmpl ,
+                                   pfv  ] ] >,
+    FLAGS.TRIGGER "bwiika_3" ].
+
+
+Removing the multiple ASPECTS from bwiika caused the code to compile successfully. Running ./translate-line.sh eng yaq 1 resulted in 493 successful parses. A few of them are included below:
+
+Chuu'u-m red3-koche kat
+Chuu'u-m red3-koche -me
+Chuu'u-m koche -n
+Chuu'u-m koche -k
+Chuu'u-m-su koche -me
+Chuu'u-ta red3-koche -n
+Chuu'u-m-su koche bwiika
+Chuu'u koche soto'i
+
+ I assume the large number of parses here is due to the empty morphology of many of the affixes. To get a head start on this, I decided to remove "bwiika" from the morphology, as outlined earlier. 
+
+====================================================================================
+
+4. 
+
+After making this week's changes, for the testsuite:
+	-94.2% of the testsuite parsed, as opposed to 62.9% last week.
+	-4.23 parses per parsed item on average, as opposed to 8.29 last week.
+	-12 was the maximum number of parses, for "Peo toro-ta hinu intok nenka."
+	-Ambiguity has been heavily reduced. Some ambiguity remains due to certain determiners also being nouns "ime" - "this" and "apo'ik" - "he/his" are examples. Asyndetic coordination on nouns still causes problems. Ambiguity in the wh-questions arises from in-situ vs wh-fronted verbs (due to the optionality of fronting). 
+	-Yes, the previously added test sentences have correctly assigned arguments in the relationshs of the MRS. For the wh-questions, like "Hakwo-sa empo yepsa-k", I was surprised to see a which_q_rel outscoping the when-question_n_rel. Unfortunately, the wh-questions seem to actually be asyndetically coordinating with the subject, as an and_coord_rel links together the wh-word and the subject in certain parse trees. 
+	
+For the corpus:
+	-12.6% of the testsuite parsed - 281 parses, compared to 282 parses two weeks ago.
+	-5.33 parses per parsed item on average, compared to 16.82 last week(!)
+	-36 is the maximum number of parses on (the repeated, for some reason) "tea hia tea". 
+	-Again, ambiguity has been heavily reduced. The repeated number of verbs (multiple versions of "nenka", for instance), still heavily contributes. The optional wh-fronting causes ambiguity in sentences with wh-words. For adverbial phrases like "aman", ambiguity results from the fact that the point of attachment is underspecified, resulting in multiple trees with the adverbial phrase attaching to the VP, or the S. The pronoun "nee" can be used in both accusative and nominative situations - the corpus makes no distinction between "ne" (1.SG.NOM) and "nee" (1.SG.ACC) - causing sentences with the word to overgenerate. 
+	-For simple sentences like "Mercedes hawai-ta muucha-k", "uusi-m yeewe", "Juanita omte-k", "Juanita maria-ta o'omta-k", "heidi waakas-ta hinu-k",  the MRS's assign correct roles to the relations. For sentences like "kaita!", nonexistent arguments are assigned to the v_rel arguments, as one might expect. For "inepo ku'una-k", the roles are correct, but "husband" is used as a v_rel - should probably fix that. Constructions featuring wh-words - "Hitaa empo hinu-k" for example - correctly assign the wh-word to the argument where they belong. 
+

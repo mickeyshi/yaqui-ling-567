@@ -1,17 +1,6 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Semantically Empty Lexical Entries
 
-bwiika_3_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ ARG0.E [ TENSE fut,
-                                   ASPECT incep,
-                                   cmpl ,
-                                   pfv  ] ] >,
-    FLAGS.TRIGGER "bwiika_3" ].
-
-tea_4_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
-    FLAGS.TRIGGER "tea_4" ].
-
 emo_2_gr := arg0e_gtr &
   [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
     FLAGS.TRIGGER "emo_2" ].

@@ -253,10 +253,6 @@ verb-pc44_lrt1-suffix2 :=
 %suffix (* -eewan)
 verb-pc44_lrt1-lex-rule.
 
-verb-pc46_lrt1-suffix :=
-%suffix (* -te)
-verb-pc46_lrt1-lex-rule.
-
 verb-pc47_lrt1-suffix :=
 %suffix (* -m)
 verb-pc47_lrt1-lex-rule.
