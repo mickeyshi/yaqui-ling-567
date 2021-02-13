@@ -1,7 +1,13 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
+head-adj := my-head-adj-phrase.
+
+adj-head := my-adj-head-phrase.
+
 decl-head-opt-subj := decl-head-opt-subj-phrase.
 
 basic-head-opt-comp := basic-head-opt-comp-phrase.
+
+non-event-subj-head := non-event-subj-head-phrase.
 
 comp-head := comp-head-phrase.
 
@@ -62,10 +68,6 @@ np10-bottom-coord := np10-bottom-coord-rule.
 s11-top-coord := s11-top-coord-rule.
 
 s11-bottom-coord := s11-bottom-coord-rule.
-
-head-adj := my-head-adj-phrase.
-
-adj-head := my-adj-head-phrase.
 
 ex-comp := extracted-comp-phrase.
 

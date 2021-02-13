@@ -14,62 +14,6 @@ au_2_gr := arg0e_gtr &
   [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
     FLAGS.TRIGGER "au_2" ].
 
--n_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ ARG0.E.ASPECT ipfv ] >,
-    FLAGS.TRIGGER "-n" ].
-
--u_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
-    FLAGS.TRIGGER "-u" ].
-
--k_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ ARG0.E.ASPECT pfv ] >,
-    FLAGS.TRIGGER "-k" ].
-
--ta_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
-    FLAGS.TRIGGER "-ta" ].
-
--me_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ ARG0.E.ASPECT rel ] >,
-    FLAGS.TRIGGER "-me" ].
-
--na_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ ARG0.E.TENSE fut ] >,
-    FLAGS.TRIGGER "-na" ].
-
--ne_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ ARG0.E.TENSE fut ] >,
-    FLAGS.TRIGGER "-ne" ].
-
-ito_2_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
-    FLAGS.TRIGGER "ito_2" ].
-
--ka_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
-    FLAGS.TRIGGER "-ka" ].
-
--po_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
-    FLAGS.TRIGGER "-po" ].
-
 vempo_2_gr := arg0e_gtr &
   [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
     FLAGS.TRIGGER "vempo_2" ].
-
--t_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
-    FLAGS.TRIGGER "-t" ].
-
--wa_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
-    FLAGS.TRIGGER "-wa" ].
-
--su_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
-    FLAGS.TRIGGER "-su" ].
-
-soto_27i_gr := arg0e_gtr &
-  [ CONTEXT.RELS.LIST < [ ARG0.E.ASPECT pot ] >,
-    FLAGS.TRIGGER "soto_27i" ].

@@ -1,0 +1,608 @@
+Name: Mickey Shi
+Language: Hiaki
+Lab 6 Report
+2/11/2021
+====================================================================================
+
+1. For the semi.vpm file, made few changes:
+	-Removed PNG from the start of the right-hand side rules, and changed the PER values to match the right-hand values in the semi.vpm of /grammars/eng 
+	
+		PNG.PER : PER
+		  3rd <> third
+		  2nd <> second
+		  1st <> first
+		  * <> *
+
+		PNG.NUM : NUM
+		  sg <> sg
+		  pl <> pl
+		  * <> *
+
+		PNG.GEND : GEND
+		  * <> *
+
+	-Changed E.TENSE on right-hand side to TENSE, as per lab instructions. Changed the TENSE values on the right hand side to match the full names of the tenses, as seen in /grammars/eng semi.vpm. Added present tense "prs", mapping to "present". 
+	-Since aspect is not specified on all nouns, added new aspect to "Tenses, Aspect, Mood" under Grammar Matrix:
+			-no-aspect
+			Added the following to the semi.vpm file:
+			
+			* <> *
+			* >> no-aspect
+			no-aspect << [e]
+			
+			Made the indicative mood default, to not generate constructions with subjunctive/quotative/other irrealis affixes:
+			* >> ind
+			ind << [e]
+	Note that aspects were added in the "Tense, Aspect, Mood" section below. These were automatically added via the Grammar Matrix. The same goes for moods that were added. 
+	
+	Full list:
+	E.TENSE : TENSE
+	  pst <> past
+	  fut <> future
+	  prs <> present
+	  * <> *
+	E.ASPECT : ASPECT
+	  prog <> prog
+	  pfv <> pfv
+	  cmpl <> cmpl
+	  incep <> incep
+	  ipfv <> ipfv
+	  rel <> rel
+	  hab <> hab
+	  prosp <> prosp
+	  * >> no-aspect
+	  no-aspect << [e]
+	E.MOOD : MOOD
+	  ind <> ind
+	  irr <> irr
+	  imp <> imp
+	  sbjv <> sbjv
+	  directive <> directive
+	  desid <> desid
+	  quot <> quot
+	  ev <> ev
+	  * >> ind
+	  ind << [e]
+				
+	These changes, combined with other changes made to the grammar (including adding features to affixes), reduced the number of translations of the first English sentence ("Dogs sleep") to 4, from 96 generated lines total prior to the changes. 
+		The final 4 lines are:
+			Chuu'u-m koche
+			Chuu'u-m koche-o
+			Chuu'u-m koche-ka
+			Chuu'u-m koche-ka-o
+			
+		The same sentences arise if we translate from yaq to yaq. 
+
+		The grammar still seems to be overgenerating on a few affixes: these will be fixed next week, when I get more information on the -o 'when' affix and the "-ka" ppl affix. The grammar also has trouble generating for the other sentences, but I'll assume those will also get worked on later. 
+		
+====================================================================================
+
+2. 
+
+No .tdl changes were made - sticking to the Grammar Matrix while I still can for the verb/auxiliary/adjective changes.   
+ 
+-Case
+	-Added COM and DIR case to the case list specifically for "-mak" and "-u" affixes, which weren't contributing any features in Morphology. Also added "SUPE" case for "-t", which had been classified as an auxiliary but is actually an affix meaning "on" or "about". 
+-Tense, Aspect, Mood
+	-Important: Added "prs" present affix. This is automatically assigned to verbs that do not get the past imperfect, past perfect, or future affixes, and was important in getting our translations to be more accurate. 
+	-Removed the hilariously-named "pot" aspect (noun "soto'i" had been misinterpreted as an aspect, for some reason)
+	-Added "HAB" aspect for habitual aspect (required for red3- affix on certain verbs.)
+	-Added no-aspect aspect for default aspect
+	-Added "prog" aspect for progressive aspect (required for red2- PROG affix).
+		-Made it a subtype of imperfective. 
+	-Added DESID mood, for desiderative affix. 
+	-Added ev mood, for evidentials. 
+-Lexicon
+
+THE BIG VERB CLEANUP--------------------------------------------------------------------------------------------------------------
+Intro to Hiaki Grammar identifies only two distinctions between nouns: transitive vs. intransitive. Most of the complexity of Hiaki verbs comes with the affixes, so it made sense to me to make the verb classes as simple as possible. I wanted to do a simple divide of the verb classes into general transitive and intransitive classes:
+
+  verb6_name=transitive-verb
+    verb6_feat1_name=case
+    verb6_feat1_value=nom
+    verb6_feat1_head=subj
+    verb6_feat2_name=case
+    verb6_feat2_value=acc
+    verb6_feat2_head=obj
+  verb6_valence=nom-acc
+  
+  verb68_name=intransitive-verb
+    verb68_feat1_name=case
+    verb68_feat1_value=nom
+    verb68_feat1_head=subj
+  verb68_valence=nom
+
+I've omitted the all choices file stuff here in favor of brevity, but only the two example lines below are changed per entry:
+    verb225_stem1_orth=siika
+    verb225_stem1_pred=_go_v_rel
+	
+Certain nouns in a copula construction were being misidentified as nouns. Moved these to common-noun noun class, if they weren't already there. 
+	Verb class		Spelling		Translation		Notes
+	verb4			chuu'u			dog				Removed verb4
+	verb4			hiaki			hiaki	
+	verb4			kapinteo		carpenter
+	verb4			kovanao			governer
+	verb4			secretario		secretary
+	verb4			kaita			nothing
+	verb4			peeso			dollar
+	
+	
+Certain adjectives were being misidentified as verbs. Created new adjective predicate class basic-adjective (class details given below), and added the following verbs to it:
+
+	Verb class			Spelling		Translation		Notes
+	verb195 (removed)	uku				tempting		Removed verb class, adj was only member of class
+	verb4				veinte			twenty
+	verb218				tapsisiolai		thin
+	verb4				o'ola			old
+	verb4				nawa			together
+	verb4				patti			covered
+	verb43				yo'ori			respected
+	verb46				tu'if			good
+	verb220				yoo				old(animate)
+	verb218				huevena			many
+	
+	
+Removed verb41. This consisted only of the verb "soa", only appearing in the following sentence. Moved the verb "soa" to transitive-verb class. 
+	16410@@@@-1@@hunuen hi-soa@@@@1@2@thus "THING"-poke // They are killing with that.@@
+	Note: I believe "hi" in this sentence is a shortened version of "hita" [something], which is why I think it's a transitive sentence. The gloss is confusing here, though.  
+	
+Removed verb234. This consisted only of the verb "yoa~". "Yoa" [shake] already appears as a transitive verb, and I was unable to locate this tilde'd version anywhere in the corpus. 
+
+Moved certain verbs to intransitive:
+Verbs were double-checked against the Hiaki-English dictionary and the corpus to determine transitivity. Because of Hiaki's pro-drop nature, it was occasionally difficult to determine whether an argument was simply being left out (i.e. "asoa" - "give birth" - only ever occurs in intransitive environments, but it's possible that there could be an uninstantiated object argument.)
+
+	Verb class			Spelling		Translation		Notes
+	verb233				yo'otu			grow			Removed verb class entirely, was only member of class
+	verb192				tu'iria			get well		Removed verb class entirely, was only member of class
+	verb69				machukta		be in the hand?	
+	verb105				naamuke			get drunk		Verb class had '-o' "when" relativizer affix
+	verb69				bwichia			smoke
+	verb105				to'ote			lie down
+	verb156				koche			sleep
+	verb156				yeewe			play
+	verb218				sipa			cool down
+	verb46				yoa~			shake
+	verb46				asoa			give birth
+	
+The following IGT should be ungrammatical:
+John Maria-ta yo'otu
+John Maria-ACC to.grow
+Intended: "John Maria grows."
+	
+Moved certain verb to transitive:
+	Verb class			Spelling		Translation		Notes
+	verb94				mahti			teach			Removed verb class entirely, was only member of class
+	verb29				eta				close			Removed verb class entirely, was only member of class
+	verb105				vepsu			whip			
+	verb194				tutta			insert
+	verb159				rettrato		take picture
+	verb46				hiohte			write			
+	verb218				huuve			get married		Note: The IGT for santos into maria emo = huuve-k has the literal translation "Santos and Maria married each other".
+	verb218				komonia			soak
+	verb218				maveta			accept
+	verb218				tetemu			kick	
+	verb46				tu'ute			repair/clean
+	verb46				vaita'a			fool
+	verb220				yeuwa			play with
+	verb220				yo'ore			respect
+	verb220				yo'oturia		raise
+	verb4				hinu			buy
+	verb4				naake			care for
+	verb4				teeka			lay it across
+	verb4				kuuta			stir
+	
+Coalesced remaining verb classes (verb131, verb4, verb20) into verb6 - the general "transitive verb" category.
+
+Chapter 10 of "Introduction to Hiaki Grammar" introduces a few irregular verbs that specify the number of their subject or object. Various verbs from other verb classes that had (sg. subj) or (pl. subj) in their rel values were moved into this new category, and the parenthesized part of the _rel value were removed. 
+
+One class of intransitives specifies that their subject must be plural: 
+ verb218_name=irr-intransitive-pl-subject-verb
+    verb218_feat1_name=number
+    verb218_feat1_value=pl
+    verb218_feat1_head=subj
+  verb218_valence=nom
+    verb218_stem1_orth=watte
+    verb218_stem1_pred=_fall_v_rel
+    verb218_stem3_orth=tenne
+    verb218_stem3_pred=_run_v_rel
+    verb218_stem4_orth=rehte
+    verb218_stem4_pred=_walk_v_rel
+    verb218_stem5_orth=kaate
+    verb218_stem5_pred=_go_v_rel
+    verb218_stem7_orth=kiimu
+    verb218_stem7_pred=_attack-or-enter_v_rel
+    verb218_stem8_orth=yaaha
+    verb218_stem8_pred=_arrive_v_rel
+    verb218_stem9_orth=koko
+    verb218_stem9_pred=_die_v_rel
+    verb218_stem10_orth=hapte
+    verb218_stem10_pred=_stand.up_v_rel
+    verb218_stem11_orth=ha'abwek
+    verb218_stem11_pred=_be.standing_v_rel
+    verb218_stem12_orth=hooye
+    verb218_stem12_pred=_sit.down_v_rel
+    verb218_stem13_orth=hooka
+    verb218_stem13_pred=_be.sitting.or.situated_v_rel
+    verb218_stem14_orth=to'ote
+    verb218_stem14_pred=_lie.down_v_rel
+    verb218_stem15_orth=to'oka
+    verb218_stem15_pred=_be.lying.down_v_rel
+    verb218_stem16_orth=hoote
+    verb218_stem16_pred=_get.up_v_rel
+
+The following should parse:
+Uusi-m tenne
+Child-PL run
+"Children are running."
+
+But the following should not:
+Uusi tenne
+Child run
+"A child is running."
+	
+Likewise, another class of intransitives specifies that their subject must be singular. These have the same rel values as the previous set, but different stems:
+  verb220_name=irr-intransitive-sg-subject-verb
+    verb220_feat1_name=number
+    verb220_feat1_value=sg
+    verb220_feat1_head=subj
+  verb220_valence=nom
+    verb220_stem1_orth=weye
+    verb220_stem1_pred=_go (sg. subj.)-or-walk_v_rel
+    verb220_stem2_orth=weche
+    verb220_stem2_pred=_fall_v_rel
+    verb220_stem3_orth=yepsa
+    verb220_stem3_pred=_arrive_v_rel
+    verb220_stem7_orth=muuke
+    verb220_stem7_pred=_die_v_rel
+    verb220_stem8_orth=weama
+    verb220_stem8_pred=_walk_v_rel
+    verb220_stem9_orth=kivake
+    verb220_stem9_pred=_enter_v_rel
+    verb220_stem10_orth=vuite
+    verb220_stem10_pred=_run_v_rel
+    verb220_stem11_orth=kikte
+    verb220_stem11_pred=_stand.up_v_rel
+    verb220_stem12_orth=weyek
+    verb220_stem12_pred=_be.standing_v_rel
+    verb220_stem13_orth=yeesa
+    verb220_stem13_pred=_sit.down_v_rel
+    verb220_stem14_orth=katek
+    verb220_stem14_pred=_be.sitting.or.situated_v_rel
+    verb220_stem15_orth=vo'ote
+    verb220_stem15_pred=_lie.down_v_rel
+    verb220_stem16_orth=vo'oka
+    verb220_stem16_pred=_be.lying.down_v_rel
+    verb220_stem17_orth=yehte
+    verb220_stem17_pred=_get.up_v_rel
+
+The following IGT should parse:
+Uusi kikte
+Child enter
+"A child is entering."
+
+But the following should not:
+Uusi-m kikte
+Child-PL enter
+"Children are entering."
+
+One class of transitives specifies that their object must be singular: 
+  verb221_name=irr-transitive-sg-object-verb
+    verb221_feat1_name=number
+    verb221_feat1_value=sg
+    verb221_feat1_head=obj
+  verb221_valence=nom-acc
+    verb221_stem1_orth=kecha
+    verb221_stem1_pred=_erect_v_rel
+    verb221_stem2_orth=yecha
+    verb221_stem2_pred=_put_v_rel
+    verb221_stem3_orth=kivacha
+    verb221_stem3_pred=_bring.in_v_rel
+    verb221_stem4_orth=me'a
+    verb221_stem4_pred=_kill_v_rel
+	
+The following should parse:
+Maria kari-ta kecha
+Maria house-ACC erect
+"Maria is erecting a house."
+
+But the following should not:
+Maria kari-m kecha
+Maria house-PL erect
+"Maria is erecting houses."
+
+(The second does parse, but the actual "kecha" in the sentence is a separate "kecha" meaning "stop", rather than "erect.")
+	
+One class of transitives specifies that their object must be plural. These have the same stems as the irregular transitive subject verbs. 
+  verb222_name=irr-transitive-pl-object-verb
+    verb222_feat1_name=number
+    verb222_feat1_value=pl
+    verb222_feat1_head=obj
+  verb222_valence=nom-acc
+    verb222_stem1_orth=ha'abwa
+    verb222_stem1_pred=_erect_v_rel
+    verb222_stem2_orth=hoa
+    verb222_stem2_pred=_put_v_rel
+    verb222_stem3_orth=kiima
+    verb222_stem3_pred=_bring.in_v_rel
+    verb222_stem4_orth=sua
+    verb222_stem4_pred=_kill_v_rel
+
+The following should not parse:
+Maria kari-ta ha'abwa
+Maria house-ACC erect
+"Maria is erecting a house."
+
+But the following should:
+Maria kari-m ha'abwa
+Maria house-PL erect
+"Maria is erecting houses."
+
+	
+A last set of categories consists of the verbs for go, which are specified for both tense and verb. These don't work quite yet, as the obligatory tense-marking lexical rule produces "siika-k" instead of the correct "siika". Cleanup for next week. 
+  verb223_name=go-sg-pres-verb
+    verb223_feat1_name=number
+    verb223_feat1_value=sg
+    verb223_feat1_head=subj
+    verb223_feat2_name=tense
+    verb223_feat2_value=prs
+    verb223_feat2_head=verb
+  verb223_valence=nom
+    verb223_stem1_orth=siime
+    verb223_stem1_pred=_go_v_rel
+  verb224_name=go-pl-pres-verb
+    verb224_feat1_name=number
+    verb224_feat1_value=pl
+    verb224_feat1_head=subj
+    verb224_feat2_name=tense
+    verb224_feat2_value=prs
+    verb224_feat2_head=verb
+  verb224_valence=nom
+    verb224_stem1_orth=saka
+    verb224_stem1_pred=_go_v_rel
+  verb225_name=go-sg-pst-verb
+    verb225_feat1_name=number
+    verb225_feat1_value=sg
+    verb225_feat1_head=subj
+    verb225_feat2_name=tense
+    verb225_feat2_value=pst
+    verb225_feat2_head=verb
+  verb225_valence=nom
+    verb225_stem1_orth=siika
+    verb225_stem1_pred=_go_v_rel
+    verb225_stem2_orth=sika
+    verb225_stem2_pred=_go_v_rel
+  verb226_name=go-sg
+    verb226_feat1_name=number
+    verb226_feat1_value=pl
+    verb226_feat1_head=subj
+    verb226_feat2_name=tense
+    verb226_feat2_value=pst
+    verb226_feat2_head=verb
+  verb226_valence=nom
+    verb226_stem1_orth=saha
+    verb226_stem1_pred=_go_v_rel
+
+	
+Auxiliary cleanup
+Many auxiliaries were simply misidentified affixes. They had the same tense markers as affixes, but occurred independently of a verb, but with the initial hyphen still there. Removed these from the language. 
+
+	-Removed aux18 auxiliary class from the lexicon. This was the perfective tense marker "-k", which is already handled via a lexical rule in the verb morphology. 	
+	-Removed aux19 auxiliary class from the lexicon. This was the object marker "-ta", which is already handled via a noun lexical rule in the noun morphology. 
+	-Removed aux20 auxiliary class from the lexicon. This was the sentence relativizer affix "-me", which a) isn't handled by the Grammar Matrix at present and b) shouldn't be an auxiliary at all.
+	-Removed aux28 "-wa" from the auxiliary category. This corresponded to either a) marker on a possessum noun, which was already handled via a possessum lexical rule, or b) a passive verb tense that we are not implementing in the current Matrix.
+	-Removed aux21 auxiliary class from the lexicon. This was the future passive verb affix "-na", which had been mistaken as an auxiliary. 
+	-Removed aux22 auxiliary class from the lexicon. This was the future verb affix "-ne", which had been mistaken as an auxiliary. 
+	-Moved "soto'i" [pot] from verbal auxiliary aux30 to common-noun noun class. Interpreter had perhaps misidentified noun "pot" as an affix? Removed aux30 auxiliary class. 
+	-Removed aux23 auxiliary class. This was the 1pl reflexive noun "ito", which had probably been mistaken for an auxiliary by the inference system. 
+	Removed aux16 auxiliary class. This was the auxiliary "-n", used for impf case, which had probably been mistaken for an auxiliary by the inference system.  
+	Removed aux17 auxiliary class.  This was the auxiliary "-u", used for DIR case on nouns, which had probably been mistaken for an auxiliary by the inference system.  
+	Removed aux24 aux class. This was the aux "-ka", used for ppl (past participle) case on nouns. 
+	-Removed aux23 auxiliary class. This was the locative noun case marker "-po", which had been mistaken for an auxiliary by the inference system. 
+	-Removed aux27 auxiliary class. This was the completive affix "-t", used to mark superessive case on nouns. This was not handled by noun lexical rule, but made it another lexical rule attached to nounpc-10 (post-object-marking noun position class)
+	-Removed aux29 auxiliary class. This was the completive affix "-su", used to mark completive aspect on verbs. This was already handled via verb lexical rules
+	
+	WH-WORDS
+	Moved "hakwo" and "hakwo-sa" [where] and "haksa" and "hakun-sa" [when] to the Adverb category. 
+	Choices file:
+		  adv5_name=where_question_adverb
+			adv5_stem1_orth=hakwo
+			adv5_stem1_pred=_place_a_rel
+			adv5_stem2_orth=hakwo-sa
+			adv5_stem2_pred=_place_a_rel
+		  adv5_inter=on
+		  adv5_type=loc
+		  adv6_name=when_question_adverb
+			adv6_stem1_orth=haksa
+			adv6_stem1_pred=_time_a_rel
+			adv6_stem2_orth=hakun-sa
+			adv6_stem2_pred=_time_a_rel
+		  adv6_inter=on
+		  adv6_type=loc
+COPULAS--------------------------------------------------------------------------------------------------------------
+	-Added empty copula framework for newly minted adjectives (just so adjectival predicate phrases have somewhere to go). Hiaki allows the formation of phrases like:
+		Chuu’u si ovetu.
+		Dog very lazy
+		‘The dog is very lazy.'
+	The choices file:
+		cop1_name=empty-copula
+		cop1_comptype=ap
+	I don't know how to create an entry for an empty, so this category is bare for now, and the above IGT doesn't parse. TBD!
+
+ADJECTIVES--------------------------------------------------------------------------------------------------------------
+	-Added category for basic adjectives. Adjectives in Hiaki occur before the noun they modify, and can be used in copula constructions like "Chuu'u si ovetu". Moved misidentified verbs that were actually adjectival predicates to this category. They can also be used to just modify the noun they precede, like:
+		Ume ili uusi-m nooka
+		The little children speak
+		"The little children speak.
+	Choices file:
+		  adj1_name=basic_adjective
+		  adj1_mod=both
+		  adj1_modpos=before
+		  adj1_predcop=obl
+			adj1_stem1_orth=uku
+			adj1_stem1_pred=_tempting_a_rel
+			...
+
+MISCELLANEOUS----------------------------------------------------------------------------------------------------------
+Because my self-worth is tied to my coverage %, added the following words that weren't being covered by the current system in order to maintain coverage after losing so many affixes.
+	-kaita [nothing] - common-noun
+	-haivu [already] - time-modifier adverb
+	-hunaman [there ] - location-modifier adverb
+	-ta [but] - clause-modifier adverb
+	
+	And a few others:
+	
+		adv1_name=clause_modifier
+			adv1_stem1_orth=ket
+			adv1_stem1_pred=_also_a_rel
+			adv1_stem2_orth=si
+			adv1_stem2_pred=_very_a_rel
+			adv1_stem3_orth=ta
+			adv1_stem3_pred=_but_a_rel
+		  adv1_type=manner
+		  adv2_name=location_modifier
+			adv2_stem1_orth=aman
+			adv2_stem1_pred=_there_a_rel
+			adv2_stem2_orth=hunaman
+			adv2_stem2_pred=_there_a_rel
+		  adv2_type=loc
+		  adv3_name=time_modifier
+			adv3_stem1_orth=ian
+			adv3_stem1_pred=_now_a_rel
+			adv3_stem2_orth=veha
+			adv3_stem2_pred=_then_a_rel
+			adv3_stem3_orth=haivu
+			adv3_stem3_pred=_already_a_rel
+		  adv3_type=loc
+		  adv4_name=how_or_shall_modifier
+			adv4_stem1_orth=haisa
+			adv4_stem1_pred=_how_or_shall_a_rel
+		  adv4_inter=on
+		  
+With these changes, the following IGT should parse:
+Ume sontau-m haivu hapte-k
+3.PL.the soldier-PL already stand.up-PST.PRF
+"The soldiers have already stood up."
+
+With these change
+
+Morphology
+
+Note: The copy-pasted IGT in this section from the corpus is only meant to illustrate the sourcing of specific affixes and their meanings. Specific parseable IGT is marked. 
+
+	-nounpc-10: Split the two lexical rule instances into two lexical rules:
+		-comitative-noun-pc10-lrt1: This adds the "-mak" affix. Gave this the feature CASE with value COM specified on itself. 
+		-directional-noun-pc10-lrt2: This adds the "-u" affix. Gave this the feature CASE with value DIR specified on itself. 
+	-noun-pc16-lrt2: Removed the "-su" emphatic affix. :( 
+	-noun-pc16-lrt1: Removed the "-k" PERF verb affix that had been put there by the inference system. 
+	-verb-pc2: Removed "aa=" suffix. This represented a shortened version of the 3rd-sg object pronoun "apo'ik", but had been (possibly typo'd) to attach to its verb. 95% of the time, "aa=" appears in constructions like:
+		13720@@@@-1@@nee aa= temai-k hakwo-sa empo weye-vae ?@@@@1@7@1.SG.NOM 3.SG.ACC= ask-PERF when-QUESTION 2.SG.NOM go (sg. subj.)-PROSP ? // ‎‎"I asked him, 'When are you leaving?'"@@
+	-verb-pc4: Added directed mood and object-adding valence-changing operation.
+		Adds _direct_rel to the front of the complements list. 
+	-verb-pc6: Removed "machi", which is a (probably compound verb) that appeared once in the corpus:
+		7900@@@@-1@@echo sewa-m , si'ime-ta huna'a veha pua-ka aa= bwa'e uu hente , vato'o-raa , poloove-m , kaita bwa'e-machi-kai .@@@@1@19@cardon cactus flower-PL , all-ACC that.one then pick.crops-PPL 3.SG.ACC= eat DET people , in.baptism-collective , poor-PL , nothing eat-appear-ppl . // Flowers of the cardon cactus.  All of that was picked and eaten by the people, the baptized ones.  Poor people, there was nothing to eat.@@
+	
+	-verb-pc8: Gave valence-changing operation to causative verb class marked by affix "-tua" (CAUS). 
+		verb-pc8_name=causative-verb-pc
+		  verb-pc8_order=suffix
+		  verb-pc8_inputs=iverb, tverb, verb-pc15, verb-pc50
+			verb-pc8_lrt1_name=causative-transitive-verb-pc-lrt
+			  verb-pc8_lrt1_valchg1_operation=subj-add
+			  verb-pc8_lrt1_valchg1_inputs=trans
+			  verb-pc8_lrt1_valchg1_argpos=pre
+			  verb-pc8_lrt1_valchg1_argtype=np
+			  verb-pc8_lrt1_lri1_inflecting=yes
+			  verb-pc8_lrt1_lri1_orth=-tua
+			verb-pc8_lrt2_name=causative-intransitive-verb-pc-lrt
+			  verb-pc8_lrt2_valchg1_operation=subj-add
+			  verb-pc8_lrt2_valchg1_inputs=intrans
+			  verb-pc8_lrt2_valchg1_argpos=pre
+			  verb-pc8_lrt2_valchg1_argtype=np
+			  verb-pc8_lrt2_lri1_inflecting=yes
+			  verb-pc8_lrt2_lri1_orth=-tua
+		With this change, the following IGT should parse:
+			Hoan uka yoeme-ta vachi-ta eecha-tua-k
+			Hoan the man-ACC corn-ACC plant-CAUS-PERF
+			"Hoan made the man plant corn."
+			
+	-verb-pc18: Added "desid" mood to the lrt with affix "ii'aa". 
+	-verb-pc19: Removed this class. It contained only "-tu", the  affix attaching to predicate nouns to indicate that the subject was becoming the noun predicate. 
+	-verb-pc20: Removed "-wa" passivization affix. 
+	-verb-pc31: Added "ev" mood to lrt-1, in accordance with gloss of "e'-" as "EV" affix.Source:
+		13660@@@@-1@@ume pueta-m eme'e aman e'-eta-k ?@@@@1@6@DET.PL door-PL 2.PL.NOM. there EV-close-PERF ? //  'Did y'all  close the doors there?' @@
+	-verb-pc44: Added sbjv feature to "could" affixes -ean and -eewan. Source:
+		7860@@@@-1@@ya'a-eewan , ibwan .@@@@1@4@do-could.do , well . // It could be done, well. @@
+		12220@@@@-1@@pos aa= ya'a-ean , heewi .@@@@1@6@well 3.SG.ACC= do-could , yes . // Well, they could do it, yes.@@
+	-verb-47: Removed class. This class added "-m" (the plural marker) to copula NPs. 
+	-verb-pc3: Removed redundant "-k" affixation rule. This is handled by verb-pc10. 
+	-verb-pc11: Removed verb-pc11. This had the "am=" affix, a shortened object pronoun affix that was likely the result of a typo. The vast majority of "am=" occuring in the dataset has a space between it and the following verb, with one instance having it attached to the verb proper. Source:
+		17520@@@@-1@@inepo am=miika-vae .@@@@1@3@1.SG.NOM 3.PL.ACC=give-PROSP . // 'I will give them'@@
+	-Verb-pc14-lrt3: Removed rule for future passive "-na", as per Canvas instructions.  
+	-Verb-pc15-lrt1: Added habitual aspect for "RED1" reduplication affix. Source:
+		7360@@@@-1@@ume maaso-m ket RED1-bwa'e-wa ?@@@@1@5@DET.PL deer-PL also Habitual-eat-PASS ? // Yes, it is grilled. Some even make deer meat  tomales. They are very good.@@
+	-verb-pc12: Removed future tense verb pc, as affix was moved to verb-pc10 (the tense-marking verb position class.)
+	-verb-pc54: Removed "-tu" verb class, representing the "BECOME" operation on noun predicates. 
+	-verb-pc57: Removed - affix "-le" only appears as an affix on adjectives in the corpus. Instead, added adjective affixes. Source: 
+		14120@@@@-1@@hita bwa'am-ta empo chea kia-le ?@@@@1@6@thing food-ACC 2.SG.NOM more delicious-think ? // What is your favorite food?@@
+	-verb-pc35: Removed this: inconsistent passivization and glosses:
+		14020@@@@-1@@nee rettrato-roa-wa-k .@@@@1@3@1.SG.ACC picture-had picture taken-PASS-PERF . // "I had my photo taken."@@
+		2330@@@@-1@@ian=ne inika'a enchim=ne eteho-roa-vae itom pasiaroa-ka-po vetana@@@@1@7@now=1.SG.NOM this.one 2.PL.ACC=1.SG.NOM speak-want to tell you-PROSP 1.PL.ACC travel-PPL-LOC from // Now I want to tell you about our travelling @@
+	-verb-pc48: Removed class, which contained passive affix "-wa" and "-ka", which is a PPL affix handled elsewhere in the grammar. 
+	-verb-pc10 : Added future-marking affix "-ne" and present-tense-marking empty affix (to default non-affixed verbs to present tense.) Verbs without affixes in Hiaki default to present tense. 
+		verb-pc10_name=tense-marked-verb-pc
+		  verb-pc10_obligatory=on
+		  verb-pc10_order=suffix
+		  verb-pc10_inputs=iverb, tverb, verb-pc4, verb-pc8, verb-pc14, verb-pc15, verb-pc27, verb-pc29, verb-pc31, verb-pc33, verb-pc49
+			verb-pc10_lrt1_name=past-perf-verb-pc-lrt
+			  verb-pc10_lrt1_feat1_name=aspect
+			  verb-pc10_lrt1_feat1_value=pfv
+			  verb-pc10_lrt1_feat1_head=verb
+			  verb-pc10_lrt1_feat2_name=tense
+			  verb-pc10_lrt1_feat2_value=pst
+			  verb-pc10_lrt1_feat2_head=verb
+			  verb-pc10_lrt1_lri1_inflecting=yes
+			  verb-pc10_lrt1_lri1_orth=-k
+			verb-pc10_lrt2_name=fut-verb-pc-lrt
+			  verb-pc10_lrt2_feat1_name=tense
+			  verb-pc10_lrt2_feat1_value=fut
+			  verb-pc10_lrt2_feat1_head=verb
+			  verb-pc10_lrt2_lri1_inflecting=yes
+			  verb-pc10_lrt2_lri1_orth=-ne
+			verb-pc10_lrt3_name=present-verb-pc-lrt
+			  verb-pc10_lrt3_feat1_name=tense
+			  verb-pc10_lrt3_feat1_value=prs
+			  verb-pc10_lrt3_feat1_head=verb
+			  verb-pc10_lrt3_lri1_inflecting=no
+	-verb-pc14-lrt2: Removed -ri "Nominalizer" affix, as Grammar Matrix is currently unable to handle NMLZR. 
+		-Added "incep" case to "hapte" affix. I surmise its use in the following is actually some kind of compound verb, as this is actually the verb "start", rather than an affix. 
+		2140@@@@-1@@yooko kupteo kaa into tenne-hapte-ne@@@@1@5@tomorrow evening NEG and run (pl. subj.)-start/stop (PL) -FUT // 'Tomorrow evening the buses will stop running'@@
+
+		
+	-Changed most affixes to take any transitive/intransitive verb as input. 
+		
+====================================================================================
+3.
+
+
+ From the last week:
+	For the testsuite:
+		1. 89.2% coverage this week, compared to 94.6 from last week. 
+		Two sentences were culpable:
+			-"Aa huuve-wa siika". The model is currently unable to produce valid readings for "siika", because it is already inflected for case. The obligatory verb lexical rule that adds "-k" past particle to the end of a verb produces the ungrammatical "siika-k". Will fix this next week. 
+			-"Uu yo'o hoote." I suspect this sentence is actually incorrect: "hoote" only takes plural subjects, according to the textbook, and "uu yo'o" is singular. Will fix in the testsuite next week. 
+		2. 2.7 distinct analyses on average, compared to 4.7 last week.
+		3. 12 max parses, for "Peo toro-ta hinu into toro-ta nenka".
+		4. No new sources of ambiguity - ambiguity was down across the board. 
+	For the corpus:
+		1. 213.2% of the sentences parsed, compared to 12.6% a week ago - 292 vs 281. 
+		2. 6.65 distinct analyses on average, compared to 4.23 last week.
+		3. 176 max parses, on "Santos maria-ta hi'ivo'o-ria".
+		4. A few new sources of ambiguity:
+			-Addition of adverbs for common adverbs, such as hunaman ["there"] and ian ["now"] have caused sentences containing many of these adverbs to have many parses, due to the lack of restrictions on adverbial modification. A sentence of the form
+				ADV VP ADV
+				can be interpreted as 
+				((ADV VP) ADV) 
+				or
+				(ADV (VP ADV))
+			-The same can be applied to adjectives, like "huevena" ["many"]. Should probably change adjectives to modify following nouns - need more data on this front. 
+			-Nouns seem to be taking S/VPs as complements via the non-event-subj-head-phrase rule (where did this come from?), leading to ambiguity in cases where a verb and a noun share orthography. Though I've tried to remove most noun predicates being interpreted as verbs, "asoa" can mean both "to give birth" as well as "child", leading to compound - vs - sentential-complement ambiguity. 
+			-For the sentence "Hoan maria-ta munim bwasa-ria-k", getting some ambiguity arising from EX-ADJ on the final verbal predicate. It seems like LKB is assuming some kind of extracted wh-adjective? (Not sure where else an adjective would appear in the grammar)

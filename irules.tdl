@@ -33,13 +33,17 @@ plural-marked-noun-lrt-suffix :=
 %suffix (* -m)
 plural-marked-noun-lrt-lex-rule.
 
-noun-pc10_lrt1-suffix1 :=
+comitative-noun-pc10_lrt1-suffix :=
 %suffix (* -mak)
-noun-pc10_lrt1-lex-rule.
+comitative-noun-pc10_lrt1-lex-rule.
 
-noun-pc10_lrt1-suffix2 :=
+directional-noun-pc10-lrt2-suffix :=
 %suffix (* -u)
-noun-pc10_lrt1-lex-rule.
+directional-noun-pc10-lrt2-lex-rule.
+
+superessive-noun-pc10-lrt3-suffix :=
+%suffix (* -t)
+superessive-noun-pc10-lrt3-lex-rule.
 
 noun-pc14_lrt1-suffix :=
 %suffix (* -ka)
@@ -48,14 +52,6 @@ noun-pc14_lrt1-lex-rule.
 noun-pc15_lrt1-suffix :=
 %suffix (* -kame)
 noun-pc15_lrt1-lex-rule.
-
-noun-pc16_lrt1-suffix :=
-%suffix (* -k)
-noun-pc16_lrt1-lex-rule.
-
-noun-pc16_lrt2-suffix :=
-%suffix (* -su)
-noun-pc16_lrt2-lex-rule.
 
 locative-noun_lrt1-suffix :=
 %suffix (* -po)
@@ -73,65 +69,53 @@ verb-pc1_lrt1-suffix :=
 %suffix (* -n)
 verb-pc1_lrt1-lex-rule.
 
-verb-pc2_lrt1-suffix :=
-%suffix (* aa=)
-verb-pc2_lrt1-lex-rule.
-
-verb-pc3_lrt1-suffix :=
-%suffix (* -k)
-verb-pc3_lrt1-lex-rule.
-
-verb-pc4_lrt1-suffix :=
+directive-verb-pc_lrt-suffix :=
 %suffix (* -sae)
-verb-pc4_lrt1-lex-rule.
+directive-verb-pc_lrt-lex-rule.
 
-verb-pc5_lrt1-suffix :=
+past-impfv-verb-pc_lrt-suffix :=
 %suffix (* -kan)
-verb-pc5_lrt1-lex-rule.
+past-impfv-verb-pc_lrt-lex-rule.
 
 verb-pc6_lrt1-suffix :=
 %suffix (* -tek)
 verb-pc6_lrt1-lex-rule.
 
 verb-pc6_lrt2-suffix1 :=
-%suffix (* -machi)
-verb-pc6_lrt2-lex-rule.
-
-verb-pc6_lrt2-suffix2 :=
 %suffix (* -roka)
 verb-pc6_lrt2-lex-rule.
 
-verb-pc6_lrt2-suffix3 :=
+verb-pc6_lrt2-suffix2 :=
 %suffix (* -u)
 verb-pc6_lrt2-lex-rule.
 
-verb-pc7_lrt1-suffix :=
+when-modified-verb-pc7_lrt1-suffix :=
 %suffix (* -o)
-verb-pc7_lrt1-lex-rule.
+when-modified-verb-pc7_lrt1-lex-rule.
 
 verb-pc7_lrt2-suffix :=
 %suffix (* -an)
 verb-pc7_lrt2-lex-rule.
 
-verb-pc8_lrt1-suffix :=
+causative-transitive-verb-pc-lrt-suffix :=
 %suffix (* -tua)
-verb-pc8_lrt1-lex-rule.
+causative-transitive-verb-pc-lrt-lex-rule.
+
+causative-intransitive-verb-pc-lrt-suffix :=
+%suffix (* -tua)
+causative-intransitive-verb-pc-lrt-lex-rule.
 
 verb-pc9_lrt1-suffix :=
 %suffix (* -la)
 verb-pc9_lrt1-lex-rule.
 
-verb-pc10_lrt1-suffix :=
+past-perf-verb-pc-lrt-suffix :=
 %suffix (* -k)
-verb-pc10_lrt1-lex-rule.
+past-perf-verb-pc-lrt-lex-rule.
 
-verb-pc11_lrt1-suffix :=
-%suffix (* am=)
-verb-pc11_lrt1-lex-rule.
-
-verb-pc12_lrt1-suffix :=
+fut-verb-pc-lrt-suffix :=
 %suffix (* -ne)
-verb-pc12_lrt1-lex-rule.
+fut-verb-pc-lrt-lex-rule.
 
 verb-pc13_lrt1-suffix :=
 %suffix (* -vae)
@@ -141,49 +125,29 @@ verb-pc14_lrt1-suffix :=
 %suffix (* -taite)
 verb-pc14_lrt1-lex-rule.
 
-verb-pc14_lrt2-suffix1 :=
+verb-pc14_lrt2-suffix :=
 %suffix (* -hapte)
 verb-pc14_lrt2-lex-rule.
 
-verb-pc14_lrt2-suffix2 :=
-%suffix (* -yaate)
-verb-pc14_lrt2-lex-rule.
-
-verb-pc14_lrt2-suffix3 :=
-%suffix (* -ri)
-verb-pc14_lrt2-lex-rule.
-
-verb-pc14_lrt3-suffix :=
-%suffix (* -na)
-verb-pc14_lrt3-lex-rule.
-
-verb-pc15_lrt1-prefix :=
+habitual-verb-pc-lrt-prefix :=
 %prefix (* red1-)
-verb-pc15_lrt1-lex-rule.
+habitual-verb-pc-lrt-lex-rule.
 
 verb-pc16_lrt1-suffix :=
 %suffix (* -ka)
 verb-pc16_lrt1-lex-rule.
 
-verb-pc18_lrt1-suffix :=
+go-pl-pc-lrt-suffix :=
 %suffix (* -vu)
-verb-pc18_lrt1-lex-rule.
+go-pl-pc-lrt-lex-rule.
 
-verb-pc18_lrt2-suffix :=
+desiderative-verb-pc-lrt-suffix :=
 %suffix (* -ii'aa)
-verb-pc18_lrt2-lex-rule.
+desiderative-verb-pc-lrt-lex-rule.
 
-verb-pc19_lrt1-suffix :=
-%suffix (* -tu)
-verb-pc19_lrt1-lex-rule.
-
-verb-pc20_lrt1-suffix :=
-%suffix (* -wa)
-verb-pc20_lrt1-lex-rule.
-
-verb-pc21_lrt1-suffix :=
+go-sg-verb-pc-lrt-suffix :=
 %suffix (* -se)
-verb-pc21_lrt1-lex-rule.
+go-sg-verb-pc-lrt-lex-rule.
 
 verb-pc23_lrt1-suffix :=
 %suffix (* -kai)
@@ -193,21 +157,25 @@ verb-pc24_lrt1-suffix :=
 %suffix (* -'u)
 verb-pc24_lrt1-lex-rule.
 
-verb-pc27_lrt1-suffix :=
+intransitive-applicative-verb-pc-lrt-suffix :=
 %suffix (* -ria)
-verb-pc27_lrt1-lex-rule.
+intransitive-applicative-verb-pc-lrt-lex-rule.
+
+transitive-applicative-verb-pc-lrt-suffix :=
+%suffix (* -ria)
+transitive-applicative-verb-pc-lrt-lex-rule.
 
 verb-pc29_lrt1-suffix :=
 %suffix (* -su)
 verb-pc29_lrt1-lex-rule.
 
-verb-pc31_lrt1-prefix :=
+evidential-verb-pc-lrt-prefix :=
 %prefix (* e'-)
-verb-pc31_lrt1-lex-rule.
+evidential-verb-pc-lrt-lex-rule.
 
-verb-pc32_lrt1-suffix :=
+irrealis-verb-pc-lrt-suffix :=
 %suffix (* -ne)
-verb-pc32_lrt1-lex-rule.
+irrealis-verb-pc-lrt-lex-rule.
 
 verb-pc32_lrt2-suffix :=
 %suffix (* -me)
@@ -216,10 +184,6 @@ verb-pc32_lrt2-lex-rule.
 verb-pc33_lrt1-suffix :=
 %suffix (* -tevo)
 verb-pc33_lrt1-lex-rule.
-
-verb-pc35_lrt1-suffix :=
-%suffix (* -roa)
-verb-pc35_lrt1-lex-rule.
 
 verb-pc37_lrt1-prefix1 :=
 %prefix (* hi'i-)
@@ -245,50 +209,30 @@ verb-pc41_lrt1-prefix :=
 %prefix (* hi-)
 verb-pc41_lrt1-lex-rule.
 
-verb-pc44_lrt1-suffix1 :=
+could-verb-pc_lrt-suffix1 :=
 %suffix (* -ean)
-verb-pc44_lrt1-lex-rule.
+could-verb-pc_lrt-lex-rule.
 
-verb-pc44_lrt1-suffix2 :=
+could-verb-pc_lrt-suffix2 :=
 %suffix (* -eewan)
-verb-pc44_lrt1-lex-rule.
+could-verb-pc_lrt-lex-rule.
 
-verb-pc47_lrt1-suffix :=
-%suffix (* -m)
-verb-pc47_lrt1-lex-rule.
-
-verb-pc48_lrt1-suffix1 :=
-%suffix (* -wa)
-verb-pc48_lrt1-lex-rule.
-
-verb-pc48_lrt1-suffix2 :=
-%suffix (* -ka)
-verb-pc48_lrt1-lex-rule.
-
-verb-pc49_lrt1-prefix :=
+hab-redupped-verb-pc-prefix :=
 %prefix (* red-)
-verb-pc49_lrt1-lex-rule.
+hab-redupped-verb-pc-lex-rule.
 
-verb-pc50_lrt1-prefix :=
+prog-verb-pc_lrt-prefix :=
 %prefix (* red2-)
-verb-pc50_lrt1-lex-rule.
+prog-verb-pc_lrt-lex-rule.
 
-verb-pc51_lrt1-prefix :=
+imp-verb-pc_lrt-prefix :=
 %prefix (* red3-)
-verb-pc51_lrt1-lex-rule.
-
-verb-pc54_lrt1-suffix :=
-%suffix (* -tu)
-verb-pc54_lrt1-lex-rule.
-
-verb-pc55_lrt1-suffix :=
-%suffix (* -ne)
-verb-pc55_lrt1-lex-rule.
-
-verb-pc57_lrt1-suffix :=
-%suffix (* -le)
-verb-pc57_lrt1-lex-rule.
+imp-verb-pc_lrt-lex-rule.
 
 verb-pc58_lrt1-suffix :=
 %suffix (* -'o)
 verb-pc58_lrt1-lex-rule.
+
+think_inflected_adj_pc_lrt-suffix :=
+%suffix (* -le)
+think_inflected_adj_pc_lrt-lex-rule.

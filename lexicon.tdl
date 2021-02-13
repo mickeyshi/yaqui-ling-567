@@ -41,10 +41,6 @@ huevena_1 := common_noun-noun-lex &
   [ STEM < "huevena" >,
     SYNSEM.LKEYS.KEYREL.PRED "_many_n_rel" ].
 
-koko_1 := common_noun-noun-lex &
-  [ STEM < "koko" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_die(pl.)_n_rel" ].
-
 ota := common_noun-noun-lex &
   [ STEM < "ota" >,
     SYNSEM.LKEYS.KEYREL.PRED "_bone_n_rel" ].
@@ -558,7 +554,7 @@ choonim := common_noun-noun-lex &
   [ STEM < "choonim" >,
     SYNSEM.LKEYS.KEYREL.PRED "_(head) hair_n_rel" ].
 
-chuu_27u_1 := common_noun-noun-lex &
+chuu_27u := common_noun-noun-lex &
   [ STEM < "chuu'u" >,
     SYNSEM.LKEYS.KEYREL.PRED "_dog_n_rel" ].
 
@@ -634,7 +630,7 @@ hi_27ito := common_noun-noun-lex &
   [ STEM < "hi'ito" >,
     SYNSEM.LKEYS.KEYREL.PRED "_palojito (tree)_n_rel" ].
 
-hiaki_1 := common_noun-noun-lex &
+hiaki := common_noun-noun-lex &
   [ STEM < "hiaki" >,
     SYNSEM.LKEYS.KEYREL.PRED "_hiaki_n_rel" ].
 
@@ -815,7 +811,7 @@ koperativa := common_noun-noun-lex &
   [ STEM < "koperativa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_cooperative_n_rel" ].
 
-kovanao_1 := common_noun-noun-lex &
+kovanao := common_noun-noun-lex &
   [ STEM < "kovanao" >,
     SYNSEM.LKEYS.KEYREL.PRED "_governer_n_rel" ].
 
@@ -1316,6 +1312,30 @@ huuve_1 := common_noun-noun-lex &
   [ STEM < "huuve" >,
     SYNSEM.LKEYS.KEYREL.PRED "_wife_n_rel" ].
 
+soto_27i := common_noun-noun-lex &
+  [ STEM < "soto'i" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pot_n_rel" ].
+
+kapinteo := common_noun-noun-lex &
+  [ STEM < "kapinteo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_carpenter_n_rel" ].
+
+secretario := common_noun-noun-lex &
+  [ STEM < "secretario" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_secretary_n_rel" ].
+
+peeso := common_noun-noun-lex &
+  [ STEM < "peeso" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dollar_n_rel" ].
+
+kaita := common_noun-noun-lex &
+  [ STEM < "kaita" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_nothing_n_rel" ].
+
+e_27e := common_noun-noun-lex &
+  [ STEM < "e'e" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_no_n_rel" ].
+
 enchim := 2nd-pl-acc-pronoun-noun-lex &
   [ STEM < "enchim" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
@@ -1324,11 +1344,11 @@ enchi-m := 2nd-pl-acc-pronoun-noun-lex &
   [ STEM < "enchi-m" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
 
-a_27a := 3rd-sg-acc-noun-lex &
+a_27a := 3rd-sg-acc-pronoun-noun-lex &
   [ STEM < "a'a" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
 
-apo_27ik_2 := 3rd-sg-acc-noun-lex &
+apo_27ik_2 := 3rd-sg-acc-pronoun-noun-lex &
   [ STEM < "apo'ik" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
 
@@ -1352,7 +1372,7 @@ empo := 2nd-sg-nom-pronoun-noun-lex &
   [ STEM < "empo" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
 
-enchi_1 := 2nd-sg-acc-pronoun-noun-lex &
+enchi := 2nd-sg-acc-pronoun-noun-lex &
   [ STEM < "enchi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
 
@@ -1368,7 +1388,7 @@ itepo := 1st-pl-nom-pronoun-noun-lex &
   [ STEM < "itepo" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
 
-ito_1 := noun124-noun-lex &
+ito := 1st-pl-refl-pronoun-noun-lex &
   [ STEM < "ito" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
 
@@ -1394,29 +1414,29 @@ vempo_27im := 3rd-pl-acc-pronoun-noun-lex &
 
 hitaa := what-noun-noun-lex &
   [ STEM < "hitaa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_what_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_thing_n_rel" ].
 
 havee := who-nom-noun-noun-lex &
   [ STEM < "havee" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_who.NOM_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
 
 have-ta := who-acc-noun-noun-lex &
   [ STEM < "have-ta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_who-ACC_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
 
-hakun-sa := where-noun-noun-lex &
+hakun-sa_1 := where-noun-noun-lex &
   [ STEM < "hakun-sa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_where-QUESTION_n_rel" ].
 
-haksa := where-noun-noun-lex &
+haksa_1 := where-noun-noun-lex &
   [ STEM < "haksa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_where_n_rel" ].
 
-hakwo-sa := when-noun-noun-lex &
+hakwo-sa_1 := when-noun-noun-lex &
   [ STEM < "hakwo-sa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_when-QUESTION_n_rel" ].
 
-hakwo := when-noun-noun-lex &
+hakwo_1 := when-noun-noun-lex &
   [ STEM < "hakwo" >,
     SYNSEM.LKEYS.KEYREL.PRED "_when_n_rel" ].
 
@@ -1424,1754 +1444,1682 @@ itom := 1st-pl-acc-pronoun-noun-lex &
   [ STEM < "itom" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
 
+aa_3D := short-3rd-sg-pronoun-noun-lex &
+  [ STEM < "aa=" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+
+am_3D := short-3rd-pl-pronoun-noun-lex &
+  [ STEM < "am=" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+
 ;;; Adjectives
+
+uku := basic_adjective-adj-lex &
+  [ STEM < "uku" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_tempting_a_rel" ].
+
+tapsisiolai := basic_adjective-adj-lex &
+  [ STEM < "tapsisiolai" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_thin_a_rel" ].
+
+veinte := basic_adjective-adj-lex &
+  [ STEM < "veinte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_twenty_a_rel" ].
+
+o_27ola := basic_adjective-adj-lex &
+  [ STEM < "o'ola" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_old_a_rel" ].
+
+nawa := basic_adjective-adj-lex &
+  [ STEM < "nawa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_together_a_rel" ].
+
+patti := basic_adjective-adj-lex &
+  [ STEM < "patti" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_covered_a_rel" ].
+
+yo_27ori := basic_adjective-adj-lex &
+  [ STEM < "yo'ori" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_respected_a_rel" ].
+
+tu_27i := basic_adjective-adj-lex &
+  [ STEM < "tu'i" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_good_a_rel" ].
+
+yoo_3 := basic_adjective-adj-lex &
+  [ STEM < "yoo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_old(animate)_a_rel" ].
+
+huevena_2 := basic_adjective-adj-lex &
+  [ STEM < "huevena" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_many_a_rel" ].
+
+ili := basic_adjective-adj-lex &
+  [ STEM < "ili" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_little_a_rel" ].
+
+siiki := basic_adjective-adj-lex &
+  [ STEM < "siiki" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_red_a_rel" ].
 
 ;;; Verbs
 
-naake_1 := verb4-verb-lex &
-  [ STEM < "naake" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_care.for_v_rel" ].
-
-hinu_1 := verb4-verb-lex &
-  [ STEM < "hinu" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_buy_v_rel" ].
-
-teeka := verb4-verb-lex &
-  [ STEM < "teeka" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_lay.it.across_v_rel" ].
-
-chuu_27u_2 := verb4-verb-lex &
-  [ STEM < "chuu'u" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_dog_v_rel" ].
-
-hiaki_2 := verb4-verb-lex &
-  [ STEM < "hiaki" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_hiaki_v_rel" ].
-
-kaita := verb4-verb-lex &
-  [ STEM < "kaita" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_nothing_v_rel" ].
-
-kapinteo := verb4-verb-lex &
-  [ STEM < "kapinteo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_carpenter_v_rel" ].
-
-kovanao_2 := verb4-verb-lex &
-  [ STEM < "kovanao" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_governer_v_rel" ].
-
-nawa := verb4-verb-lex &
-  [ STEM < "nawa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_together_v_rel" ].
-
-o_27ola := verb4-verb-lex &
-  [ STEM < "o'ola" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_old_v_rel" ].
-
-patti := verb4-verb-lex &
-  [ STEM < "patti" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_covered_v_rel" ].
-
-peeso := verb4-verb-lex &
-  [ STEM < "peeso" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_dollar_v_rel" ].
-
-secretario := verb4-verb-lex &
-  [ STEM < "secretario" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_secretary_v_rel" ].
-
-veinte := verb4-verb-lex &
-  [ STEM < "veinte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_twenty_v_rel" ].
-
-kuuta := verb4-verb-lex &
-  [ STEM < "kuuta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_stir_v_rel" ].
-
-aane_2 := verb6-verb-lex &
+aane_2 := transitive-verb-verb-lex &
   [ STEM < "aane" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be around-or-do_v_rel" ].
 
-aawe_1 := verb6-verb-lex &
+aawe_1 := transitive-verb-verb-lex &
   [ STEM < "aawe" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be.able_v_rel" ].
 
-aayu_1 := verb6-verb-lex &
+aayu_1 := transitive-verb-verb-lex &
   [ STEM < "aayu" >,
     SYNSEM.LKEYS.KEYREL.PRED "_available_v_rel" ].
 
-auka_1 := verb6-verb-lex &
+auka_1 := transitive-verb-verb-lex &
   [ STEM < "auka" >,
     SYNSEM.LKEYS.KEYREL.PRED "_did_v_rel" ].
 
-bwa_27e_1 := verb6-verb-lex &
+bwa_27e_1 := transitive-verb-verb-lex &
   [ STEM < "bwa'e" >,
     SYNSEM.LKEYS.KEYREL.PRED "_eat_v_rel" ].
 
-chepte_1 := verb6-verb-lex &
+chepte_1 := transitive-verb-verb-lex &
   [ STEM < "chepte" >,
     SYNSEM.LKEYS.KEYREL.PRED "_step_v_rel" ].
 
-e_27a_1 := verb6-verb-lex &
+e_27a_1 := transitive-verb-verb-lex &
   [ STEM < "e'a" >,
     SYNSEM.LKEYS.KEYREL.PRED "_feel_v_rel" ].
 
-eteho_1 := verb6-verb-lex &
+eteho_1 := transitive-verb-verb-lex &
   [ STEM < "eteho" >,
     SYNSEM.LKEYS.KEYREL.PRED "_speak-or-talk about_v_rel" ].
 
-faltaroa_1 := verb6-verb-lex &
+faltaroa_1 := transitive-verb-verb-lex &
   [ STEM < "faltaroa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_lacking_v_rel" ].
 
-gravaroa_1 := verb6-verb-lex &
+gravaroa_1 := transitive-verb-verb-lex &
   [ STEM < "gravaroa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_record_v_rel" ].
 
-hahase_1 := verb6-verb-lex &
+hahase_1 := transitive-verb-verb-lex &
   [ STEM < "hahase" >,
     SYNSEM.LKEYS.KEYREL.PRED "_follow_v_rel" ].
 
-hapte_1 := verb6-verb-lex &
-  [ STEM < "hapte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_stand up (pl)_v_rel" ].
-
-hi_27ivoa_1 := verb6-verb-lex &
+hi_27ivoa_1 := transitive-verb-verb-lex &
   [ STEM < "hi'ivoa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be cooking_v_rel" ].
 
-hi_27iwe_1 := verb6-verb-lex &
+hi_27iwe_1 := transitive-verb-verb-lex &
   [ STEM < "hi'iwe" >,
     SYNSEM.LKEYS.KEYREL.PRED "_taste_v_rel" ].
 
-hia_1 := verb6-verb-lex &
+hia_1 := transitive-verb-verb-lex &
   [ STEM < "hia" >,
     SYNSEM.LKEYS.KEYREL.PRED "_quot-or-sound_v_rel" ].
 
-hiapsa_1 := verb6-verb-lex &
+hiapsa_1 := transitive-verb-verb-lex &
   [ STEM < "hiapsa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_ be alive_v_rel" ].
 
-hikka_1 := verb6-verb-lex &
+hikka_1 := transitive-verb-verb-lex &
   [ STEM < "hikka" >,
     SYNSEM.LKEYS.KEYREL.PRED "_hear_v_rel" ].
 
-himma_1 := verb6-verb-lex &
+himma_1 := transitive-verb-verb-lex &
   [ STEM < "himma" >,
     SYNSEM.LKEYS.KEYREL.PRED "_throw_v_rel" ].
 
-hinu_2 := verb6-verb-lex &
+hinu_1 := transitive-verb-verb-lex &
   [ STEM < "hinu" >,
     SYNSEM.LKEYS.KEYREL.PRED "_buy_v_rel" ].
 
-hippue_1 := verb6-verb-lex &
+hippue_1 := transitive-verb-verb-lex &
   [ STEM < "hippue" >,
     SYNSEM.LKEYS.KEYREL.PRED "_own, possess_v_rel" ].
 
-hivveva_1 := verb6-verb-lex &
+hivveva_1 := transitive-verb-verb-lex &
   [ STEM < "hivveva" >,
     SYNSEM.LKEYS.KEYREL.PRED "_whip_v_rel" ].
 
-hooa_1 := verb6-verb-lex &
+hooa_1 := transitive-verb-verb-lex &
   [ STEM < "hooa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_do-or-make_v_rel" ].
 
-hooka_1 := verb6-verb-lex &
+hooka_1 := transitive-verb-verb-lex &
   [ STEM < "hooka" >,
     SYNSEM.LKEYS.KEYREL.PRED "_sit.down_v_rel" ].
 
-hoowa_1 := verb6-verb-lex &
+hoowa_1 := transitive-verb-verb-lex &
   [ STEM < "hoowa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_do to_v_rel" ].
 
-hu_27unea_1 := verb6-verb-lex &
+hu_27unea_1 := transitive-verb-verb-lex &
   [ STEM < "hu'unea" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be knowledgeable_v_rel" ].
 
-hu_27uneiya_1 := verb6-verb-lex &
+hu_27uneiya_1 := transitive-verb-verb-lex &
   [ STEM < "hu'uneiya" >,
     SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
 
-kaate_1 := verb6-verb-lex &
-  [ STEM < "kaate" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_go-pl_v_rel" ].
-
-katte_1 := verb6-verb-lex &
+katte_1 := transitive-verb-verb-lex &
   [ STEM < "katte" >,
     SYNSEM.LKEYS.KEYREL.PRED "_we.dont_v_rel" ].
 
-koko_2 := verb6-verb-lex &
-  [ STEM < "koko" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_die(pl.)_v_rel" ].
-
-kompararoa_1 := verb6-verb-lex &
+kompararoa_1 := transitive-verb-verb-lex &
   [ STEM < "kompararoa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_compare_v_rel" ].
 
-konta_1 := verb6-verb-lex &
-  [ STEM < "konta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_surround_v_rel" ].
-
-maachi_1 := verb6-verb-lex &
-  [ STEM < "maachi" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_seems.like_v_rel" ].
-
-mahta_1 := verb6-verb-lex &
-  [ STEM < "mahta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_teach_v_rel" ].
-
-maka_1 := verb6-verb-lex &
-  [ STEM < "maka" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_give_v_rel" ].
-
-mammatte_1 := verb6-verb-lex &
-  [ STEM < "mammatte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
-
-naake_2 := verb6-verb-lex &
-  [ STEM < "naake" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_care.for_v_rel" ].
-
-nassua_1 := verb6-verb-lex &
-  [ STEM < "nassua" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_fight_v_rel" ].
-
-nenka_1 := verb6-verb-lex &
-  [ STEM < "nenka" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_to.sell_v_rel" ].
-
-nooka_1 := verb6-verb-lex &
-  [ STEM < "nooka" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_speak_v_rel" ].
-
-nu_27e_1 := verb6-verb-lex &
-  [ STEM < "nu'e" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_acquire_v_rel" ].
-
-pona_1 := verb6-verb-lex &
-  [ STEM < "pona" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pull.up_v_rel" ].
-
-puanama_1 := verb6-verb-lex &
-  [ STEM < "puanama" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_carry (person)_v_rel" ].
-
-rukta_1 := verb6-verb-lex &
-  [ STEM < "rukta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_move_v_rel" ].
-
-saha_1 := verb6-verb-lex &
-  [ STEM < "saha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
-
-savaana_1 := verb6-verb-lex &
-  [ STEM < "savaana" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_put.out.to.pasture_v_rel" ].
-
-siika_1 := verb6-verb-lex &
-  [ STEM < "siika" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_left-or-went_v_rel" ].
-
-siime_1 := verb6-verb-lex &
-  [ STEM < "siime" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
-
-sua_1 := verb6-verb-lex &
-  [ STEM < "sua" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_take.care_v_rel" ].
-
-ta_27a_2 := verb6-verb-lex &
-  [ STEM < "ta'a" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_know-or-know.how_v_rel" ].
-
-ta_27aru_1 := verb6-verb-lex &
-  [ STEM < "ta'aru" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_lose_v_rel" ].
-
-tami_2 := verb6-verb-lex &
-  [ STEM < "tami" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_tooth_v_rel" ].
-
-tatta_27a_1 := verb6-verb-lex &
-  [ STEM < "tatta'a" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_learn_v_rel" ].
-
-tekipanoa_1 := verb6-verb-lex &
-  [ STEM < "tekipanoa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_work_v_rel" ].
-
-temai_1 := verb6-verb-lex &
-  [ STEM < "temai" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ask_v_rel" ].
-
-tenne_1 := verb6-verb-lex &
-  [ STEM < "tenne" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_run (pl. subj.)_v_rel" ].
-
-teuwa_1 := verb6-verb-lex &
-  [ STEM < "teuwa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_affirm_v_rel" ].
-
-to_27o_1 := verb6-verb-lex &
-  [ STEM < "to'o" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_behind_v_rel" ].
-
-toha_1 := verb6-verb-lex &
-  [ STEM < "toha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_bring_v_rel" ].
-
-tu_27ure_1 := verb6-verb-lex &
-  [ STEM < "tu'ure" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_like_v_rel" ].
-
-u_27ura_1 := verb6-verb-lex &
-  [ STEM < "u'ura" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_take away_v_rel" ].
-
-uvva_1 := verb6-verb-lex &
-  [ STEM < "uvva" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_bathe (sthg else)_v_rel" ].
-
-vaane_1 := verb6-verb-lex &
-  [ STEM < "vaane" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_irrigate_v_rel" ].
-
-vea_2 := verb6-verb-lex &
-  [ STEM < "vea" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_skin_v_rel" ].
-
-veeva_1 := verb6-verb-lex &
-  [ STEM < "veeva" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_hit_v_rel" ].
-
-vehe_27e_1 := verb6-verb-lex &
-  [ STEM < "vehe'e" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_betray_v_rel" ].
-
-viihta_1 := verb6-verb-lex &
-  [ STEM < "viihta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_wrap_v_rel" ].
-
-vo_27e_1 := verb6-verb-lex &
-  [ STEM < "vo'e" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_lay_v_rel" ].
-
-waata_1 := verb6-verb-lex &
-  [ STEM < "waata" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_want_v_rel" ].
-
-waate_3 := verb6-verb-lex &
-  [ STEM < "waate" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_remember_v_rel" ].
-
-wante_2 := verb6-verb-lex &
-  [ STEM < "wante" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ache_v_rel" ].
-
-weche_1 := verb6-verb-lex &
-  [ STEM < "weche" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_fall_v_rel" ].
-
-weiya_1 := verb6-verb-lex &
-  [ STEM < "weiya" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_take_v_rel" ].
-
-weye_1 := verb6-verb-lex &
-  [ STEM < "weye" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_go (sg. subj.)-or-walk_v_rel" ].
-
-wiksime_1 := verb6-verb-lex &
-  [ STEM < "wiksime" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_drag_v_rel" ].
-
-wo_27oke_1 := verb6-verb-lex &
-  [ STEM < "wo'oke" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_scratch_v_rel" ].
-
-woita_1 := verb6-verb-lex &
-  [ STEM < "woita" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_untie_v_rel" ].
-
-ya_27awak_1 := verb6-verb-lex &
-  [ STEM < "ya'awak" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_made_v_rel" ].
-
-yaaha_1 := verb6-verb-lex &
-  [ STEM < "yaaha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_arrive_v_rel" ].
-
-ye_27e_1 := verb6-verb-lex &
-  [ STEM < "ye'e" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_dance_v_rel" ].
-
-yeuwa_1 := verb6-verb-lex &
-  [ STEM < "yeuwa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_play with_v_rel" ].
-
-yo_27ore_1 := verb6-verb-lex &
-  [ STEM < "yo'ore" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_respect_v_rel" ].
-
-yo_27oturia_1 := verb6-verb-lex &
-  [ STEM < "yo'oturia" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_raise_v_rel" ].
-
-yoo_1 := verb6-verb-lex &
-  [ STEM < "yoo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_old (animate)_v_rel" ].
-
-yo_27o_2 := verb6-verb-lex &
-  [ STEM < "yo'o" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_win_v_rel" ].
-
-miika_1 := verb6-verb-lex &
-  [ STEM < "miika" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_give_n_rel" ].
-
-ke_27e_1 := verb6-verb-lex &
-  [ STEM < "ke'e" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_bite_n_rel" ].
-
-etbwa_1 := verb6-verb-lex &
-  [ STEM < "etbwa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_steal_n_rel" ].
-
-bwise := verb20-verb-lex &
+bwise := transitive-verb-verb-lex &
   [ STEM < "bwise" >,
     SYNSEM.LKEYS.KEYREL.PRED "_catch_v_rel" ].
 
-hi_27ivo_27o := verb20-verb-lex &
+hi_27ivo_27o := transitive-verb-verb-lex &
   [ STEM < "hi'ivo'o" >,
     SYNSEM.LKEYS.KEYREL.PRED "_cook_v_rel" ].
 
-hoa_2 := verb20-verb-lex &
-  [ STEM < "hoa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_live-or-put(pl.)_v_rel" ].
-
-hutta := verb20-verb-lex &
-  [ STEM < "hutta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_remove_v_rel" ].
-
-watta := verb20-verb-lex &
-  [ STEM < "watta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_take.off_v_rel" ].
-
-vanna := verb20-verb-lex &
-  [ STEM < "vanna" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_make.vanaim_v_rel" ].
-
-miika_2 := verb20-verb-lex &
-  [ STEM < "miika" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_feed-or-give_v_rel" ].
-
-kiimu := verb20-verb-lex &
-  [ STEM < "kiimu" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_attack-or-enter(pl.)_v_rel" ].
-
-pasaaroa_1 := verb20-verb-lex &
-  [ STEM < "pasaaroa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_happen-or-pass_v_rel" ].
-
-tehwa := verb20-verb-lex &
-  [ STEM < "tehwa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_tell_v_rel" ].
-
-wike := verb20-verb-lex &
-  [ STEM < "wike" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pull_v_rel" ].
-
-yecha := verb20-verb-lex &
-  [ STEM < "yecha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_put(sg.obj)_v_rel" ].
-
-omte := verb20-verb-lex &
-  [ STEM < "omte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_be angry_v_rel" ].
-
-ro_27akta := verb20-verb-lex &
-  [ STEM < "ro'akta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_roll_v_rel" ].
-
-rukta_2 := verb20-verb-lex &
-  [ STEM < "rukta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_move_v_rel" ].
-
-saha_2 := verb20-verb-lex &
-  [ STEM < "saha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
-
-savaana_2 := verb20-verb-lex &
-  [ STEM < "savaana" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_put.out.to.pasture_v_rel" ].
-
-siika_2 := verb20-verb-lex &
-  [ STEM < "siika" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_left-or-went_v_rel" ].
-
-siime_2 := verb20-verb-lex &
-  [ STEM < "siime" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
-
-sua_2 := verb20-verb-lex &
-  [ STEM < "sua" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_kill (pl. obj.)-or-take.care_v_rel" ].
-
-ta_27a_3 := verb20-verb-lex &
-  [ STEM < "ta'a" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_know-or-know.how_v_rel" ].
-
-ta_27aru_2 := verb20-verb-lex &
-  [ STEM < "ta'aru" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_lose_v_rel" ].
-
-tami_3 := verb20-verb-lex &
-  [ STEM < "tami" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_tooth_v_rel" ].
-
-tatta_27a_2 := verb20-verb-lex &
-  [ STEM < "tatta'a" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_learn_v_rel" ].
-
-tekipanoa_2 := verb20-verb-lex &
-  [ STEM < "tekipanoa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_work_v_rel" ].
-
-temai_2 := verb20-verb-lex &
-  [ STEM < "temai" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ask_v_rel" ].
-
-tenne_2 := verb20-verb-lex &
-  [ STEM < "tenne" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_run (pl. subj.)_v_rel" ].
-
-teuwa_2 := verb20-verb-lex &
-  [ STEM < "teuwa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_affirm-or-say_v_rel" ].
-
-to_27o_2 := verb20-verb-lex &
-  [ STEM < "to'o" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_behind_v_rel" ].
-
-toha_2 := verb20-verb-lex &
-  [ STEM < "toha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_bring_v_rel" ].
-
-tu_27ure_2 := verb20-verb-lex &
-  [ STEM < "tu'ure" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_like_v_rel" ].
-
-u_27ura_2 := verb20-verb-lex &
-  [ STEM < "u'ura" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_take away_v_rel" ].
-
-uvva_2 := verb20-verb-lex &
-  [ STEM < "uvva" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_bathe (sthg else)_v_rel" ].
-
-vaane_2 := verb20-verb-lex &
-  [ STEM < "vaane" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_irrigate_v_rel" ].
-
-vea_3 := verb20-verb-lex &
-  [ STEM < "vea" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_skin_v_rel" ].
-
-veeva_2 := verb20-verb-lex &
-  [ STEM < "veeva" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_hit_v_rel" ].
-
-vehe_27e_2 := verb20-verb-lex &
-  [ STEM < "vehe'e" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_betray_v_rel" ].
-
-viihta_2 := verb20-verb-lex &
-  [ STEM < "viihta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_wrap_v_rel" ].
-
-vo_27e_2 := verb20-verb-lex &
-  [ STEM < "vo'e" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_lay_v_rel" ].
-
-waata_2 := verb20-verb-lex &
-  [ STEM < "waata" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_want_v_rel" ].
-
-waate_4 := verb20-verb-lex &
-  [ STEM < "waate" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_remember_v_rel" ].
-
-wante_3 := verb20-verb-lex &
-  [ STEM < "wante" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ache_v_rel" ].
-
-weche_2 := verb20-verb-lex &
-  [ STEM < "weche" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_fall_v_rel" ].
-
-weiya_2 := verb20-verb-lex &
-  [ STEM < "weiya" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_take_v_rel" ].
-
-weye_2 := verb20-verb-lex &
-  [ STEM < "weye" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_go (sg. subj.)-or-walk_v_rel" ].
-
-wiksime_2 := verb20-verb-lex &
-  [ STEM < "wiksime" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_drag_v_rel" ].
-
-wo_27oke_2 := verb20-verb-lex &
-  [ STEM < "wo'oke" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_scratch_v_rel" ].
-
-woita_2 := verb20-verb-lex &
-  [ STEM < "woita" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_untie_v_rel" ].
-
-ya_27awak_2 := verb20-verb-lex &
-  [ STEM < "ya'awak" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_made_v_rel" ].
-
-yaaha_2 := verb20-verb-lex &
-  [ STEM < "yaaha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_arrive_v_rel" ].
-
-ye_27e_2 := verb20-verb-lex &
-  [ STEM < "ye'e" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_dance_v_rel" ].
-
-yeuwa_2 := verb20-verb-lex &
-  [ STEM < "yeuwa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_play with_v_rel" ].
-
-yo_27ore_2 := verb20-verb-lex &
-  [ STEM < "yo'ore" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_respect_v_rel" ].
-
-yo_27oturia_2 := verb20-verb-lex &
-  [ STEM < "yo'oturia" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_raise_v_rel" ].
-
-yoo_2 := verb20-verb-lex &
-  [ STEM < "yoo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_old (animate)_v_rel" ].
-
-ro_27akti := verb20-verb-lex &
-  [ STEM < "ro'akti" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_roll_v_rel" ].
-
-eiya := verb20-verb-lex &
-  [ STEM < "eiya" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_care for_v_rel" ].
-
-hariu := verb20-verb-lex &
-  [ STEM < "hariu" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_search_v_rel" ].
-
-kampiaroa := verb20-verb-lex &
-  [ STEM < "kampiaroa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_go camping_v_rel" ].
-
-lotte := verb20-verb-lex &
-  [ STEM < "lotte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_get.tired_v_rel" ].
-
-lu_27ute := verb20-verb-lex &
-  [ STEM < "lu'ute" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_away-or-disappear_v_rel" ].
-
-machi_2 := verb20-verb-lex &
-  [ STEM < "machi" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_should_v_rel" ].
-
-matchu := verb20-verb-lex &
-  [ STEM < "matchu" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_become morning_v_rel" ].
-
-naaya := verb20-verb-lex &
-  [ STEM < "naaya" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_light.fire_v_rel" ].
-
-naya_27i := verb20-verb-lex &
-  [ STEM < "naya'i" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_fire_v_rel" ].
-
-nuksiime := verb20-verb-lex &
-  [ STEM < "nuksiime" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_take away_v_rel" ].
-
-nunu := verb20-verb-lex &
-  [ STEM < "nunu" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_invite_v_rel" ].
-
-saawa := verb20-verb-lex &
-  [ STEM < "saawa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_use_v_rel" ].
-
-suma := verb20-verb-lex &
-  [ STEM < "suma" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_tie_v_rel" ].
-
-triyaaroa := verb20-verb-lex &
-  [ STEM < "triyaaroa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_sort_v_rel" ].
-
-veete := verb20-verb-lex &
-  [ STEM < "veete" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_burn_v_rel" ].
-
-visitaroa := verb20-verb-lex &
-  [ STEM < "visitaroa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_visit_v_rel" ].
-
-waake := verb20-verb-lex &
-  [ STEM < "waake" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_dry.out_v_rel" ].
-
-wikiria := verb20-verb-lex &
-  [ STEM < "wikiria" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_owe_v_rel" ].
-
-yevih := verb20-verb-lex &
-  [ STEM < "yevih" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_arrive_v_rel" ].
-
-koova := verb20-verb-lex &
-  [ STEM < "koova" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_beat-or-earn_v_rel" ].
-
-chupa := verb20-verb-lex &
-  [ STEM < "chupa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_finish-or-get.married_v_rel" ].
-
-hiove := verb20-verb-lex &
-  [ STEM < "hiove" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_make a mistake_v_rel" ].
-
-kecha_1 := verb20-verb-lex &
-  [ STEM < "kecha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_stop_v_rel" ].
-
-ko_27akte := verb20-verb-lex &
-  [ STEM < "ko'akte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_down roll_v_rel" ].
-
-ku_27una := verb20-verb-lex &
-  [ STEM < "ku'una" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_husband_v_rel" ].
-
-mammate := verb20-verb-lex &
-  [ STEM < "mammate" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_notice_v_rel" ].
-
-me_27a := verb20-verb-lex &
-  [ STEM < "me'a" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_kill(sg.)_v_rel" ].
-
-muucha := verb20-verb-lex &
-  [ STEM < "muucha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_lose through death_v_rel" ].
-
-nanke := verb20-verb-lex &
-  [ STEM < "nanke" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_meet_v_rel" ].
-
-o_27omta := verb20-verb-lex &
-  [ STEM < "o'omta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_be.mad_v_rel" ].
-
-rettrataroa := verb20-verb-lex &
-  [ STEM < "rettrataroa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_took picture_v_rel" ].
-
-ropta := verb20-verb-lex &
-  [ STEM < "ropta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_sink_v_rel" ].
-
-taawa := verb20-verb-lex &
-  [ STEM < "taawa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_leave behind-or-stay_v_rel" ].
-
-tatave := verb20-verb-lex &
-  [ STEM < "tatave" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_drop_v_rel" ].
-
-taya := verb20-verb-lex &
-  [ STEM < "taya" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_burn_v_rel" ].
-
-ukulu := verb20-verb-lex &
-  [ STEM < "ukulu" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_have.desire_v_rel" ].
-
-vehe_27etua := verb20-verb-lex &
-  [ STEM < "vehe'etua" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pay_v_rel" ].
-
-wo_27ota := verb20-verb-lex &
-  [ STEM < "wo'ota" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_spill-or-throw_v_rel" ].
-
-ya_27aria := verb20-verb-lex &
-  [ STEM < "ya'aria" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_make_v_rel" ].
-
-ya_27ate := verb20-verb-lex &
-  [ STEM < "ya'ate" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_stop_v_rel" ].
-
-yoka := verb20-verb-lex &
-  [ STEM < "yoka" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_paint_v_rel" ].
-
-yoopna := verb20-verb-lex &
-  [ STEM < "yoopna" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_answer_v_rel" ].
-
-yuma := verb20-verb-lex &
-  [ STEM < "yuma" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_arrive (time)_v_rel" ].
-
-bwite := verb20-verb-lex &
-  [ STEM < "bwite" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_run.over_v_rel" ].
-
-chakukta := verb20-verb-lex &
-  [ STEM < "chakukta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_bend_v_rel" ].
-
-hamte := verb20-verb-lex &
-  [ STEM < "hamte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_break(intr.)_v_rel" ].
-
-hapte_2 := verb20-verb-lex &
-  [ STEM < "hapte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_stand up (pl)-or-start/stop (pl)_v_rel" ].
-
-hoote := verb20-verb-lex &
-  [ STEM < "hoote" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_sit_v_rel" ].
-
-ka_27ate := verb20-verb-lex &
-  [ STEM < "ka'ate" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_build.house_v_rel" ].
-
-kate := verb20-verb-lex &
-  [ STEM < "kate" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_sit_v_rel" ].
-
-luute := verb20-verb-lex &
-  [ STEM < "luute" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pass away (die)_v_rel" ].
-
-nasontu := verb20-verb-lex &
-  [ STEM < "nasontu" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_spoil_v_rel" ].
-
-ropte := verb20-verb-lex &
-  [ STEM < "ropte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_sink_v_rel" ].
-
-sevea := verb20-verb-lex &
-  [ STEM < "sevea" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_get cold_v_rel" ].
-
-suutoha := verb20-verb-lex &
-  [ STEM < "suutoha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_leave behind_v_rel" ].
-
-viakte := verb20-verb-lex &
-  [ STEM < "viakte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_roll_v_rel" ].
-
-wake := verb20-verb-lex &
-  [ STEM < "wake" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_dry.out_v_rel" ].
-
-yaate := verb20-verb-lex &
-  [ STEM < "yaate" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_stop_v_rel" ].
-
-koko_3 := verb20-verb-lex &
-  [ STEM < "koko" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_die(pl.)_v_rel" ].
-
-maachi_2 := verb20-verb-lex &
-  [ STEM < "maachi" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_appear-or-lighted-or-seems.like_v_rel" ].
-
-mahta_2 := verb20-verb-lex &
+mahta_1 := transitive-verb-verb-lex &
   [ STEM < "mahta" >,
     SYNSEM.LKEYS.KEYREL.PRED "_teach_v_rel" ].
 
-maka_2 := verb20-verb-lex &
-  [ STEM < "maka" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_give_v_rel" ].
+hutta := transitive-verb-verb-lex &
+  [ STEM < "hutta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_remove_v_rel" ].
 
-mammatte_2 := verb20-verb-lex &
-  [ STEM < "mammatte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
+watta := transitive-verb-verb-lex &
+  [ STEM < "watta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_take.off_v_rel" ].
 
-naake_3 := verb20-verb-lex &
-  [ STEM < "naake" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_care.for_v_rel" ].
+vanna := transitive-verb-verb-lex &
+  [ STEM < "vanna" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_make.vanaim_v_rel" ].
 
-nassua_2 := verb20-verb-lex &
-  [ STEM < "nassua" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_fight_v_rel" ].
+miika_1 := transitive-verb-verb-lex &
+  [ STEM < "miika" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_feed-or-give_v_rel" ].
 
-nenka_2 := verb20-verb-lex &
+nenka_1 := transitive-verb-verb-lex &
   [ STEM < "nenka" >,
     SYNSEM.LKEYS.KEYREL.PRED "_to.sell_v_rel" ].
 
-nooka_2 := verb20-verb-lex &
-  [ STEM < "nooka" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_speak_v_rel" ].
+pasaaroa_1 := transitive-verb-verb-lex &
+  [ STEM < "pasaaroa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_happen-or-pass_v_rel" ].
 
-nu_27e_2 := verb20-verb-lex &
+nu_27e_1 := transitive-verb-verb-lex &
   [ STEM < "nu'e" >,
     SYNSEM.LKEYS.KEYREL.PRED "_acquire_v_rel" ].
 
-pona_2 := verb20-verb-lex &
+pona_1 := transitive-verb-verb-lex &
   [ STEM < "pona" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pull.up_v_rel" ].
 
-puanama_2 := verb20-verb-lex &
+puanama_1 := transitive-verb-verb-lex &
   [ STEM < "puanama" >,
     SYNSEM.LKEYS.KEYREL.PRED "_carry (person)_v_rel" ].
 
-chive := verb20-verb-lex &
+rukta_1 := transitive-verb-verb-lex &
+  [ STEM < "rukta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_move_v_rel" ].
+
+savaana_1 := transitive-verb-verb-lex &
+  [ STEM < "savaana" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_put.out.to.pasture_v_rel" ].
+
+ta_27a_2 := transitive-verb-verb-lex &
+  [ STEM < "ta'a" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_know-or-know.how_v_rel" ].
+
+ta_27aru_1 := transitive-verb-verb-lex &
+  [ STEM < "ta'aru" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_lose_v_rel" ].
+
+tami_2 := transitive-verb-verb-lex &
+  [ STEM < "tami" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_tooth_v_rel" ].
+
+tatta_27a_1 := transitive-verb-verb-lex &
+  [ STEM < "tatta'a" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_learn_v_rel" ].
+
+tekipanoa_1 := transitive-verb-verb-lex &
+  [ STEM < "tekipanoa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_work_v_rel" ].
+
+temai_1 := transitive-verb-verb-lex &
+  [ STEM < "temai" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ask_v_rel" ].
+
+teuwa_1 := transitive-verb-verb-lex &
+  [ STEM < "teuwa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_affirm_v_rel" ].
+
+to_27o_1 := transitive-verb-verb-lex &
+  [ STEM < "to'o" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_behind_v_rel" ].
+
+toha := transitive-verb-verb-lex &
+  [ STEM < "toha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_bring_v_rel" ].
+
+tu_27ure_1 := transitive-verb-verb-lex &
+  [ STEM < "tu'ure" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_like_v_rel" ].
+
+u_27ura_1 := transitive-verb-verb-lex &
+  [ STEM < "u'ura" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_take away_v_rel" ].
+
+uvva_1 := transitive-verb-verb-lex &
+  [ STEM < "uvva" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_bathe (sthg else)_v_rel" ].
+
+vaane_1 := transitive-verb-verb-lex &
+  [ STEM < "vaane" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_irrigate_v_rel" ].
+
+vea_2 := transitive-verb-verb-lex &
+  [ STEM < "vea" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_skin_v_rel" ].
+
+veeva_1 := transitive-verb-verb-lex &
+  [ STEM < "veeva" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_hit_v_rel" ].
+
+vehe_27e_1 := transitive-verb-verb-lex &
+  [ STEM < "vehe'e" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_betray_v_rel" ].
+
+viihta_1 := transitive-verb-verb-lex &
+  [ STEM < "viihta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_wrap_v_rel" ].
+
+vo_27e_1 := transitive-verb-verb-lex &
+  [ STEM < "vo'e" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_lay_v_rel" ].
+
+waata_1 := transitive-verb-verb-lex &
+  [ STEM < "waata" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_want_v_rel" ].
+
+waate_3 := transitive-verb-verb-lex &
+  [ STEM < "waate" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_remember_v_rel" ].
+
+wante_2 := transitive-verb-verb-lex &
+  [ STEM < "wante" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ache_v_rel" ].
+
+weiya_1 := transitive-verb-verb-lex &
+  [ STEM < "weiya" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_take_v_rel" ].
+
+wiksime_1 := transitive-verb-verb-lex &
+  [ STEM < "wiksime" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_drag_v_rel" ].
+
+wo_27oke_1 := transitive-verb-verb-lex &
+  [ STEM < "wo'oke" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_scratch_v_rel" ].
+
+woita_1 := transitive-verb-verb-lex &
+  [ STEM < "woita" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_untie_v_rel" ].
+
+ya_27awak_1 := transitive-verb-verb-lex &
+  [ STEM < "ya'awak" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_made_v_rel" ].
+
+yaaha_1 := transitive-verb-verb-lex &
+  [ STEM < "yaaha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_arrive_v_rel" ].
+
+ye_27e_1 := transitive-verb-verb-lex &
+  [ STEM < "ye'e" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dance_v_rel" ].
+
+yeuwa_1 := transitive-verb-verb-lex &
+  [ STEM < "yeuwa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_play with_v_rel" ].
+
+yo_27ore_1 := transitive-verb-verb-lex &
+  [ STEM < "yo'ore" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_respect_v_rel" ].
+
+yo_27oturia_1 := transitive-verb-verb-lex &
+  [ STEM < "yo'oturia" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_raise_v_rel" ].
+
+yoo_1 := transitive-verb-verb-lex &
+  [ STEM < "yoo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_old (animate)_v_rel" ].
+
+yo_27o_2 := transitive-verb-verb-lex &
+  [ STEM < "yo'o" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_win_v_rel" ].
+
+miika_2 := transitive-verb-verb-lex &
+  [ STEM < "miika" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_give_n_rel" ].
+
+ke_27e_1 := transitive-verb-verb-lex &
+  [ STEM < "ke'e" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_bite_n_rel" ].
+
+etbwa_1 := transitive-verb-verb-lex &
+  [ STEM < "etbwa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_steal_n_rel" ].
+
+naake_1 := transitive-verb-verb-lex &
+  [ STEM < "naake" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_care.for_v_rel" ].
+
+hinu_2 := transitive-verb-verb-lex &
+  [ STEM < "hinu" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_buy_v_rel" ].
+
+teeka := transitive-verb-verb-lex &
+  [ STEM < "teeka" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_lay.it.across_v_rel" ].
+
+kuuta := transitive-verb-verb-lex &
+  [ STEM < "kuuta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_stir_v_rel" ].
+
+ehso := transitive-verb-verb-lex &
+  [ STEM < "ehso" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_hide_v_rel" ].
+
+hiokoe := transitive-verb-verb-lex &
+  [ STEM < "hiokoe" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_forgive_v_rel" ].
+
+poona := transitive-verb-verb-lex &
+  [ STEM < "poona" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pound-or-strike, play_v_rel" ].
+
+reuwa := transitive-verb-verb-lex &
+  [ STEM < "reuwa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_loan_v_rel" ].
+
+tehwa := transitive-verb-verb-lex &
+  [ STEM < "tehwa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_tell_v_rel" ].
+
+wike := transitive-verb-verb-lex &
+  [ STEM < "wike" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pull_v_rel" ].
+
+omte := transitive-verb-verb-lex &
+  [ STEM < "omte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be angry_v_rel" ].
+
+ro_27akta := transitive-verb-verb-lex &
+  [ STEM < "ro'akta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_roll_v_rel" ].
+
+rukta_2 := transitive-verb-verb-lex &
+  [ STEM < "rukta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_move_v_rel" ].
+
+savaana_2 := transitive-verb-verb-lex &
+  [ STEM < "savaana" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_put.out.to.pasture_v_rel" ].
+
+ta_27a_3 := transitive-verb-verb-lex &
+  [ STEM < "ta'a" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_know-or-know.how_v_rel" ].
+
+ta_27aru_2 := transitive-verb-verb-lex &
+  [ STEM < "ta'aru" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_lose_v_rel" ].
+
+tami_3 := transitive-verb-verb-lex &
+  [ STEM < "tami" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_tooth_v_rel" ].
+
+tatta_27a_2 := transitive-verb-verb-lex &
+  [ STEM < "tatta'a" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_learn_v_rel" ].
+
+tekipanoa_2 := transitive-verb-verb-lex &
+  [ STEM < "tekipanoa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_work_v_rel" ].
+
+temai_2 := transitive-verb-verb-lex &
+  [ STEM < "temai" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ask_v_rel" ].
+
+teuwa_2 := transitive-verb-verb-lex &
+  [ STEM < "teuwa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_affirm-or-say_v_rel" ].
+
+to_27o_2 := transitive-verb-verb-lex &
+  [ STEM < "to'o" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_behind_v_rel" ].
+
+tu_27ure_2 := transitive-verb-verb-lex &
+  [ STEM < "tu'ure" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_like_v_rel" ].
+
+u_27ura_2 := transitive-verb-verb-lex &
+  [ STEM < "u'ura" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_take away_v_rel" ].
+
+uvva_2 := transitive-verb-verb-lex &
+  [ STEM < "uvva" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_bathe (sthg else)_v_rel" ].
+
+vaane_2 := transitive-verb-verb-lex &
+  [ STEM < "vaane" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_irrigate_v_rel" ].
+
+vea_3 := transitive-verb-verb-lex &
+  [ STEM < "vea" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_skin_v_rel" ].
+
+veeva_2 := transitive-verb-verb-lex &
+  [ STEM < "veeva" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_hit_v_rel" ].
+
+vehe_27e_2 := transitive-verb-verb-lex &
+  [ STEM < "vehe'e" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_betray_v_rel" ].
+
+viihta_2 := transitive-verb-verb-lex &
+  [ STEM < "viihta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_wrap_v_rel" ].
+
+vo_27e_2 := transitive-verb-verb-lex &
+  [ STEM < "vo'e" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_lay_v_rel" ].
+
+waata_2 := transitive-verb-verb-lex &
+  [ STEM < "waata" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_want_v_rel" ].
+
+waate_4 := transitive-verb-verb-lex &
+  [ STEM < "waate" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_remember_v_rel" ].
+
+wante_3 := transitive-verb-verb-lex &
+  [ STEM < "wante" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ache_v_rel" ].
+
+weche_1 := transitive-verb-verb-lex &
+  [ STEM < "weche" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fall_v_rel" ].
+
+weiya_2 := transitive-verb-verb-lex &
+  [ STEM < "weiya" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_take_v_rel" ].
+
+weye_1 := transitive-verb-verb-lex &
+  [ STEM < "weye" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_go (sg. subj.)-or-walk_v_rel" ].
+
+wiksime_2 := transitive-verb-verb-lex &
+  [ STEM < "wiksime" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_drag_v_rel" ].
+
+wo_27oke_2 := transitive-verb-verb-lex &
+  [ STEM < "wo'oke" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_scratch_v_rel" ].
+
+woita_2 := transitive-verb-verb-lex &
+  [ STEM < "woita" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_untie_v_rel" ].
+
+ya_27awak_2 := transitive-verb-verb-lex &
+  [ STEM < "ya'awak" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_made_v_rel" ].
+
+yaaha_2 := transitive-verb-verb-lex &
+  [ STEM < "yaaha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_arrive_v_rel" ].
+
+ye_27e_2 := transitive-verb-verb-lex &
+  [ STEM < "ye'e" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dance_v_rel" ].
+
+yeuwa_2 := transitive-verb-verb-lex &
+  [ STEM < "yeuwa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_play with_v_rel" ].
+
+yo_27ore_2 := transitive-verb-verb-lex &
+  [ STEM < "yo'ore" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_respect_v_rel" ].
+
+yo_27oturia_2 := transitive-verb-verb-lex &
+  [ STEM < "yo'oturia" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_raise_v_rel" ].
+
+yoo_2 := transitive-verb-verb-lex &
+  [ STEM < "yoo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_old (animate)_v_rel" ].
+
+ro_27akti := transitive-verb-verb-lex &
+  [ STEM < "ro'akti" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_roll_v_rel" ].
+
+eiya := transitive-verb-verb-lex &
+  [ STEM < "eiya" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_care for_v_rel" ].
+
+hariu := transitive-verb-verb-lex &
+  [ STEM < "hariu" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_search_v_rel" ].
+
+kampiaroa := transitive-verb-verb-lex &
+  [ STEM < "kampiaroa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_go camping_v_rel" ].
+
+lotte := transitive-verb-verb-lex &
+  [ STEM < "lotte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_get.tired_v_rel" ].
+
+lu_27ute := transitive-verb-verb-lex &
+  [ STEM < "lu'ute" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_away-or-disappear_v_rel" ].
+
+machi_2 := transitive-verb-verb-lex &
+  [ STEM < "machi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_should_v_rel" ].
+
+matchu := transitive-verb-verb-lex &
+  [ STEM < "matchu" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_become morning_v_rel" ].
+
+naaya := transitive-verb-verb-lex &
+  [ STEM < "naaya" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_light.fire_v_rel" ].
+
+naya_27i := transitive-verb-verb-lex &
+  [ STEM < "naya'i" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fire_v_rel" ].
+
+nuksiime := transitive-verb-verb-lex &
+  [ STEM < "nuksiime" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_take away_v_rel" ].
+
+nunu := transitive-verb-verb-lex &
+  [ STEM < "nunu" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_invite_v_rel" ].
+
+saawa := transitive-verb-verb-lex &
+  [ STEM < "saawa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_use_v_rel" ].
+
+suma := transitive-verb-verb-lex &
+  [ STEM < "suma" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_tie_v_rel" ].
+
+triyaaroa := transitive-verb-verb-lex &
+  [ STEM < "triyaaroa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sort_v_rel" ].
+
+veete := transitive-verb-verb-lex &
+  [ STEM < "veete" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_burn_v_rel" ].
+
+visitaroa := transitive-verb-verb-lex &
+  [ STEM < "visitaroa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_visit_v_rel" ].
+
+waake := transitive-verb-verb-lex &
+  [ STEM < "waake" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dry.out_v_rel" ].
+
+wikiria := transitive-verb-verb-lex &
+  [ STEM < "wikiria" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_owe_v_rel" ].
+
+yevih := transitive-verb-verb-lex &
+  [ STEM < "yevih" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_arrive_v_rel" ].
+
+koova := transitive-verb-verb-lex &
+  [ STEM < "koova" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_beat-or-earn_v_rel" ].
+
+chupa := transitive-verb-verb-lex &
+  [ STEM < "chupa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_finish-or-get.married_v_rel" ].
+
+hiove := transitive-verb-verb-lex &
+  [ STEM < "hiove" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_make a mistake_v_rel" ].
+
+kecha_1 := transitive-verb-verb-lex &
+  [ STEM < "kecha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_stop_v_rel" ].
+
+ko_27akte := transitive-verb-verb-lex &
+  [ STEM < "ko'akte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_down roll_v_rel" ].
+
+ku_27una := transitive-verb-verb-lex &
+  [ STEM < "ku'una" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_husband_v_rel" ].
+
+mammate := transitive-verb-verb-lex &
+  [ STEM < "mammate" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_notice_v_rel" ].
+
+me_27a_1 := transitive-verb-verb-lex &
+  [ STEM < "me'a" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_kill(sg.)_v_rel" ].
+
+muucha := transitive-verb-verb-lex &
+  [ STEM < "muucha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_lose through death_v_rel" ].
+
+nanke := transitive-verb-verb-lex &
+  [ STEM < "nanke" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_meet_v_rel" ].
+
+o_27omta := transitive-verb-verb-lex &
+  [ STEM < "o'omta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be.mad_v_rel" ].
+
+rettrataroa := transitive-verb-verb-lex &
+  [ STEM < "rettrataroa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_took picture_v_rel" ].
+
+ropta := transitive-verb-verb-lex &
+  [ STEM < "ropta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sink_v_rel" ].
+
+taawa := transitive-verb-verb-lex &
+  [ STEM < "taawa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_leave behind-or-stay_v_rel" ].
+
+tatave := transitive-verb-verb-lex &
+  [ STEM < "tatave" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_drop_v_rel" ].
+
+taya := transitive-verb-verb-lex &
+  [ STEM < "taya" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_burn_v_rel" ].
+
+ukulu := transitive-verb-verb-lex &
+  [ STEM < "ukulu" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_have.desire_v_rel" ].
+
+vehe_27etua := transitive-verb-verb-lex &
+  [ STEM < "vehe'etua" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pay_v_rel" ].
+
+wo_27ota := transitive-verb-verb-lex &
+  [ STEM < "wo'ota" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_spill-or-throw_v_rel" ].
+
+ya_27aria := transitive-verb-verb-lex &
+  [ STEM < "ya'aria" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_make_v_rel" ].
+
+ya_27ate := transitive-verb-verb-lex &
+  [ STEM < "ya'ate" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_stop_v_rel" ].
+
+yoka := transitive-verb-verb-lex &
+  [ STEM < "yoka" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_paint_v_rel" ].
+
+yoopna := transitive-verb-verb-lex &
+  [ STEM < "yoopna" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_answer_v_rel" ].
+
+suke := transitive-verb-verb-lex &
+  [ STEM < "suke" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_scratch_v_rel" ].
+
+ta_27aru_3 := transitive-verb-verb-lex &
+  [ STEM < "ta'aru" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_lose_v_rel" ].
+
+vaake := transitive-verb-verb-lex &
+  [ STEM < "vaake" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_boil_v_rel" ].
+
+vaane_3 := transitive-verb-verb-lex &
+  [ STEM < "vaane" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_irrigate_v_rel" ].
+
+piokti := transitive-verb-verb-lex &
+  [ STEM < "piokti" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sound_v_rel" ].
+
+vaite := transitive-verb-verb-lex &
+  [ STEM < "vaite" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_flap_v_rel" ].
+
+etbwa_2 := transitive-verb-verb-lex &
+  [ STEM < "etbwa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_steal_v_rel" ].
+
+hipon := transitive-verb-verb-lex &
+  [ STEM < "hipon" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_play(instument)_v_rel" ].
+
+yuma := transitive-verb-verb-lex &
+  [ STEM < "yuma" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_arrive (time)_v_rel" ].
+
+bwite := transitive-verb-verb-lex &
+  [ STEM < "bwite" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_run.over_v_rel" ].
+
+chakukta := transitive-verb-verb-lex &
+  [ STEM < "chakukta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_bend_v_rel" ].
+
+hamte := transitive-verb-verb-lex &
+  [ STEM < "hamte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_break(intr.)_v_rel" ].
+
+ka_27ate := transitive-verb-verb-lex &
+  [ STEM < "ka'ate" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_build.house_v_rel" ].
+
+kate := transitive-verb-verb-lex &
+  [ STEM < "kate" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sit_v_rel" ].
+
+luute := transitive-verb-verb-lex &
+  [ STEM < "luute" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pass away (die)_v_rel" ].
+
+nasontu := transitive-verb-verb-lex &
+  [ STEM < "nasontu" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_spoil_v_rel" ].
+
+ropte := transitive-verb-verb-lex &
+  [ STEM < "ropte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sink_v_rel" ].
+
+sevea := transitive-verb-verb-lex &
+  [ STEM < "sevea" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_get cold_v_rel" ].
+
+suutoha := transitive-verb-verb-lex &
+  [ STEM < "suutoha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_leave behind_v_rel" ].
+
+viakte := transitive-verb-verb-lex &
+  [ STEM < "viakte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_roll_v_rel" ].
+
+wake := transitive-verb-verb-lex &
+  [ STEM < "wake" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dry.out_v_rel" ].
+
+yaate := transitive-verb-verb-lex &
+  [ STEM < "yaate" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_stop_v_rel" ].
+
+maachi := transitive-verb-verb-lex &
+  [ STEM < "maachi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_appear-or-lighted-or-seems.like_v_rel" ].
+
+mahta_2 := transitive-verb-verb-lex &
+  [ STEM < "mahta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_teach_v_rel" ].
+
+maka := transitive-verb-verb-lex &
+  [ STEM < "maka" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_give_v_rel" ].
+
+mammatte := transitive-verb-verb-lex &
+  [ STEM < "mammatte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
+
+naake_2 := transitive-verb-verb-lex &
+  [ STEM < "naake" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_care.for_v_rel" ].
+
+nassua := transitive-verb-verb-lex &
+  [ STEM < "nassua" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fight_v_rel" ].
+
+nenka_2 := transitive-verb-verb-lex &
+  [ STEM < "nenka" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_to.sell_v_rel" ].
+
+nooka := transitive-verb-verb-lex &
+  [ STEM < "nooka" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_speak_v_rel" ].
+
+nu_27e_2 := transitive-verb-verb-lex &
+  [ STEM < "nu'e" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_acquire_v_rel" ].
+
+pona_2 := transitive-verb-verb-lex &
+  [ STEM < "pona" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pull.up_v_rel" ].
+
+puanama_2 := transitive-verb-verb-lex &
+  [ STEM < "puanama" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_carry (person)_v_rel" ].
+
+chive := transitive-verb-verb-lex &
   [ STEM < "chive" >,
     SYNSEM.LKEYS.KEYREL.PRED "_shatter_v_rel" ].
 
-tea_1 := verb20-verb-lex &
+tea_1 := transitive-verb-verb-lex &
   [ STEM < "tea" >,
     SYNSEM.LKEYS.KEYREL.PRED "_find-or-name_v_rel" ].
 
-aapo := verb20-verb-lex &
+aapo := transitive-verb-verb-lex &
   [ STEM < "aapo" >,
     SYNSEM.LKEYS.KEYREL.PRED "_3.sg.nom_v_rel" ].
 
-kopan := verb20-verb-lex &
+kopan := transitive-verb-verb-lex &
   [ STEM < "kopan" >,
     SYNSEM.LKEYS.KEYREL.PRED "_resting_v_rel" ].
 
-wakti := verb20-verb-lex &
+wakti := transitive-verb-verb-lex &
   [ STEM < "wakti" >,
     SYNSEM.LKEYS.KEYREL.PRED "_skinny_v_rel" ].
 
-nah := verb20-verb-lex &
+nah := transitive-verb-verb-lex &
   [ STEM < "nah" >,
     SYNSEM.LKEYS.KEYREL.PRED "_around_v_rel" ].
 
-noite := verb20-verb-lex &
+noite := transitive-verb-verb-lex &
   [ STEM < "noite" >,
     SYNSEM.LKEYS.KEYREL.PRED "_visit_v_rel" ].
 
-vicha := verb20-verb-lex &
+vicha := transitive-verb-verb-lex &
   [ STEM < "vicha" >,
     SYNSEM.LKEYS.KEYREL.PRED "_see_v_rel" ].
 
-weama := verb20-verb-lex &
-  [ STEM < "weama" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_walk_v_rel" ].
-
-avoh := verb20-verb-lex &
+avoh := transitive-verb-verb-lex &
   [ STEM < "avoh" >,
     SYNSEM.LKEYS.KEYREL.PRED "_offer.food_v_rel" ].
 
-allea := verb20-verb-lex &
+allea := transitive-verb-verb-lex &
   [ STEM < "allea" >,
     SYNSEM.LKEYS.KEYREL.PRED "_happy_v_rel" ].
 
-chepte_2 := verb20-verb-lex &
+chepte_2 := transitive-verb-verb-lex &
   [ STEM < "chepte" >,
     SYNSEM.LKEYS.KEYREL.PRED "_jump_v_rel" ].
 
-hi_27ivoa_2 := verb20-verb-lex &
+hi_27ivoa_2 := transitive-verb-verb-lex &
   [ STEM < "hi'ivoa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be cooking_v_rel" ].
 
-hia_2 := verb20-verb-lex &
+hia_2 := transitive-verb-verb-lex &
   [ STEM < "hia" >,
     SYNSEM.LKEYS.KEYREL.PRED "_quot-or-sound_v_rel" ].
 
-hiapsa_2 := verb20-verb-lex &
+hiapsa_2 := transitive-verb-verb-lex &
   [ STEM < "hiapsa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_ be alive_v_rel" ].
 
-hikka_2 := verb20-verb-lex &
+hikka_2 := transitive-verb-verb-lex &
   [ STEM < "hikka" >,
     SYNSEM.LKEYS.KEYREL.PRED "_hear-or-listen_v_rel" ].
 
-hooa_2 := verb20-verb-lex &
+hooa_2 := transitive-verb-verb-lex &
   [ STEM < "hooa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_do-or-make_v_rel" ].
 
-hooka_2 := verb20-verb-lex &
+hooka_2 := transitive-verb-verb-lex &
   [ STEM < "hooka" >,
     SYNSEM.LKEYS.KEYREL.PRED "_sit.down_v_rel" ].
 
-hu_27uneiya_2 := verb20-verb-lex &
+hu_27uneiya_2 := transitive-verb-verb-lex &
   [ STEM < "hu'uneiya" >,
     SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
 
-kaate_2 := verb20-verb-lex &
-  [ STEM < "kaate" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_go-pl_v_rel" ].
-
-ke_27e_2 := verb20-verb-lex &
+ke_27e_2 := transitive-verb-verb-lex &
   [ STEM < "ke'e" >,
     SYNSEM.LKEYS.KEYREL.PRED "_bite_v_rel" ].
 
-kompararoa_2 := verb20-verb-lex &
+kompararoa_2 := transitive-verb-verb-lex &
   [ STEM < "kompararoa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_compare_v_rel" ].
 
-konta_2 := verb20-verb-lex &
+konta := transitive-verb-verb-lex &
   [ STEM < "konta" >,
     SYNSEM.LKEYS.KEYREL.PRED "_surround_v_rel" ].
 
-taka_2 := verb20-verb-lex &
+taka_2 := transitive-verb-verb-lex &
   [ STEM < "taka" >,
     SYNSEM.LKEYS.KEYREL.PRED "_body_v_rel" ].
 
-to_27 := verb20-verb-lex &
+to_27 := transitive-verb-verb-lex &
   [ STEM < "to'" >,
     SYNSEM.LKEYS.KEYREL.PRED "_leave_v_rel" ].
 
-uhu_27u := verb20-verb-lex &
+uhu_27u := transitive-verb-verb-lex &
   [ STEM < "uhu'u" >,
     SYNSEM.LKEYS.KEYREL.PRED "_take.care.of_v_rel" ].
 
-a_27ayu := verb20-verb-lex &
+a_27ayu := transitive-verb-verb-lex &
   [ STEM < "a'ayu" >,
     SYNSEM.LKEYS.KEYREL.PRED "_there.are_v_rel" ].
 
-kikkimu := verb20-verb-lex &
+kikkimu := transitive-verb-verb-lex &
   [ STEM < "kikkimu" >,
     SYNSEM.LKEYS.KEYREL.PRED "_enter_v_rel" ].
 
-rohikte := verb20-verb-lex &
+rohikte := transitive-verb-verb-lex &
   [ STEM < "rohikte" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be sad_v_rel" ].
 
-viakti := verb20-verb-lex &
+viakti := transitive-verb-verb-lex &
   [ STEM < "viakti" >,
     SYNSEM.LKEYS.KEYREL.PRED "_roll_v_rel" ].
 
-supe := verb20-verb-lex &
+supe := transitive-verb-verb-lex &
   [ STEM < "supe" >,
     SYNSEM.LKEYS.KEYREL.PRED "_dress_v_rel" ].
 
-aache := verb20-verb-lex &
+aache := transitive-verb-verb-lex &
   [ STEM < "aache" >,
     SYNSEM.LKEYS.KEYREL.PRED "_laugh_v_rel" ].
 
-aamu := verb20-verb-lex &
+aamu := transitive-verb-verb-lex &
   [ STEM < "aamu" >,
     SYNSEM.LKEYS.KEYREL.PRED "_hunt_v_rel" ].
 
-cha_27aka := verb20-verb-lex &
+cha_27aka := transitive-verb-verb-lex &
   [ STEM < "cha'aka" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be.suspended_v_rel" ].
 
-chaai := verb20-verb-lex &
+chaai := transitive-verb-verb-lex &
   [ STEM < "chaai" >,
     SYNSEM.LKEYS.KEYREL.PRED "_bark_v_rel" ].
 
-chukti := verb20-verb-lex &
+chukti := transitive-verb-verb-lex &
   [ STEM < "chukti" >,
     SYNSEM.LKEYS.KEYREL.PRED "_cut_v_rel" ].
 
-eechi := verb20-verb-lex &
+eechi := transitive-verb-verb-lex &
   [ STEM < "eechi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be planted_v_rel" ].
 
-haiwa := verb20-verb-lex &
+haiwa := transitive-verb-verb-lex &
   [ STEM < "haiwa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_look.for_v_rel" ].
 
-i_27a := verb20-verb-lex &
+i_27a := transitive-verb-verb-lex &
   [ STEM < "i'a" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be.cruel_v_rel" ].
 
-katek := verb20-verb-lex &
-  [ STEM < "katek" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_be sitting_v_rel" ].
-
-kuakte := verb20-verb-lex &
+kuakte := transitive-verb-verb-lex &
   [ STEM < "kuakte" >,
     SYNSEM.LKEYS.KEYREL.PRED "_move.about_v_rel" ].
 
-muuke := verb20-verb-lex &
-  [ STEM < "muuke" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_die (sg.)_v_rel" ].
-
-ne_27e := verb20-verb-lex &
+ne_27e := transitive-verb-verb-lex &
   [ STEM < "ne'e" >,
     SYNSEM.LKEYS.KEYREL.PRED "_fly_v_rel" ].
 
-oule := verb20-verb-lex &
+oule := transitive-verb-verb-lex &
   [ STEM < "oule" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be.brave_v_rel" ].
 
-pensaroa := verb20-verb-lex &
+pensaroa := transitive-verb-verb-lex &
   [ STEM < "pensaroa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_think_v_rel" ].
 
-ru_27utihia := verb20-verb-lex &
+ru_27utihia := transitive-verb-verb-lex &
   [ STEM < "ru'utihia" >,
     SYNSEM.LKEYS.KEYREL.PRED "_sound_v_rel" ].
 
-sisse := verb20-verb-lex &
+sisse := transitive-verb-verb-lex &
   [ STEM < "sisse" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pee_v_rel" ].
 
-teki := verb20-verb-lex &
+teki := transitive-verb-verb-lex &
   [ STEM < "teki" >,
     SYNSEM.LKEYS.KEYREL.PRED "_to.work.habitually_v_rel" ].
 
-to_27e := verb20-verb-lex &
+to_27e := transitive-verb-verb-lex &
   [ STEM < "to'e" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be.lying.down (pl. subj)_v_rel" ].
 
-va_27ane := verb20-verb-lex &
+va_27ane := transitive-verb-verb-lex &
   [ STEM < "va'ane" >,
     SYNSEM.LKEYS.KEYREL.PRED "_swim_v_rel" ].
 
-vaa := verb20-verb-lex &
+vaa := transitive-verb-verb-lex &
   [ STEM < "vaa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_cross_v_rel" ].
 
-vahum := verb20-verb-lex &
+vahum := transitive-verb-verb-lex &
   [ STEM < "vahum" >,
     SYNSEM.LKEYS.KEYREL.PRED "_swim_v_rel" ].
 
-vamsi := verb20-verb-lex &
+vamsi := transitive-verb-verb-lex &
   [ STEM < "vamsi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_hurry_v_rel" ].
 
-veetia := verb20-verb-lex &
+veetia := transitive-verb-verb-lex &
   [ STEM < "veetia" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be burned_v_rel" ].
 
-veras := verb20-verb-lex &
+veras := transitive-verb-verb-lex &
   [ STEM < "veras" >,
     SYNSEM.LKEYS.KEYREL.PRED "_you will see_v_rel" ].
 
-vitchu := verb20-verb-lex &
+vitchu := transitive-verb-verb-lex &
   [ STEM < "vitchu" >,
     SYNSEM.LKEYS.KEYREL.PRED "_look_v_rel" ].
 
-voe := verb20-verb-lex &
+voe := transitive-verb-verb-lex &
   [ STEM < "voe" >,
     SYNSEM.LKEYS.KEYREL.PRED "_bark at_v_rel" ].
 
-voo_27o := verb20-verb-lex &
+voo_27o := transitive-verb-verb-lex &
   [ STEM < "voo'o" >,
     SYNSEM.LKEYS.KEYREL.PRED "_road_v_rel" ].
 
-voovicha := verb20-verb-lex &
+voovicha := transitive-verb-verb-lex &
   [ STEM < "voovicha" >,
     SYNSEM.LKEYS.KEYREL.PRED "_wait.for_v_rel" ].
 
-woi_2 := verb20-verb-lex &
+woi_2 := transitive-verb-verb-lex &
   [ STEM < "woi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_two_v_rel" ].
 
-yeewe_1 := verb20-verb-lex &
+yeewe_1 := transitive-verb-verb-lex &
   [ STEM < "yeewe" >,
     SYNSEM.LKEYS.KEYREL.PRED "_play_v_rel" ].
 
-yehte := verb20-verb-lex &
-  [ STEM < "yehte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_sit.down_v_rel" ].
-
-yena := verb20-verb-lex &
+yena := transitive-verb-verb-lex &
   [ STEM < "yena" >,
     SYNSEM.LKEYS.KEYREL.PRED "_smoke_v_rel" ].
 
-yeohte := verb20-verb-lex &
+yeohte := transitive-verb-verb-lex &
   [ STEM < "yeohte" >,
     SYNSEM.LKEYS.KEYREL.PRED "_write_v_rel" ].
 
-hi_27ibwa := verb20-verb-lex &
+hi_27ibwa := transitive-verb-verb-lex &
   [ STEM < "hi'ibwa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_eat_v_rel" ].
 
-himuucha := verb20-verb-lex &
+himuucha := transitive-verb-verb-lex &
   [ STEM < "himuucha" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be bereaved_v_rel" ].
 
-watte_1 := verb20-verb-lex &
+watte_1 := transitive-verb-verb-lex &
   [ STEM < "watte" >,
     SYNSEM.LKEYS.KEYREL.PRED "_return_v_rel" ].
 
-nu_27upa := verb20-verb-lex &
+nu_27upa := transitive-verb-verb-lex &
   [ STEM < "nu'upa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_bring_v_rel" ].
 
-ansu := verb20-verb-lex &
+ansu := transitive-verb-verb-lex &
   [ STEM < "ansu" >,
     SYNSEM.LKEYS.KEYREL.PRED "_finish_v_rel" ].
 
-chukta := verb20-verb-lex &
+chukta := transitive-verb-verb-lex &
   [ STEM < "chukta" >,
     SYNSEM.LKEYS.KEYREL.PRED "_cut_v_rel" ].
 
-hamta := verb20-verb-lex &
+hamta := transitive-verb-verb-lex &
   [ STEM < "hamta" >,
     SYNSEM.LKEYS.KEYREL.PRED "_break(tr.)_v_rel" ].
 
-hinne_27u := verb20-verb-lex &
+hinne_27u := transitive-verb-verb-lex &
   [ STEM < "hinne'u" >,
     SYNSEM.LKEYS.KEYREL.PRED "_save_v_rel" ].
 
-nattemai := verb20-verb-lex &
+nattemai := transitive-verb-verb-lex &
   [ STEM < "nattemai" >,
     SYNSEM.LKEYS.KEYREL.PRED "_ask.about_v_rel" ].
 
-notte := verb20-verb-lex &
+notte := transitive-verb-verb-lex &
   [ STEM < "notte" >,
     SYNSEM.LKEYS.KEYREL.PRED "_return_v_rel" ].
 
-vuite := verb20-verb-lex &
-  [ STEM < "vuite" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_run (sg.subj)_v_rel" ].
-
-ya_27a_1 := verb20-verb-lex &
+ya_27a_1 := transitive-verb-verb-lex &
   [ STEM < "ya'a" >,
     SYNSEM.LKEYS.KEYREL.PRED "_do-or-make_v_rel" ].
 
-yuuma := verb20-verb-lex &
+yuuma := transitive-verb-verb-lex &
   [ STEM < "yuuma" >,
     SYNSEM.LKEYS.KEYREL.PRED "_attain.goal_v_rel" ].
 
-va_27ata := verb20-verb-lex &
+va_27ata := transitive-verb-verb-lex &
   [ STEM < "va'ata" >,
     SYNSEM.LKEYS.KEYREL.PRED "_get.water_v_rel" ].
 
-kopta := verb20-verb-lex &
+kopta := transitive-verb-verb-lex &
   [ STEM < "kopta" >,
     SYNSEM.LKEYS.KEYREL.PRED "_forget_v_rel" ].
 
-kupe := verb20-verb-lex &
+kupe := transitive-verb-verb-lex &
   [ STEM < "kupe" >,
     SYNSEM.LKEYS.KEYREL.PRED "_blink_v_rel" ].
 
-to_27a := verb20-verb-lex &
+to_27a := transitive-verb-verb-lex &
   [ STEM < "to'a" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pour_v_rel" ].
 
-atte_27ak_2 := verb20-verb-lex &
+atte_27ak_2 := transitive-verb-verb-lex &
   [ STEM < "atte'ak" >,
     SYNSEM.LKEYS.KEYREL.PRED "_own_v_rel" ].
 
-ukuli := verb20-verb-lex &
+ukuli := transitive-verb-verb-lex &
   [ STEM < "ukuli" >,
     SYNSEM.LKEYS.KEYREL.PRED "_desire_v_rel" ].
 
-hahase_2 := verb20-verb-lex &
+hahase_2 := transitive-verb-verb-lex &
   [ STEM < "hahase" >,
     SYNSEM.LKEYS.KEYREL.PRED "_chase-or-follow_v_rel" ].
 
-hippue_2 := verb20-verb-lex &
+hippue_2 := transitive-verb-verb-lex &
   [ STEM < "hippue" >,
     SYNSEM.LKEYS.KEYREL.PRED "_keep-or-own, possess_v_rel" ].
 
-kiima := verb20-verb-lex &
-  [ STEM < "kiima" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_insert (pl.obj)_v_rel" ].
-
-maveta_1 := verb20-verb-lex &
+maveta_1 := transitive-verb-verb-lex &
   [ STEM < "maveta" >,
     SYNSEM.LKEYS.KEYREL.PRED "_receive_v_rel" ].
 
-me_27e := verb20-verb-lex &
-  [ STEM < "me'e" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_kill.(sg.)_v_rel" ].
-
-muhe := verb20-verb-lex &
+muhe := transitive-verb-verb-lex &
   [ STEM < "muhe" >,
     SYNSEM.LKEYS.KEYREL.PRED "_shoot_v_rel" ].
 
-nuksaka := verb20-verb-lex &
+nuksaka := transitive-verb-verb-lex &
   [ STEM < "nuksaka" >,
     SYNSEM.LKEYS.KEYREL.PRED "_take away_v_rel" ].
 
-su_27utotoi := verb20-verb-lex &
+su_27utotoi := transitive-verb-verb-lex &
   [ STEM < "su'utotoi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_release_v_rel" ].
 
-tehal := verb20-verb-lex &
+tehal := transitive-verb-verb-lex &
   [ STEM < "tehal" >,
     SYNSEM.LKEYS.KEYREL.PRED "_use up_v_rel" ].
 
-vittua := verb20-verb-lex &
+vittua := transitive-verb-verb-lex &
   [ STEM < "vittua" >,
     SYNSEM.LKEYS.KEYREL.PRED "_send_v_rel" ].
 
-hitto := verb20-verb-lex &
+hitto := transitive-verb-verb-lex &
   [ STEM < "hitto" >,
     SYNSEM.LKEYS.KEYREL.PRED "_heal_v_rel" ].
 
-bwiika_2 := verb20-verb-lex &
+bwiika_2 := transitive-verb-verb-lex &
   [ STEM < "bwiika" >,
     SYNSEM.LKEYS.KEYREL.PRED "_sing_v_rel" ].
 
-toiwa := verb20-verb-lex &
+toiwa := transitive-verb-verb-lex &
   [ STEM < "toiwa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be.taken_v_rel" ].
 
-konte := verb20-verb-lex &
+konte := transitive-verb-verb-lex &
   [ STEM < "konte" >,
     SYNSEM.LKEYS.KEYREL.PRED "_go around_v_rel" ].
 
-yuke := verb20-verb-lex &
+yuke := transitive-verb-verb-lex &
   [ STEM < "yuke" >,
     SYNSEM.LKEYS.KEYREL.PRED "_rain_v_rel" ].
 
-mana := verb20-verb-lex &
+mana := transitive-verb-verb-lex &
   [ STEM < "mana" >,
     SYNSEM.LKEYS.KEYREL.PRED "_set_v_rel" ].
 
-hu_27unakte := verb20-verb-lex &
+hu_27unakte := transitive-verb-verb-lex &
   [ STEM < "hu'unakte" >,
     SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
 
-ve_27e := verb20-verb-lex &
+ve_27e := transitive-verb-verb-lex &
   [ STEM < "ve'e" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be.lacking_v_rel" ].
 
-naate := verb20-verb-lex &
+naate := transitive-verb-verb-lex &
   [ STEM < "naate" >,
     SYNSEM.LKEYS.KEYREL.PRED "_begin_v_rel" ].
 
-pua := verb20-verb-lex &
+pua := transitive-verb-verb-lex &
   [ STEM < "pua" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pick.crops_v_rel" ].
 
-a_27asoa := verb20-verb-lex &
+a_27asoa := transitive-verb-verb-lex &
   [ STEM < "a'asoa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be.fertile_v_rel" ].
 
-aane_3 := verb20-verb-lex &
+aane_3 := transitive-verb-verb-lex &
   [ STEM < "aane" >,
     SYNSEM.LKEYS.KEYREL.PRED "_do_v_rel" ].
 
-aawe_2 := verb20-verb-lex &
+aawe_2 := transitive-verb-verb-lex &
   [ STEM < "aawe" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be.able_v_rel" ].
 
-aayu_2 := verb20-verb-lex &
+aayu_2 := transitive-verb-verb-lex &
   [ STEM < "aayu" >,
     SYNSEM.LKEYS.KEYREL.PRED "_available_v_rel" ].
 
-amma_27ali_20hiia := verb20-verb-lex &
+amma_27ali_20hiia := transitive-verb-verb-lex &
   [ STEM < "amma'ali",
            "hiia" >,
     SYNSEM.LKEYS.KEYREL.PRED "_say the right thing_v_rel" ].
 
-auka_2 := verb20-verb-lex &
+auka_2 := transitive-verb-verb-lex &
   [ STEM < "auka" >,
     SYNSEM.LKEYS.KEYREL.PRED "_did_v_rel" ].
 
-bwa_27e_2 := verb20-verb-lex &
+bwa_27e_2 := transitive-verb-verb-lex &
   [ STEM < "bwa'e" >,
     SYNSEM.LKEYS.KEYREL.PRED "_eat_v_rel" ].
 
-bwan := verb20-verb-lex &
+bwan := transitive-verb-verb-lex &
   [ STEM < "bwan" >,
     SYNSEM.LKEYS.KEYREL.PRED "_crying_v_rel" ].
 
-bwasa := verb20-verb-lex &
+bwasa := transitive-verb-verb-lex &
   [ STEM < "bwasa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_cook_v_rel" ].
 
-chiwe := verb20-verb-lex &
+chiwe := transitive-verb-verb-lex &
   [ STEM < "chiwe" >,
     SYNSEM.LKEYS.KEYREL.PRED "_shell_v_rel" ].
 
-e_27a_2 := verb20-verb-lex &
+e_27a_2 := transitive-verb-verb-lex &
   [ STEM < "e'a" >,
     SYNSEM.LKEYS.KEYREL.PRED "_feel_v_rel" ].
 
-enchi_2 := verb20-verb-lex &
-  [ STEM < "enchi" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_2.sg.acc_v_rel" ].
-
-eta_1 := verb20-verb-lex &
+eta_1 := transitive-verb-verb-lex &
   [ STEM < "eta" >,
     SYNSEM.LKEYS.KEYREL.PRED "_close_v_rel" ].
 
-eteho_2 := verb20-verb-lex &
+eteho_2 := transitive-verb-verb-lex &
   [ STEM < "eteho" >,
     SYNSEM.LKEYS.KEYREL.PRED "_talk about_v_rel" ].
 
-faltaroa_2 := verb20-verb-lex &
+faltaroa_2 := transitive-verb-verb-lex &
   [ STEM < "faltaroa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_lacking_v_rel" ].
 
-gravaroa_2 := verb20-verb-lex &
+gravaroa_2 := transitive-verb-verb-lex &
   [ STEM < "gravaroa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_record_v_rel" ].
 
-hi_27iwe_2 := verb20-verb-lex &
+hi_27iwe_2 := transitive-verb-verb-lex &
   [ STEM < "hi'iwe" >,
     SYNSEM.LKEYS.KEYREL.PRED "_taste_v_rel" ].
 
-himma_2 := verb20-verb-lex &
+himma_2 := transitive-verb-verb-lex &
   [ STEM < "himma" >,
     SYNSEM.LKEYS.KEYREL.PRED "_throw_v_rel" ].
 
-hinu_3 := verb20-verb-lex &
+hinu_3 := transitive-verb-verb-lex &
   [ STEM < "hinu" >,
     SYNSEM.LKEYS.KEYREL.PRED "_buy_v_rel" ].
 
-hivveva_2 := verb20-verb-lex &
+hivveva_2 := transitive-verb-verb-lex &
   [ STEM < "hivveva" >,
     SYNSEM.LKEYS.KEYREL.PRED "_whip_v_rel" ].
 
-hoowa_2 := verb20-verb-lex &
+hoowa_2 := transitive-verb-verb-lex &
   [ STEM < "hoowa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_do to_v_rel" ].
 
-hu_27unea_2 := verb20-verb-lex &
+hu_27unea_2 := transitive-verb-verb-lex &
   [ STEM < "hu'unea" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be knowledgeable_v_rel" ].
 
-katte_2 := verb20-verb-lex &
+katte_2 := transitive-verb-verb-lex &
   [ STEM < "katte" >,
     SYNSEM.LKEYS.KEYREL.PRED "_we.dont_v_rel" ].
 
-ania_2 := verb20-verb-lex &
+ania_2 := transitive-verb-verb-lex &
   [ STEM < "ania" >,
     SYNSEM.LKEYS.KEYREL.PRED "_help_v_rel" ].
 
-eecha := verb20-verb-lex &
+eecha := transitive-verb-verb-lex &
   [ STEM < "eecha" >,
     SYNSEM.LKEYS.KEYREL.PRED "_plant_v_rel" ].
 
-tu_27ute_1 := verb20-verb-lex &
+tu_27ute_1 := transitive-verb-verb-lex &
   [ STEM < "tu'ute" >,
     SYNSEM.LKEYS.KEYREL.PRED "_clean.up_v_rel" ].
 
-nu_27u := verb20-verb-lex &
+nu_27u := transitive-verb-verb-lex &
   [ STEM < "nu'u" >,
     SYNSEM.LKEYS.KEYREL.PRED "_get_v_rel" ].
 
-chaya := verb20-verb-lex &
+chaya := transitive-verb-verb-lex &
   [ STEM < "chaya" >,
     SYNSEM.LKEYS.KEYREL.PRED "_hang it_v_rel" ].
 
-nuk := verb20-verb-lex &
+nuk := transitive-verb-verb-lex &
   [ STEM < "nuk" >,
     SYNSEM.LKEYS.KEYREL.PRED "_take.away_v_rel" ].
 
-rehte_1 := verb20-verb-lex &
-  [ STEM < "rehte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_walk (pl. subj.) _v_rel" ].
-
-ea := verb20-verb-lex &
+ea := transitive-verb-verb-lex &
   [ STEM < "ea" >,
     SYNSEM.LKEYS.KEYREL.PRED "_think_v_rel" ].
 
-tawa := verb20-verb-lex &
+tawa := transitive-verb-verb-lex &
   [ STEM < "tawa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_stay_v_rel" ].
 
-he_27e := verb20-verb-lex &
+he_27e := transitive-verb-verb-lex &
   [ STEM < "he'e" >,
     SYNSEM.LKEYS.KEYREL.PRED "_drink_v_rel" ].
 
-totta := verb20-verb-lex &
+totta := transitive-verb-verb-lex &
   [ STEM < "totta" >,
     SYNSEM.LKEYS.KEYREL.PRED "_fold_v_rel" ].
 
-eta_2 := verb29-verb-lex &
-  [ STEM < "eta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_close_v_rel" ].
-
-soa := verb41-verb-lex &
-  [ STEM < "soa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_poke_v_rel" ].
-
-hima := verb43-verb-lex &
-  [ STEM < "hima" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_leave behind_v_rel" ].
-
-veeva_3 := verb43-verb-lex &
-  [ STEM < "veeva" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_chase_v_rel" ].
-
-yo_27ori := verb43-verb-lex &
-  [ STEM < "yo'ori" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_respected_v_rel" ].
-
-hiohte := verb46-verb-lex &
-  [ STEM < "hiohte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_write_v_rel" ].
-
-tu_27i := verb46-verb-lex &
-  [ STEM < "tu'i" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_good_v_rel" ].
-
-yoa := verb46-verb-lex &
-  [ STEM < "yoa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_shake_v_rel" ].
-
-asoa_2 := verb46-verb-lex &
-  [ STEM < "asoa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_give.birth_v_rel" ].
-
-vaita_27a := verb46-verb-lex &
-  [ STEM < "vaita'a" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_fool_v_rel" ].
-
-tu_27ute_2 := verb46-verb-lex &
-  [ STEM < "tu'ute" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_repair_v_rel" ].
-
-kecha_2 := verb68-verb-lex &
-  [ STEM < "kecha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_erect_v_rel" ].
-
-tapunia := verb68-verb-lex &
-  [ STEM < "tapunia" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_fill_v_rel" ].
-
-tahkai_3 := verb68-verb-lex &
-  [ STEM < "tahkai" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_make.tortilla_v_rel" ].
-
-pensionaroa := verb68-verb-lex &
-  [ STEM < "pensionaroa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_give.pension_n_rel" ].
-
-keu := verb69-verb-lex &
-  [ STEM < "keu" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_look.for_v_rel" ].
-
-machukta := verb69-verb-lex &
-  [ STEM < "machukta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_be in the hand?_v_rel" ].
-
-omta := verb69-verb-lex &
-  [ STEM < "omta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_hate_v_rel" ].
-
-bwichia := verb69-verb-lex &
-  [ STEM < "bwichia" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_smoke_v_rel" ].
-
-mahti := verb94-verb-lex &
+mahti := transitive-verb-verb-lex &
   [ STEM < "mahti" >,
     SYNSEM.LKEYS.KEYREL.PRED "_teach_v_rel" ].
 
-naamuke := verb105-verb-lex &
-  [ STEM < "naamuke" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_get drunk_v_rel" ].
+eta_2 := transitive-verb-verb-lex &
+  [ STEM < "eta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_close_v_rel" ].
 
-to_27ote := verb105-verb-lex &
-  [ STEM < "to'ote" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_lie.down_v_rel" ].
+soa := transitive-verb-verb-lex &
+  [ STEM < "soa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_poke_v_rel" ].
 
-vepsu := verb105-verb-lex &
+omta := transitive-verb-verb-lex &
+  [ STEM < "omta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_hate_v_rel" ].
+
+keu := transitive-verb-verb-lex &
+  [ STEM < "keu" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_look.for_v_rel" ].
+
+hima := transitive-verb-verb-lex &
+  [ STEM < "hima" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_leave.behind_v_rel" ].
+
+veeva_3 := transitive-verb-verb-lex &
+  [ STEM < "veeva" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_chase_v_rel" ].
+
+vepsu := transitive-verb-verb-lex &
   [ STEM < "vepsu" >,
     SYNSEM.LKEYS.KEYREL.PRED "_whip_v_rel" ].
 
-ehso := verb131-verb-lex &
-  [ STEM < "ehso" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_hide_v_rel" ].
-
-hiokoe := verb131-verb-lex &
-  [ STEM < "hiokoe" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_forgive_v_rel" ].
-
-kooka := verb131-verb-lex &
-  [ STEM < "kooka" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_wear.necklace_v_rel" ].
-
-panoa := verb131-verb-lex &
-  [ STEM < "panoa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_to.work.habitually_v_rel" ].
-
-poona := verb131-verb-lex &
-  [ STEM < "poona" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pound-or-strike, play_v_rel" ].
-
-rehte_2 := verb131-verb-lex &
-  [ STEM < "rehte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_walk (pl. subj.) _v_rel" ].
-
-reuwa := verb131-verb-lex &
-  [ STEM < "reuwa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_loan_v_rel" ].
-
-siime_3 := verb131-verb-lex &
-  [ STEM < "siime" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
-
-sua_3 := verb131-verb-lex &
-  [ STEM < "sua" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_take.care_v_rel" ].
-
-suke := verb131-verb-lex &
-  [ STEM < "suke" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_scratch_v_rel" ].
-
-ta_27aru_3 := verb131-verb-lex &
-  [ STEM < "ta'aru" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_lose_v_rel" ].
-
-tuuke := verb131-verb-lex &
-  [ STEM < "tuuke" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_burn out_v_rel" ].
-
-vaake := verb131-verb-lex &
-  [ STEM < "vaake" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_boil_v_rel" ].
-
-vaane_3 := verb131-verb-lex &
-  [ STEM < "vaane" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_irrigate_v_rel" ].
-
-vaawe_2 := verb131-verb-lex &
-  [ STEM < "vaawe" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_leak_v_rel" ].
-
-sika := verb131-verb-lex &
-  [ STEM < "sika" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_leave_v_rel" ].
-
-toha_3 := verb131-verb-lex &
-  [ STEM < "toha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_bring_v_rel" ].
-
-piokti := verb131-verb-lex &
-  [ STEM < "piokti" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_sound_v_rel" ].
-
-vaite := verb131-verb-lex &
-  [ STEM < "vaite" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_flap_v_rel" ].
-
-etbwa_2 := verb131-verb-lex &
-  [ STEM < "etbwa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_steal_v_rel" ].
-
-kupikte := verb131-verb-lex &
-  [ STEM < "kupikte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_close.eyes_v_rel" ].
-
-bwaana_2 := verb131-verb-lex &
-  [ STEM < "bwaana" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_cry_v_rel" ].
-
-hipon := verb131-verb-lex &
-  [ STEM < "hipon" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_play(instument)_v_rel" ].
-
-koche := verb156-verb-lex &
-  [ STEM < "koche" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_sleep_v_rel" ].
-
-yeewe_2 := verb156-verb-lex &
-  [ STEM < "yeewe" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_play_v_rel" ].
-
-rettrato_2 := verb159-verb-lex &
-  [ STEM < "rettrato" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_picture_v_rel" ].
-
-teeki := verb183-verb-lex &
-  [ STEM < "teeki" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_the theme of a laying down event_v_rel" ].
-
-tu_27iria := verb192-verb-lex &
-  [ STEM < "tu'iria" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_get well_v_rel" ].
-
-tutta := verb194-verb-lex &
+tutta := transitive-verb-verb-lex &
   [ STEM < "tutta" >,
     SYNSEM.LKEYS.KEYREL.PRED "_insert_v_rel" ].
 
-uku := verb195-verb-lex &
-  [ STEM < "uku" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_tempting_v_rel" ].
+rettrato_2 := transitive-verb-verb-lex &
+  [ STEM < "rettrato" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_take.picture_v_rel" ].
 
-watte_2 := verb218-verb-lex &
-  [ STEM < "watte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_fall_v_rel" ].
+hiohte := transitive-verb-verb-lex &
+  [ STEM < "hiohte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_write_v_rel" ].
 
-huuve_2 := verb218-verb-lex &
+huuve_2 := transitive-verb-verb-lex &
   [ STEM < "huuve" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_marry_v_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_got.married_v_rel" ].
 
-komonia := verb218-verb-lex &
+komonia := transitive-verb-verb-lex &
   [ STEM < "komonia" >,
     SYNSEM.LKEYS.KEYREL.PRED "_soak_v_rel" ].
 
-maveta_2 := verb218-verb-lex &
+maveta_2 := transitive-verb-verb-lex &
   [ STEM < "maveta" >,
     SYNSEM.LKEYS.KEYREL.PRED "_accept_v_rel" ].
 
-sipa := verb218-verb-lex &
-  [ STEM < "sipa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_cool.down_v_rel" ].
-
-tea_2 := verb218-verb-lex &
-  [ STEM < "tea" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_quot_v_rel" ].
-
-tetemu := verb218-verb-lex &
+tetemu := transitive-verb-verb-lex &
   [ STEM < "tetemu" >,
     SYNSEM.LKEYS.KEYREL.PRED "_kick_v_rel" ].
 
-huevena_2 := verb218-verb-lex &
-  [ STEM < "huevena" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_many_v_rel" ].
+tu_27ute_2 := transitive-verb-verb-lex &
+  [ STEM < "tu'ute" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_repair_or_clean_v_rel" ].
 
-tapsisiolai := verb218-verb-lex &
-  [ STEM < "tapsisiolai" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_thin_v_rel" ].
+vaita_27a := transitive-verb-verb-lex &
+  [ STEM < "vaita'a" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fool_v_rel" ].
 
-weye_3 := verb220-verb-lex &
-  [ STEM < "weye" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_go (sg. subj.)-or-walk_v_rel" ].
+sua_1 := transitive-verb-verb-lex &
+  [ STEM < "sua" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_take.care.of_v_rel" ].
 
-yaaha_3 := verb220-verb-lex &
-  [ STEM < "yaaha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_arrive_v_rel" ].
+tapunia := intransitive-verb-verb-lex &
+  [ STEM < "tapunia" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fill_v_rel" ].
 
-yepsa := verb220-verb-lex &
-  [ STEM < "yepsa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_arrive_v_rel" ].
+tahkai_3 := intransitive-verb-verb-lex &
+  [ STEM < "tahkai" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_make.tortilla_v_rel" ].
 
-yeuwa_3 := verb220-verb-lex &
-  [ STEM < "yeuwa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_play with_v_rel" ].
+pensionaroa := intransitive-verb-verb-lex &
+  [ STEM < "pensionaroa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_give.pension_n_rel" ].
 
-yo_27ore_3 := verb220-verb-lex &
-  [ STEM < "yo'ore" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_respect_v_rel" ].
-
-yo_27oturia_3 := verb220-verb-lex &
-  [ STEM < "yo'oturia" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_raise_v_rel" ].
-
-yoo_3 := verb220-verb-lex &
-  [ STEM < "yoo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_old (animate)_v_rel" ].
-
-yo_27otu := verb233-verb-lex &
+yo_27otu := intransitive-verb-verb-lex &
   [ STEM < "yo'otu" >,
     SYNSEM.LKEYS.KEYREL.PRED "_grow_v_rel" ].
 
-yoa_7E := verb234-verb-lex &
-  [ STEM < "yoa~" >,
+machukta := intransitive-verb-verb-lex &
+  [ STEM < "machukta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be in the hand?_v_rel" ].
+
+naamuke := intransitive-verb-verb-lex &
+  [ STEM < "naamuke" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_get.drunk_v_rel" ].
+
+bwichia := intransitive-verb-verb-lex &
+  [ STEM < "bwichia" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_smoke_v_rel" ].
+
+koche := intransitive-verb-verb-lex &
+  [ STEM < "koche" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sleep_v_rel" ].
+
+yeewe_2 := intransitive-verb-verb-lex &
+  [ STEM < "yeewe" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_play_v_rel" ].
+
+sipa := intransitive-verb-verb-lex &
+  [ STEM < "sipa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cool.down_v_rel" ].
+
+yoa := intransitive-verb-verb-lex &
+  [ STEM < "yoa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_shake_v_rel" ].
+
+asoa_2 := intransitive-verb-verb-lex &
+  [ STEM < "asoa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_give.birth_v_rel" ].
+
+kooka := intransitive-verb-verb-lex &
+  [ STEM < "kooka" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_wear.necklace_v_rel" ].
+
+panoa := intransitive-verb-verb-lex &
+  [ STEM < "panoa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_to.work.habitually_v_rel" ].
+
+tuuke := intransitive-verb-verb-lex &
+  [ STEM < "tuuke" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_burn out_v_rel" ].
+
+vaawe_2 := intransitive-verb-verb-lex &
+  [ STEM < "vaawe" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_leak_v_rel" ].
+
+kupikte := intransitive-verb-verb-lex &
+  [ STEM < "kupikte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_close.eyes_v_rel" ].
+
+bwaana_2 := intransitive-verb-verb-lex &
+  [ STEM < "bwaana" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cry_v_rel" ].
+
+watte_2 := irr-intransitive-pl-subject-verb-verb-lex &
+  [ STEM < "watte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fall_v_rel" ].
+
+tenne := irr-intransitive-pl-subject-verb-verb-lex &
+  [ STEM < "tenne" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_run_v_rel" ].
+
+rehte := irr-intransitive-pl-subject-verb-verb-lex &
+  [ STEM < "rehte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_walk_v_rel" ].
+
+kaate := irr-intransitive-pl-subject-verb-verb-lex &
+  [ STEM < "kaate" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
+
+kiimu := irr-intransitive-pl-subject-verb-verb-lex &
+  [ STEM < "kiimu" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_attack-or-enter_v_rel" ].
+
+yaaha_3 := irr-intransitive-pl-subject-verb-verb-lex &
+  [ STEM < "yaaha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_arrive_v_rel" ].
+
+koko := irr-intransitive-pl-subject-verb-verb-lex &
+  [ STEM < "koko" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_die_v_rel" ].
+
+hapte := irr-intransitive-pl-subject-verb-verb-lex &
+  [ STEM < "hapte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_stand.up_v_rel" ].
+
+ha_27abwek := irr-intransitive-pl-subject-verb-verb-lex &
+  [ STEM < "ha'abwek" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be.standing_v_rel" ].
+
+hooye := irr-intransitive-pl-subject-verb-verb-lex &
+  [ STEM < "hooye" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sit.down_v_rel" ].
+
+hooka_3 := irr-intransitive-pl-subject-verb-verb-lex &
+  [ STEM < "hooka" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be.sitting.or.situated_v_rel" ].
+
+to_27ote := irr-intransitive-pl-subject-verb-verb-lex &
+  [ STEM < "to'ote" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_lie.down_v_rel" ].
+
+to_27oka := irr-intransitive-pl-subject-verb-verb-lex &
+  [ STEM < "to'oka" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be.lying.down_v_rel" ].
+
+hoote := irr-intransitive-pl-subject-verb-verb-lex &
+  [ STEM < "hoote" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_get.up_v_rel" ].
+
+weye_2 := irr-intransitive-sg-subject-verb-verb-lex &
+  [ STEM < "weye" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_go (sg. subj.)-or-walk_v_rel" ].
+
+weche_2 := irr-intransitive-sg-subject-verb-verb-lex &
+  [ STEM < "weche" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fall_v_rel" ].
+
+yepsa := irr-intransitive-sg-subject-verb-verb-lex &
+  [ STEM < "yepsa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_arrive_v_rel" ].
+
+muuke := irr-intransitive-sg-subject-verb-verb-lex &
+  [ STEM < "muuke" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_die_v_rel" ].
+
+weama := irr-intransitive-sg-subject-verb-verb-lex &
+  [ STEM < "weama" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_walk_v_rel" ].
+
+kivake := irr-intransitive-sg-subject-verb-verb-lex &
+  [ STEM < "kivake" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_enter_v_rel" ].
+
+vuite := irr-intransitive-sg-subject-verb-verb-lex &
+  [ STEM < "vuite" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_run_v_rel" ].
+
+kikte := irr-intransitive-sg-subject-verb-verb-lex &
+  [ STEM < "kikte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_stand.up_v_rel" ].
+
+weyek := irr-intransitive-sg-subject-verb-verb-lex &
+  [ STEM < "weyek" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be.standing_v_rel" ].
+
+yeesa := irr-intransitive-sg-subject-verb-verb-lex &
+  [ STEM < "yeesa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sit.down_v_rel" ].
+
+katek := irr-intransitive-sg-subject-verb-verb-lex &
+  [ STEM < "katek" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be.sitting.or.situated_v_rel" ].
+
+vo_27ote := irr-intransitive-sg-subject-verb-verb-lex &
+  [ STEM < "vo'ote" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_lie.down_v_rel" ].
+
+vo_27oka := irr-intransitive-sg-subject-verb-verb-lex &
+  [ STEM < "vo'oka" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be.lying.down_v_rel" ].
+
+yehte := irr-intransitive-sg-subject-verb-verb-lex &
+  [ STEM < "yehte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_get.up_v_rel" ].
+
+kecha_2 := irr-transitive-sg-object-verb-verb-lex &
+  [ STEM < "kecha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_erect_v_rel" ].
+
+yecha := irr-transitive-sg-object-verb-verb-lex &
+  [ STEM < "yecha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_put_v_rel" ].
+
+kivacha := irr-transitive-sg-object-verb-verb-lex &
+  [ STEM < "kivacha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_bring.in_v_rel" ].
+
+me_27a_2 := irr-transitive-sg-object-verb-verb-lex &
+  [ STEM < "me'a" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_kill_v_rel" ].
+
+ha_27abwa := irr-transitive-pl-object-verb-verb-lex &
+  [ STEM < "ha'abwa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_erect_v_rel" ].
+
+hoa_2 := irr-transitive-pl-object-verb-verb-lex &
+  [ STEM < "hoa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_put_v_rel" ].
+
+kiima := irr-transitive-pl-object-verb-verb-lex &
+  [ STEM < "kiima" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_bring.in_v_rel" ].
+
+sua_2 := irr-transitive-pl-object-verb-verb-lex &
+  [ STEM < "sua" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_kill_v_rel" ].
+
+siime := go-sg-pres-verb-verb-lex &
+  [ STEM < "siime" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
+
+saka := go-pl-pres-verb-verb-lex &
+  [ STEM < "saka" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
+
+siika := go-sg-pst-verb-verb-lex &
+  [ STEM < "siika" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
+
+sika := go-sg-pst-verb-verb-lex &
+  [ STEM < "sika" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
+
+saha := go-sg-verb-lex &
+  [ STEM < "saha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
 
 ;;; Auxiliaries
 
@@ -3191,7 +3139,7 @@ pasaaroa_2 := aux4-aux-lex &
   [ STEM < "pasaaroa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_happen-or-pass_v_rel" ].
 
-tea_3 := aux5-aux-lex &
+tea_2 := aux5-aux-lex &
   [ STEM < "tea" >,
     SYNSEM.LKEYS.KEYREL.PRED "_find-or-name_v_rel" ].
 
@@ -3211,7 +3159,7 @@ aane_5 := aux10-aux-lex &
   [ STEM < "aane" >,
     SYNSEM.LKEYS.KEYREL.PRED "_do_v_rel" ].
 
-tea_4 := aux11-aux-lex &
+tea_3 := aux11-aux-lex &
   [ STEM < "tea" >,
     SYNSEM.LKEYS.KEYREL.PRED "_quot_v_rel" ].
 
@@ -3228,50 +3176,10 @@ kat := aux14-aux-lex &
 au_2 := aux15-aux-lex &
   [ STEM < "au" > ].
 
--n := aux16-aux-lex &
-  [ STEM < "-n" > ].
-
--u := aux17-aux-lex &
-  [ STEM < "-u" > ].
-
--k := aux18-aux-lex &
-  [ STEM < "-k" > ].
-
--ta := aux19-aux-lex &
-  [ STEM < "-ta" > ].
-
--me := aux20-aux-lex &
-  [ STEM < "-me" > ].
-
--na := aux21-aux-lex &
-  [ STEM < "-na" > ].
-
--ne := aux22-aux-lex &
-  [ STEM < "-ne" > ].
-
-ito_2 := aux23-aux-lex &
-  [ STEM < "ito" > ].
-
--ka := aux24-aux-lex &
-  [ STEM < "-ka" > ].
-
--po := aux25-aux-lex &
-  [ STEM < "-po" > ].
-
 vempo_2 := aux26-aux-lex &
   [ STEM < "vempo" > ].
 
--t := aux27-aux-lex &
-  [ STEM < "-t" > ].
-
--wa := aux28-aux-lex &
-  [ STEM < "-wa" > ].
-
--su := aux29-aux-lex &
-  [ STEM < "-su" > ].
-
-soto_27i := aux30-aux-lex &
-  [ STEM < "soto'i" > ].
+;;; Copulas
 
 ;;; Determiners
 
@@ -3381,8 +3289,20 @@ ket := clause_modifier-adverb-lex &
   [ STEM < "ket" >,
     SYNSEM.LKEYS.KEYREL.PRED "_also_a_rel" ].
 
+si := clause_modifier-adverb-lex &
+  [ STEM < "si" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_very_a_rel" ].
+
+ta := clause_modifier-adverb-lex &
+  [ STEM < "ta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_but_a_rel" ].
+
 aman := location_modifier-adverb-lex &
   [ STEM < "aman" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_there_a_rel" ].
+
+hunaman := location_modifier-adverb-lex &
+  [ STEM < "hunaman" >,
     SYNSEM.LKEYS.KEYREL.PRED "_there_a_rel" ].
 
 ian := time_modifier-adverb-lex &
@@ -3393,9 +3313,29 @@ veha := time_modifier-adverb-lex &
   [ STEM < "veha" >,
     SYNSEM.LKEYS.KEYREL.PRED "_then_a_rel" ].
 
+haivu := time_modifier-adverb-lex &
+  [ STEM < "haivu" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_already_a_rel" ].
+
 haisa := how_or_shall_modifier-adverb-lex &
   [ STEM < "haisa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_how_or_shall_a_rel" ].
+
+hakwo_2 := where_question_adverb-adverb-lex &
+  [ STEM < "hakwo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_place_a_rel" ].
+
+hakwo-sa_2 := where_question_adverb-adverb-lex &
+  [ STEM < "hakwo-sa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_place_a_rel" ].
+
+haksa_2 := when_question_adverb-adverb-lex &
+  [ STEM < "haksa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_time_a_rel" ].
+
+hakun-sa_2 := when_question_adverb-adverb-lex &
+  [ STEM < "hakun-sa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_time_a_rel" ].
 
 1st-sg-possessive-noun := 1st-sg-possessive-noun-lex &
   [ STEM < "in" > ].
