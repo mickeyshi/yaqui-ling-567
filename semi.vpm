@@ -58,25 +58,25 @@ E.TENSE : TENSE
   * <> *
 
 E.ASPECT : ASPECT
-  prog <> prog
-  pfv <> pfv
-  cmpl <> cmpl
-  incep <> incep
-  ipfv <> ipfv
+  prog <> progressive
+  pfv <> perfective
+  cmpl <> completive
+  incep <> inceptive
+  ipfv <> imperfective
   rel <> rel
-  hab <> hab
-  prosp <> prosp
+  hab <> habitual
+  prosp <> prospective
   * >> no-aspect
   no-aspect << [e]
 
 E.MOOD : MOOD
-  ind <> ind
-  irr <> irr
-  imp <> imp
-  sbjv <> sbjv
+  ind <> indicative
+  irr <> irrealis
+  imp <> imperfective
+  sbjv <> subjunctive
   directive <> directive
   desid <> desid
-  quot <> quot
+  quot <> quotative
   ev <> ev
   * >> ind
   ind << [e]

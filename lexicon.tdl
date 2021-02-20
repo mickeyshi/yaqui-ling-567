@@ -5,6 +5,18 @@ taewai := common_noun-noun-lex &
   [ STEM < "taewai" >,
     SYNSEM.LKEYS.KEYREL.PRED "_day_n_rel" ].
 
+kanyone := common_noun-noun-lex &
+  [ STEM < "kanyone" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_canyon_n_rel" ].
+
+martimiano := common_noun-noun-lex &
+  [ STEM < "martimiano" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_Martimiano_n_rel" ].
+
+tiempo := common_noun-noun-lex &
+  [ STEM < "tiempo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_time_n_rel" ].
+
 aane_1 := common_noun-noun-lex &
   [ STEM < "aane" >,
     SYNSEM.LKEYS.KEYREL.PRED "_do_n_rel" ].
@@ -64,6 +76,10 @@ anoki_27ichi := common_noun-noun-lex &
 avion := common_noun-noun-lex &
   [ STEM < "avion" >,
     SYNSEM.LKEYS.KEYREL.PRED "_plane_n_rel" ].
+
+yo_27owak := common_noun-noun-lex &
+  [ STEM < "yo'owak" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_parents_n_rel" ].
 
 bwa_27am := common_noun-noun-lex &
   [ STEM < "bwa'am" >,
@@ -255,7 +271,7 @@ kanal := common_noun-noun-lex &
 
 karo := common_noun-noun-lex &
   [ STEM < "karo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_car-or-wagon_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_car_n_rel" ].
 
 kiiyohtei := common_noun-noun-lex &
   [ STEM < "kiiyohtei" >,
@@ -449,7 +465,7 @@ vaka := common_noun-noun-lex &
   [ STEM < "vaka" >,
     SYNSEM.LKEYS.KEYREL.PRED "_bamboo_n_rel" ].
 
-waasa := common_noun-noun-lex &
+waasa_1 := common_noun-noun-lex &
   [ STEM < "waasa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_field_n_rel" ].
 
@@ -1336,81 +1352,85 @@ e_27e := common_noun-noun-lex &
   [ STEM < "e'e" >,
     SYNSEM.LKEYS.KEYREL.PRED "_no_n_rel" ].
 
+waasa_2 := common_noun-noun-lex &
+  [ STEM < "waasa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_park_n_rel" ].
+
 enchim := 2nd-pl-acc-pronoun-noun-lex &
   [ STEM < "enchim" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
 
 enchi-m := 2nd-pl-acc-pronoun-noun-lex &
   [ STEM < "enchi-m" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 a_27a := 3rd-sg-acc-pronoun-noun-lex &
   [ STEM < "a'a" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 apo_27ik_2 := 3rd-sg-acc-pronoun-noun-lex &
   [ STEM < "apo'ik" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 a_27apo := 3rd-sg-nom-pronoun-noun-lex &
   [ STEM < "a'apo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 au_1 := 3rd-sg-reflexive-pronoun-noun-lex &
   [ STEM < "au" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 chikti := noun117-noun-lex &
   [ STEM < "chikti" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 eme_27e := 2nd-pl-nom-pronoun-noun-lex &
   [ STEM < "eme'e" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 empo := 2nd-sg-nom-pronoun-noun-lex &
   [ STEM < "empo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 enchi := 2nd-sg-acc-pronoun-noun-lex &
   [ STEM < "enchi" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 inepo := noun121-noun-lex &
   [ STEM < "inepo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 ite := noun122-noun-lex &
   [ STEM < "ite" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 itepo := 1st-pl-nom-pronoun-noun-lex &
   [ STEM < "itepo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 ito := 1st-pl-refl-pronoun-noun-lex &
   [ STEM < "ito" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 ka := noun125-noun-lex &
   [ STEM < "ka" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 nee := 1st-sg-nom-acc-pronoun-noun-lex &
   [ STEM < "nee" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 si_27ime_1 := noun127-noun-lex &
   [ STEM < "si'ime" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 vempo_1 := noun128-noun-lex &
   [ STEM < "vempo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 vempo_27im := 3rd-pl-acc-pronoun-noun-lex &
   [ STEM < "vempo'im" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 hitaa := what-noun-noun-lex &
   [ STEM < "hitaa" >,
@@ -1442,15 +1462,15 @@ hakwo_1 := when-noun-noun-lex &
 
 itom := 1st-pl-acc-pronoun-noun-lex &
   [ STEM < "itom" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 aa_3D := short-3rd-sg-pronoun-noun-lex &
   [ STEM < "aa=" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 am_3D := short-3rd-pl-pronoun-noun-lex &
   [ STEM < "am=" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_pron_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 ;;; Adjectives
 
@@ -1501,6 +1521,27 @@ ili := basic_adjective-adj-lex &
 siiki := basic_adjective-adj-lex &
   [ STEM < "siiki" >,
     SYNSEM.LKEYS.KEYREL.PRED "_red_a_rel" ].
+
+tutuli := basic_adjective-adj-lex &
+  [ STEM < "tutuli" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pretty_a_rel" ].
+
+wakila := basic_adjective-adj-lex &
+  [ STEM < "wakila" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_skinny_a_rel" ].
+
+lazy := basic_adjective-adj-lex &
+  [ STEM < "oove" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_lazy_a_rel" ].
+
+awi := basic_adjective-adj-lex &
+  [ STEM < "awi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_chubby_a_rel" ].
+
+
+dummy-adposition := normadp1-norm-adposition-lex &
+  [ STEM < "dummy-adposition" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dummy-adposition_p_rel" ].
 
 ;;; Verbs
 
@@ -2236,9 +2277,6 @@ nasontu := transitive-verb-verb-lex &
   [ STEM < "nasontu" >,
     SYNSEM.LKEYS.KEYREL.PRED "_spoil_v_rel" ].
 
-ropte := transitive-verb-verb-lex &
-  [ STEM < "ropte" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_sink_v_rel" ].
 
 sevea := transitive-verb-verb-lex &
   [ STEM < "sevea" >,
@@ -2319,10 +2357,6 @@ aapo := transitive-verb-verb-lex &
 kopan := transitive-verb-verb-lex &
   [ STEM < "kopan" >,
     SYNSEM.LKEYS.KEYREL.PRED "_resting_v_rel" ].
-
-wakti := transitive-verb-verb-lex &
-  [ STEM < "wakti" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_skinny_v_rel" ].
 
 nah := transitive-verb-verb-lex &
   [ STEM < "nah" >,
@@ -2696,10 +2730,6 @@ aawe_2 := transitive-verb-verb-lex &
   [ STEM < "aawe" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be.able_v_rel" ].
 
-aayu_2 := transitive-verb-verb-lex &
-  [ STEM < "aayu" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_available_v_rel" ].
-
 amma_27ali_20hiia := transitive-verb-verb-lex &
   [ STEM < "amma'ali",
            "hiia" >,
@@ -2889,6 +2919,10 @@ tapunia := intransitive-verb-verb-lex &
   [ STEM < "tapunia" >,
     SYNSEM.LKEYS.KEYREL.PRED "_fill_v_rel" ].
 
+ropte := intransitive-verb-verb-lex &
+  [ STEM < "ropte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sink_v_rel" ].
+
 tahkai_3 := intransitive-verb-verb-lex &
   [ STEM < "tahkai" >,
     SYNSEM.LKEYS.KEYREL.PRED "_make.tortilla_v_rel" ].
@@ -2912,6 +2946,10 @@ naamuke := intransitive-verb-verb-lex &
 bwichia := intransitive-verb-verb-lex &
   [ STEM < "bwichia" >,
     SYNSEM.LKEYS.KEYREL.PRED "_smoke_v_rel" ].
+
+tevaure := intransitive-verb-verb-lex &
+  [ STEM < "tevaure" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_hungry_a_rel" ].
 
 koche := intransitive-verb-verb-lex &
   [ STEM < "koche" >,
@@ -3117,8 +3155,12 @@ sika := go-sg-pst-verb-verb-lex &
   [ STEM < "sika" >,
     SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
 
-saha := go-sg-verb-lex &
+saha := go-pl-pst-verb-verb-lex &
   [ STEM < "saha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
+
+saha-k := go-pl-pst-verb-verb-lex &
+  [ STEM < "saha-k" >,
     SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
 
 ;;; Auxiliaries
@@ -3312,6 +3354,10 @@ ian := time_modifier-adverb-lex &
 veha := time_modifier-adverb-lex &
   [ STEM < "veha" >,
     SYNSEM.LKEYS.KEYREL.PRED "_then_a_rel" ].
+
+tuuka := time_modifier-adverb-lex &
+  [ STEM < "tuuka" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_yesterday_a_rel" ].
 
 haivu := time_modifier-adverb-lex &
   [ STEM < "haivu" >,

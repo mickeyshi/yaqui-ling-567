@@ -21,6 +21,8 @@ head-spec := head-spec-phrase.
 
 bare-np := bare-np-phrase.
 
+head-comp := head-comp-phrase.
+
 adv1-bottom-coord := adv1-bottom-coord-rule.
 
 adv1-mid-coord := adv1-mid-coord-rule.
@@ -69,14 +71,18 @@ s11-top-coord := s11-top-coord-rule.
 
 s11-bottom-coord := s11-bottom-coord-rule.
 
-ex-comp := extracted-comp-phrase.
+; ex-comp := extracted-comp-phrase.
 
-ex-adj := basic-extracted-adj-phrase.
+; ex-adj := basic-extracted-adj-phrase.
 
-ex-subj := extracted-subj-phrase.
+ ex-subj := extracted-subj-phrase.
 
 wh-ques := wh-ques-phrase.
 
 in-situ-ques := insitu-int-cl.
 
-ex-det := extracted-det-phrase.
+; ex-det := extracted-det-phrase.
+
+loc-pp := locative-pp-phrase.
+
+n-bar-pred := n-bar-predicate-rule.

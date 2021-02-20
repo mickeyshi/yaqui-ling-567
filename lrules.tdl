@@ -1,9 +1,7 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
-nominal-sing-noun-lrt-lex := nominal-sing-noun-lrt-lex-rule.
-
 nonpossessed-noun_lrt2-lex := nonpossessed-noun_lrt2-lex-rule.
 
-singular-noun-lrt-lex := singular-noun-lrt-lex-rule.
+singular-nom-noun-lrt-lex := singular-nom-noun-lrt-lex-rule.
 
 present-verb-pc-lrt-lex := present-verb-pc-lrt-lex-rule.
 

@@ -5,10 +5,6 @@ noun-pc1_lrt1-suffix :=
 %suffix (* -me)
 noun-pc1_lrt1-lex-rule.
 
-accusative-sing-noun-lrt-suffix :=
-%suffix (* -ta)
-accusative-sing-noun-lrt-lex-rule.
-
 noun-pc3_lrt2-suffix :=
 %suffix (* -mea)
 noun-pc3_lrt2-lex-rule.
@@ -29,9 +25,21 @@ possessed-noun_lrt1-suffix :=
 %suffix (* -wa)
 possessed-noun_lrt1-lex-rule.
 
-plural-marked-noun-lrt-suffix :=
+plural-nom-or-acc-noun-lrt-suffix :=
 %suffix (* -m)
-plural-marked-noun-lrt-lex-rule.
+plural-nom-or-acc-noun-lrt-lex-rule.
+
+singular-acc-noun-lrt-suffix :=
+%suffix (* -ta)
+singular-acc-noun-lrt-lex-rule.
+
+singular-locative-noun_lrt-suffix :=
+%suffix (* -po)
+singular-locative-noun_lrt-lex-rule.
+
+plural-locative-noun_lrt-suffix :=
+%suffix (* -m-po)
+plural-locative-noun_lrt-lex-rule.
 
 comitative-noun-pc10_lrt1-suffix :=
 %suffix (* -mak)
@@ -48,14 +56,6 @@ superessive-noun-pc10-lrt3-lex-rule.
 noun-pc14_lrt1-suffix :=
 %suffix (* -ka)
 noun-pc14_lrt1-lex-rule.
-
-noun-pc15_lrt1-suffix :=
-%suffix (* -kame)
-noun-pc15_lrt1-lex-rule.
-
-locative-noun_lrt1-suffix :=
-%suffix (* -po)
-locative-noun_lrt1-lex-rule.
 
 noun-pc21_lrt1-suffix :=
 %suffix (* -'u)
@@ -201,14 +201,6 @@ verb-pc38_lrt1-suffix2 :=
 %suffix (* -vo)
 verb-pc38_lrt1-lex-rule.
 
-verb-pc40_lrt1-suffix :=
-%suffix (* =em)
-verb-pc40_lrt1-lex-rule.
-
-verb-pc41_lrt1-prefix :=
-%prefix (* hi-)
-verb-pc41_lrt1-lex-rule.
-
 could-verb-pc_lrt-suffix1 :=
 %suffix (* -ean)
 could-verb-pc_lrt-lex-rule.
@@ -236,3 +228,8 @@ verb-pc58_lrt1-lex-rule.
 think_inflected_adj_pc_lrt-suffix :=
 %suffix (* -le)
 think_inflected_adj_pc_lrt-lex-rule.
+
+; Transitive verb taking adjectives/nouns to verbs
+; become-verb-suffix1 :=
+; %suffix (* -tu)
+; become-verb_lrt-lex-rule.

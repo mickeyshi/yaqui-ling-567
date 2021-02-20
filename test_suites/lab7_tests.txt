@@ -1,0 +1,743 @@
+Language: Yaqui
+Language code: yaq1
+Lines: translit translit-seg gloss translat
+Author: Changfei Shi
+Date: January 17, 2021
+Source a: Introduction to Hiaki Grammar
+
+#LAB 2
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+In kapitan nooka. 
+In kapitan nooka
+1SG.POSS captain speak
+My captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Em= kapitan nooka. 
+Em= kapitan nooka
+2SG.POSS= captain speak
+Your captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Itom kapitan nooka. 
+Itom kapitan nooka
+1PL.POSS captain speak
+Our captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Enchim kapitan nooka. 
+Enchim kapitan nooka
+2PL.POSS captain speak
+You all's captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Apo'ik kapitan nooka. 
+Apo'ik kapitan nooka
+3SG.POSS captain speak
+Her captain is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Vempo'im kapitan nooka. 
+Vempo'im kapitan nooka
+3PL.POSS captain speak
+Their captain is speaking. 
+
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {poss}
+In nooka. 
+In nooka
+1SG.POSS speak
+My is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {poss}
+Em= nooka. 
+Em= nooka
+2SG.POSS= speak
+Your is speaking. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+Hoan vempo'im kari-ta vitchu. 
+Hoan vempo'im kari-ta vitchu.
+Hoan 3PL.POSS house-ACC watch
+Hoan is watching their house. 
+
+Source: Introduction to Hiaki Grammar, pg 166
+Vetted: s
+Judgment: g
+Phenomena: {poss}
+Aa huviawa siika.
+Aa huuve-wa siika
+3SG.POSS wife-POSS went
+His wife left.  
+
+#Test case 1: pass
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: g
+Phenomena: {case}
+uu yo'o bwa'am-ta bwa'e
+uu yo'o bwa'am-ta bwa'e
+the adult.3sg broth-acc eat
+`The adult ate the broth.'
+
+#Test case 2: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu-ta yo'o bwa'am bwa'e
+uu-ta yo'o bwa'am bwa'e
+the-acc adult.3sg broth eat
+`The adult ate the broth.'
+
+#Test case 3: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o-ta bwa'am bwa'e
+uu yo'o-ta bwa'am bwa'e
+the adult.3sg-acc broth eat
+`The adult ate the broth.'
+
+#Test case 4: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o bwa'am bwa'e-ta
+uu yo'o bwa'am bwa'e-ta
+the adult.3sg broth eat-acc
+`The adult ate the broth.'
+
+#Test case 5: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o-ta bwa'am-ta bwa'e
+uu yo'o-ta bwa'am-ta bwa'e
+the adult.3sg-acc broth-acc eat
+`The adult ate the broth.'
+
+#Test case 6: pass
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: g
+Phenomena: {case}
+uu yo'o paloma-m bwa'e
+uu yo'o paloma-m bwa'e
+the adult.3sg pigeon-3pl.acc eat
+`The adult ate the pigeon.'
+
+#Test case 7: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o paloma-m-ta bwa'e
+uu yo'o paloma-m-ta bwa'e
+the adult.3sg pigeon-3pl-acc eat
+`The adult ate the pigeon.'
+
+#Test case 8: pass
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: g
+Phenomena: {case}
+uu yo'o hoote
+uu yo'o hoote
+the adult.3sg sit
+`The adult sits.'
+
+#Test case 9: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o-ta hoote
+uu yo'o-ta hoote
+the adult.3sg-acc sit
+`The adult sits.'
+
+#Test case 10: fail
+Source: Meheresh Yeditha
+Vetted: f
+Judgment: u
+Phenomena: {case}
+uu yo'o-m-ta hoote
+uu yo'o-m-ta hoote
+the adults-3pl-acc sit
+`The adults sit.'
+
+#LAB 3
+#DETERMINERS----------------------------------------------
+#Subject Determiners------------------------------
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Uu kapitan bwiika
+Uu kapitan bwiika
+the.SG.SUBJ captain sing
+The captain is singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+I'i kapitan bwiika
+I'i kapitan bwiika
+this.SG.SUBJ captain sing
+This captain is singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Wa'a kapitan bwiika
+Wa'a kapitan bwiika
+that.SG.SUBJ captain sing
+That captain is singing.
+
+#Object Determiners------------------------------
+#Basic agreement checks for singular determiners
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Maria uka uusita vicha.
+Maria uka uusi-ta vicha
+Maria the.SG.OBJ child-ACC see
+Maria sees the child. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Maria ika uusita vicha.
+Maria ika uusi-ta vicha
+Maria this.SG.OBJ child-ACC see
+Maria sees this child. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Maria waka uusita vicha.
+Maria waka uusi-ta vicha
+Maria that.SG.OBJ child-ACC see
+Maria sees that child. 
+
+#Ungrammatical checks (subject determiner in object position)
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Maria uu uusita vicha.
+Maria uu uusi-ta vicha
+Maria the.SG.SUBJ child-ACC see
+Intended: Maria sees the child. 
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Maria i'i uusita vicha.
+Maria i'i uusi-ta vicha
+Maria this.SG.SUBJ child-ACC see
+Intended: Maria sees this child.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Maria wa'a uusita vicha.
+Maria wa'a uusi-ta vicha
+Maria that.SG.SUBJ child-ACC see
+Maria sees that child. 
+
+#Ungrammatical checks (object determiner in subject position)
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Uka kapitan bwiika
+Uka kapitan bwiika
+the.SG.OBJ captain sing
+The captain is singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+ika kapitan bwiika
+ika kapitan bwiika
+this.SG.OBJ captain sing
+This captain is singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Waka kapitan bwiika
+Waka kapitan bwiika
+that.SG.OBJ captain sing
+That captain is singing.
+
+#Plural Determiners------------------------------
+#Plural determiner in subject position
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Ume uusim bwiika
+Ume uusi-m bwiika
+the.PL.OBJ child-pl sing
+The children are singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Ime uusim bwiika
+Ime uusi-m bwiika
+this.PL.OBJ child-PL sing
+These children are singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Wame'e uusim bwiika
+Wame'e uusi-m bwiika
+that.PL.OBJ child-PL sing
+Those children are singing.
+
+#Ungrammatical checks (plural determiner in singular determiner position)
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Ume kapitan bwiika
+Ume kapitan bwiika
+the.PL.OBJ captain sing
+The captain is singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Ime kapitan bwiika
+Ime kapitan bwiika
+this.PL.OBJ captain sing
+This captain is singing.
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Wame'e kapitan bwiika
+Wame'e kapitan bwiika
+that.PL.OBJ captain sing
+That captain is singing.
+
+
+#Plural in object position
+Source: Changfei Shi
+Vetted: f
+Judgment: g
+Phenomena: {det}
+Maria ume uusim vicha.
+Maria ume uusi-m vicha
+Maria the.PL.OBJ child-PL see
+Maria sees the children.  
+
+#Plural in singular object position - should error
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {det}
+Maria wame'e uusita vicha.
+Maria wame'e uusi-ta vicha
+Maria that.PL.OBJ child-OBJ see
+Intended: Maria sees the child.
+#LAB 4
+#COORDINATION----------------------------------------------
+Source: Heidi Harley
+Vetted: s
+Judgment: u
+Phenomena: {crd}
+Emilio into Maria nooka
+Emilio into Maria nooka
+Emilio and Maria speak
+Emilio and Maria are speaking. 
+
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {crd}
+Hoan nooka into bwiika.
+Hoan nooka into bwiika.
+Hoan speak.PRS and sing.PRS
+Hoan is speaking and singing.
+
+#No coordination of subject and objects
+
+Source: Changfei Shi
+Vetted: f
+Judgment: u
+Phenomena: {crd}
+Hoan into Maria-ta nooka.
+Hoan into Maria-ta nooka
+Hoan and Maria-acc sing
+Hoan and Maria are singing.
+
+#Improper asyndetic coordination
+Source: Heidi Harley
+Vetted: s
+Judgment: u
+Phenomena: {crd}
+Emilio Maria nooka
+Emilio Maria nooka
+Emilio Maria speak
+Intended: Emilio and Maria are speaking. 
+
+#Omnisyndetic coordination not available in Yaqui
+Source: Changfei Shi
+Vetted: s
+Judgment: u
+Phenomena: {crd}
+Emilio intok Maria intok nooka
+Emilio intok Maria intok nooka
+Emilio and Maria and speak
+Intended: Emilio and Maria are speaking. 
+
+
+#Second position coordination (similar to Latin que)
+Source: Heidi Harley
+Vetted: s
+Judgment: g
+Phenomena: {crd}
+Emilio bwiika Maria intok nooka
+Emilio bwiika Maria intok nooka
+Emilio sing Maria and speak
+Emilio is singing and Maria is speaking. 
+
+#Coordination of sentences
+Source: Changfei Shi
+Vetted: s
+Judgment: g
+Phenomena: {crd}
+Emilio vicha intok Maria nooka
+Emilio vicha intok Maria nooka
+Emilio see Maria and speak
+Emilio is seeing and Maria is speaking. 
+
+#Cannot coordinate verbs sharing an object
+Source: Yaqui Coordination, Constantino Martinez Fabian
+Vetted: s
+Judgment: u
+Phenomena: {crd}
+Peo torota hinu into nenka
+Peo toro-ta hinu into nenka
+Peter bull-ACC buy and sell
+Intended: Pedro buys and sells a bull. 
+
+Source: Yaqui Coordination,  Constantino Martinez Fabian
+Vetted: s
+Judgment: g
+Phenomena: {crd}
+Peo torota hinu into torota nenka
+Peo toro-ta hinu into toro-ta nenka
+Peter bull-ACC buy and bull-ACC sell
+Pedro buys and sells a bull. 
+
+
+#Coordination of locatives
+Source: Changfei Shi
+Vetted: s
+Judgment: g
+Phenomena: {crd}
+Emilio kari-po intok waalupe-po tekipanoa
+Emilio kari-po intok waalupe-po tekipanoa
+Emilio home-LOC and Guadalupe-LOC speak
+Emilio works at home and in Guadalupe.
+
+
+#Wh questions
+Source: Changfei Shi
+Vetted: s
+Judgment: g
+Phenomena: {wh}
+Hitaa empo vitchu
+Hitaa empo vitchu
+What 2SG.NOM look
+What are you looking at?
+
+Source: Changfei Shi
+Vetted: s
+Judgment: g
+Phenomena: {wh}
+Hitaa hamte-k
+Hitaa hamte-k
+What break-PERF
+What broke?
+
+Source: Changfei Shi
+Vetted: s
+Judgment: g
+Phenomena: {wh}
+Havee eteho
+Havee eteho
+Who speak
+Who is speaking?
+
+Source: Changfei Shi
+Vetted: s
+Judgment: g
+Phenomena: {wh}
+Uu kapitan haveta vicha
+Uu kapitan have-ta vicha
+the captain who-ACC see
+Who is the captain seeing?
+
+Source: Changfei Shi
+Vetted: s
+Judgment: u
+Phenomena: {wh}
+Uu kapitan uu haveta vicha
+Uu kapitan uu have-ta vicha
+the captain the who-ACC see
+Intended: Who is the captain seeing?
+
+#Accusative marker required for objects
+Source: Changfei Shi
+Vetted: s
+Judgment: u
+Phenomena: {wh}
+Uu kapitan havee vicha
+Uu kapitan havee vicha
+the captain who see
+Who is the captain seeing?
+
+Source: Changfei Shi
+Vetted: s
+Judgment: g
+Phenomena: {wh}
+Havee haveta vichak
+Havee have-ta vicha-k
+who who-ACC see-PFV
+Who saw who?
+
+
+Source: Changfei Shi
+Vetted: s
+Judgment: u
+Phenomena: {wh}
+Have-ta havee vicha-k
+Have-ta havee vicha-k
+who-ACC who see-PFV
+Who saw who?
+
+Source: Introduction to Hiaki Grammar
+Vetted: s
+Judgment: g
+Phenomena: {wh}
+Haksa empo tekipanoa
+Haksa empo tekipanoa
+Where you work
+Where do you work?
+
+#Haksa is shortened form of hakunsa
+Source: Introduction to Hiaki Grammar
+Vetted: s
+Judgment: g
+Phenomena: {wh}
+Hakunsa empo tekipanoa
+Hakun-sa empo tekipanoa
+Where-QUESTION you work
+Where-QUESTION do you work?
+
+Source: Introduction to Hiaki Grammar 
+Vetted: s
+Judgment: g
+Phenomena: {wh}
+Hakwo empo tekipanoa
+Hakwo empo tekipanoa
+When you work
+When do you work?
+
+Source: Introduction to Hiaki Grammar
+Vetted: s
+Judgment: g
+Phenomena: {wh}
+Hakwosa empo yepsak
+Hakwo-sa empo yepsa-k
+When-QUESTION you arrive-PST
+When did you arrive?
+
+Source: Changfei Shi
+Vetted: s
+Judgment: g
+Phenomena: {}
+Chu'um koche.
+Chuu'u-m koche
+Dog-PL sleep
+Dogs are sleeping.
+
+Source: Changfei Shi
+Vetted: s
+Judgment: g
+Phenomena: {}
+Chu'um karom hahase.
+Chuu'u-m karo-m hahase
+Dog-PL car-pl chase
+Dogs are chasing cars. 
+
+Source: Changfei Shi
+Vetted: s
+Judgment: g
+Phenomena: {pn}
+Inepo enchim hahase.
+inepo enchim hahase
+1.SG.NOM 2.SG.ACC chase
+I chase you.
+
+
+#NONVERBAL PREDICATES----------------------------------------------
+#Noun predicates
+
+Source: Introduction to Hiaki Grammar
+Vetted: s
+Judgment: g
+Phenomena: {cop}
+Uu hamut hitevi
+Uu hamut hitevi
+the woman healer
+"The woman is a healer."
+
+Source: Introduction to Hiaki Grammar
+Vetted: s
+Judgment: g
+Phenomena: {cop}
+Uu hamut hitevitu
+Uu hamut hitevi-tu
+the woman healer-BECOME
+"The woman is becoming a healer."
+
+Source: Introduction to Hiaki Grammar
+Vetted: s
+Judgment: g
+Phenomena: {cop, tam}
+Uu hamut hitevitune
+Uu hamut hitevi-tu-ne
+the woman healer-BECOME-FUT
+"The woman will become a healer."
+
+Source: Introduction to Hiaki Grammar
+Vetted: s
+Judgment: g
+Phenomena: {cop, tam}
+Uu hamut hitevituk
+Uu hamut hitevi-tu-k
+the woman healer-BECOME-PST.PRF
+"The woman became a healer."
+
+Source: Introduction to Hiaki Grammar
+Vetted: s
+Judgment: g
+Phenomena: {cop, tam}
+Uu hamut hitevitukan
+Uu hamut hitevi-tu-kan
+the woman healer-BECOME-PST.IMPF
+"The woman was a healer."
+
+#Adjective predicates
+Source: Introduction to Hiaki Grammar
+Vetted: s
+Judgment: g
+Phenomena: {cop}
+Uu sewa tutuli
+Uu sewa tutuli
+the flower pretty
+"The flower is pretty".
+
+Source: Introduction to Hiaki Grammar
+Vetted: s
+Judgment: g
+Phenomena: {cop}
+Uu sewa si tutuli
+Uu sewa si tutuli
+the flower very pretty
+"The flower is very pretty".
+
+Source: Introduction to Hiaki Grammar
+Vetted: s
+Judgment: g
+Phenomena: {cop}
+Uu sewa tutulitu
+Uu sewa tutuli-tu
+the flower pretty-BECOME
+"The flower is becoming pretty".
+
+Source: Introduction to Hiaki Grammar
+Vetted: s
+Judgment: g
+Phenomena: {cop}
+Uu sewa tutulitune
+Uu sewa tutuli-tu-ne
+the flower pretty-BECOME-FUT
+"The flower will become pretty".
+
+Source: Introduction to Hiaki Grammar
+Vetted: s
+Judgment: g
+Phenomena: {cop, tam}
+Uu sewa tutulituk
+Uu sewa tutuli-tu-k
+the flower pretty-BECOME-PST
+"The flower became pretty".
+
+Source: Introduction to Hiaki Grammar
+Vetted: s
+Judgment: g
+Phenomena: {cop, tam}
+Uu sewa tutulitukan
+Uu sewa tutuli-tu-kan
+the flower pretty-BECOME-PST.IMPF
+"The flower was very pretty".
+
+
+
