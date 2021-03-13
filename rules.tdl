@@ -7,7 +7,18 @@ decl-head-opt-subj := decl-head-opt-subj-phrase.
 
 basic-head-opt-comp := basic-head-opt-comp-phrase.
 
-non-event-subj-head := non-event-subj-head-phrase.
+;non-event-subj-head := non-event-subj-head-phrase.
+
+;adj-head-scop := adj-head-scop-phrase.
+
+; Rule instances for head-modifier structures. Corresponding types
+; are defined in matrix.tdl.  The matrix customization script did
+; not need to add any further constraints, so no corresponding types
+; appear in hiaki.tdl
+
+;head-adj-scop := head-adj-scop-phrase.
+
+neg-adverb := neg-adverb-phrase.
 
 comp-head := comp-head-phrase.
 
@@ -71,7 +82,7 @@ s11-top-coord := s11-top-coord-rule.
 
 s11-bottom-coord := s11-bottom-coord-rule.
 
-; ex-comp := extracted-comp-phrase.
+;ex-comp := extracted-comp-phrase.
 
 ; ex-adj := basic-extracted-adj-phrase.
 

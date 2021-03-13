@@ -17,3 +17,7 @@ au_2_gr := arg0e_gtr &
 vempo_2_gr := arg0e_gtr &
   [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
     FLAGS.TRIGGER "vempo_2" ].
+
+available-copula_gr := arg0e_gtr &
+[ CONTEXT [ RELS <! [ PRED "~.*_p_"] !> ],
+  FLAGS.TRIGGER "aayu_3" ].

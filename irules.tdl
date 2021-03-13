@@ -1,10 +1,6 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Inflecting Lexical Rule Instances
 
-noun-pc1_lrt1-suffix :=
-%suffix (* -me)
-noun-pc1_lrt1-lex-rule.
-
 noun-pc3_lrt2-suffix :=
 %suffix (* -mea)
 noun-pc3_lrt2-lex-rule.
@@ -57,10 +53,6 @@ noun-pc14_lrt1-suffix :=
 %suffix (* -ka)
 noun-pc14_lrt1-lex-rule.
 
-noun-pc21_lrt1-suffix :=
-%suffix (* -'u)
-noun-pc21_lrt1-lex-rule.
-
 noun-pc23_lrt1-prefix :=
 %prefix (* red-)
 noun-pc23_lrt1-lex-rule.
@@ -88,10 +80,6 @@ verb-pc6_lrt2-lex-rule.
 verb-pc6_lrt2-suffix2 :=
 %suffix (* -u)
 verb-pc6_lrt2-lex-rule.
-
-when-modified-verb-pc7_lrt1-suffix :=
-%suffix (* -o)
-when-modified-verb-pc7_lrt1-lex-rule.
 
 verb-pc7_lrt2-suffix :=
 %suffix (* -an)
